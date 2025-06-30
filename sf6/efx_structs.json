@@ -1,0 +1,54 @@
+{
+  "AttributeTypes": {
+    "FixRandomGenerator": {
+      "TypeID": 1,
+      "Name": "FixRandomGenerator",
+      "Classname": "ReeLib.Efx.Structs.Misc.EFXAttributeFixRandomGenerator",
+      "Hash": 1030576992,
+      "Fields": [
+        {
+          "Name": "unkn1_0",
+          "FieldType": "U32"
+        },
+        {
+          "Name": "unkn1_1",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_2",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_3",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_4",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_5",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_6",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_7",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_8",
+          "FieldType": "S32"
+        },
+        {
+          "Name": "unkn1_9",
+          "FieldType": "S32"
+        }
+      ]
+    }
+  },
+  "Structs": {},
+  "Enums": {}
+}
