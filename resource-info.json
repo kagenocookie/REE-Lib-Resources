@@ -1,11 +1,10 @@
 {
 	"resources": {
 		"dd2": {
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszdd2.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/dd2/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/rszdd2.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/DD2_PC_Release_10312024.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/il2cpp_cache.json",
@@ -16,13 +15,12 @@
 			"DynamicsDefinition": "config/dynamics/towerdynamics.def.6"
 		},
 		"dmc5":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszdmc5.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/dmc5/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/rsz_patch.json"
 			],
-			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/dmc5_STM_Release.list",
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/DMC5_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/il2cpp_cache.json",
 			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/pfb_ref_props.json",
 			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/efx_structs.json",
@@ -31,7 +29,7 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"mhrise":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-06-30T15:55:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszmhrise.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
@@ -41,7 +39,7 @@
 			"CollisionDefinition": "natives/stm/physics/collisiondefinition.cdef.4"
 		},
 		"mhwilds":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-06-30T15:55:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszmhwilds.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
@@ -52,11 +50,10 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"re2":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre2.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re2/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE2_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/il2cpp_cache.json",
@@ -67,11 +64,10 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.5"
 		},
 		"re2rt":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre2rt.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re2rt/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE2_RT_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/il2cpp_cache.json",
@@ -82,11 +78,10 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
 		},
 		"re3":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre3.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re3/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE3_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/il2cpp_cache.json",
@@ -97,11 +92,10 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.5"
 		},
 		"re3rt":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre3rt.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re3rt/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3rt/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE3_RT_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3rt/il2cpp_cache.json",
@@ -112,11 +106,10 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
 		},
 		"re4":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre4_reasy.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re4/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE4_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/il2cpp_cache.json",
@@ -127,11 +120,10 @@
 			"DynamicsDefinition": "_share/config/dynamics/appdynamicsdefinition.def.6"
 		},
 		"re7":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre7.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re7/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE7_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7/il2cpp_cache.json",
@@ -141,11 +133,10 @@
 			"CollisionDefinition": "collision/harawatacollision.cdef.1"
 		},
 		"re7rt":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre7rt.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re7rt/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7rt/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE7_RT_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7rt/il2cpp_cache.json",
@@ -155,11 +146,10 @@
 			"CollisionDefinition": "collision/harawatacollision.cdef.4"
 		},
 		"re8":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-01T15:42:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre8.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json",
-				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/re8/rsz_patches.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE8_STM_Release.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/il2cpp_cache.json",
@@ -170,7 +160,7 @@
 			"DynamicsDefinition": "collisionfilter/villagedynamics.def.6"
 		},
 		"sf6":{
-			"LastUpdatedAtUtc": "2025-06-30T06:01:00Z",
+			"LastUpdatedAtUtc": "2025-06-30T15:55:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszsf6.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"

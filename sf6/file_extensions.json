@@ -1,0 +1,766 @@
+{
+  "Versions": {
+    "mdf2": 31,
+    "mesh": 230110883,
+    "tex": 143230113,
+    "mmtr": 221102761,
+    "motbank": 3,
+    "motlist": 653,
+    "user": 2,
+    "uvs": 7,
+    "mot": 603,
+    "jmap": 19,
+    "iklookat2": 21,
+    "fbxskel": 5,
+    "mcambank": 3,
+    "mcamlist": 22,
+    "chain": 52,
+    "ikbodyrig": 3,
+    "uvar": 3,
+    "jointlodgroup": 2,
+    "rtbs": 4,
+    "oft": 1,
+    "fslt": 3,
+    "gcf": 26,
+    "ift": 7,
+    "pfb": 17,
+    "rtex": 5,
+    "motfsm2": 43,
+    "rcol": 25,
+    "tmlfsm2": 41053002,
+    "scn": 20,
+    "psop": 2,
+    "fchar": 18,
+    "fcmndatals": 1,
+    "fextdata": 1,
+    "fsubchar": 18,
+    "skeleton": 5,
+    "cdef": 5,
+    "cfil": 7,
+    "cmat": 3,
+    "def": 6,
+    "finf": 1,
+    "rbs": 34,
+    "lod": 3,
+    "mcol": 20021,
+    "clip": 53,
+    "stmesh": 221031760,
+    "gpuc": 230110953,
+    "rdd": 34022,
+    "gpumotlist": 605,
+    "fol": 3,
+    "pci": 5,
+    "rmesh": 24013,
+    "fbik": 6,
+    "mov": 1,
+    "tml": 53002,
+    "efx": 3474371,
+    "gui": 530034,
+    "motcam": 12,
+    "gcp": 2,
+    "tean": 1,
+    "sss": 4,
+    "ucurve": 53,
+    "star": 3,
+    "ies": 2,
+    "lmap": -2069823483,
+    "lprb": 6,
+    "prb": 9,
+    "tmlbld": 53011,
+    "dblc": 1,
+    "sst": 8,
+    "mame": 8,
+    "mameac": 2,
+    "gpbf": 2,
+    "mmtrs": 221102761,
+    "msg": 20,
+    "jcns": 22,
+    "havokcloth": 1,
+    "ncf": 10,
+    "rcf": 2,
+    "bhvt": 41,
+    "ainvm": 17,
+    "swms": 1,
+    "sbnk": 1,
+    "spck": 1,
+    "vsdf": 221102763,
+    "fxct": 4,
+    "eem": 0,
+    "efcsv": 1,
+    "lfa": 4,
+    "sdf": 221102761,
+    "rtmr": 5,
+    "rcfg": 5,
+    "aiwayp": 5
+  },
+  "Info": {
+    "mdf2": {
+      "Locales": [],
+      "Type": "MaterialDefinition",
+      "Version": 31,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mesh": {
+      "Locales": [],
+      "Type": "Mesh",
+      "Version": 230110883,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "tex": {
+      "Locales": [
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ja",
+        "zhcn",
+        "zhtw",
+        "ko",
+        "ar"
+      ],
+      "Type": "Texture",
+      "Version": 143230113,
+      "CanHaveX64": true,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "mmtr": {
+      "Locales": [],
+      "Type": "MasterMaterial",
+      "Version": 221102761,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "motbank": {
+      "Locales": [],
+      "Type": "MotionBank",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "motlist": {
+      "Locales": [],
+      "Type": "MotionList",
+      "Version": 653,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "user": {
+      "Locales": [
+        "stm"
+      ],
+      "Type": "Userdata",
+      "Version": 2,
+      "CanHaveX64": true,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "uvs": {
+      "Locales": [],
+      "Type": "UVSequence",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mot": {
+      "Locales": [],
+      "Type": "Motion",
+      "Version": 603,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "jmap": {
+      "Locales": [],
+      "Type": "JointMap",
+      "Version": 19,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "iklookat2": {
+      "Locales": [],
+      "Type": "IKLookat2",
+      "Version": 21,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fbxskel": {
+      "Locales": [],
+      "Type": "FbxSkeleton",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mcambank": {
+      "Locales": [],
+      "Type": "MotionCameraBank",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mcamlist": {
+      "Locales": [],
+      "Type": "MotionCameraList",
+      "Version": 22,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "chain": {
+      "Locales": [],
+      "Type": "Chain",
+      "Version": 52,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ikbodyrig": {
+      "Locales": [],
+      "Type": "IKBodyRig",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "uvar": {
+      "Locales": [],
+      "Type": "Uvar",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "jointlodgroup": {
+      "Locales": [],
+      "Type": "JointLodGroup",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rtbs": {
+      "Locales": [],
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "oft": {
+      "Locales": [],
+      "Type": "OutlineFont",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fslt": {
+      "Locales": [],
+      "Type": "FontSlot",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gcf": {
+      "Locales": [],
+      "Type": "GUIConfig",
+      "Version": 26,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ift": {
+      "Locales": [],
+      "Type": "IconFont",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "pfb": {
+      "Locales": [
+        "ja",
+        "ko",
+        "zhcn",
+        "zhtw"
+      ],
+      "Type": "Prefab",
+      "Version": 17,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "rtex": {
+      "Locales": [],
+      "Type": "RenderTexture",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "motfsm2": {
+      "Locales": [],
+      "Type": "MotionFsm2",
+      "Version": 43,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rcol": {
+      "Locales": [],
+      "Type": "Rcol",
+      "Version": 25,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "tmlfsm2": {
+      "Locales": [],
+      "Type": "TimelineFsm2",
+      "Version": 41053002,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "scn": {
+      "Locales": [],
+      "Type": "Scene",
+      "Version": 20,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "psop": {
+      "Locales": [],
+      "Type": "PSOPatch",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fchar": {
+      "Locales": [],
+      "Version": 18,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fcmndatals": {
+      "Locales": [],
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fextdata": {
+      "Locales": [],
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fsubchar": {
+      "Locales": [],
+      "Version": 18,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "skeleton": {
+      "Locales": [],
+      "Type": "Skeleton",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "cdef": {
+      "Locales": [],
+      "Type": "CollisionDefinition",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "cfil": {
+      "Locales": [],
+      "Type": "CollisionFilter",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "cmat": {
+      "Locales": [],
+      "Type": "CollisionMaterial",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "def": {
+      "Locales": [],
+      "Type": "DynamicsDefinition",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "finf": {
+      "Locales": [],
+      "Type": "FilterInfo",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rbs": {
+      "Locales": [],
+      "Type": "RigidBodySet",
+      "Version": 34,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "lod": {
+      "Locales": [],
+      "Type": "Lod",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mcol": {
+      "Locales": [],
+      "Type": "MeshCollider",
+      "Version": 20021,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "clip": {
+      "Locales": [],
+      "Type": "Clip",
+      "Version": 53,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "stmesh": {
+      "Locales": [],
+      "Type": "SpeedTreeMesh",
+      "Version": 221031760,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gpuc": {
+      "Locales": [],
+      "Type": "GpuCloth",
+      "Version": 230110953,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rdd": {
+      "Locales": [],
+      "Type": "Ragdoll",
+      "Version": 34022,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gpumotlist": {
+      "Locales": [],
+      "Version": 605,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fol": {
+      "Locales": [],
+      "Type": "Foliage",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "pci": {
+      "Locales": [],
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rmesh": {
+      "Locales": [],
+      "Type": "RigidBodyMesh",
+      "Version": 24013,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fbik": {
+      "Locales": [],
+      "Type": "FullBodyIK",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mov": {
+      "Locales": [
+        "ja",
+        "ko",
+        "zhcn",
+        "zhtw"
+      ],
+      "Type": "Movie",
+      "Version": 1,
+      "CanHaveX64": true,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "tml": {
+      "Locales": [],
+      "Type": "Timeline",
+      "Version": 53002,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "efx": {
+      "Locales": [],
+      "Type": "Efx",
+      "Version": 3474371,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gui": {
+      "Locales": [],
+      "Type": "Gui",
+      "Version": 530034,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "motcam": {
+      "Locales": [],
+      "Version": 12,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gcp": {
+      "Locales": [],
+      "Type": "GUIColorPreset",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "tean": {
+      "Locales": [],
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sss": {
+      "Locales": [],
+      "Type": "SSSProfile",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ucurve": {
+      "Locales": [],
+      "Type": "UserCurve",
+      "Version": 53,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "star": {
+      "Locales": [],
+      "Type": "StarCatalogue",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ies": {
+      "Locales": [],
+      "Type": "IESLight",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "lmap": {
+      "Locales": [],
+      "Version": -2069823483,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "lprb": {
+      "Locales": [],
+      "Type": "LightProbe",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "prb": {
+      "Locales": [],
+      "Type": "Probe",
+      "Version": 9,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "tmlbld": {
+      "Locales": [],
+      "Type": "TimelineBlend",
+      "Version": 53011,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "dblc": {
+      "Locales": [],
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sst": {
+      "Locales": [],
+      "Type": "SetStateList",
+      "Version": 8,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mame": {
+      "Locales": [],
+      "Version": 8,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mameac": {
+      "Locales": [],
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gpbf": {
+      "Locales": [],
+      "Type": "GpuBuffer",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mmtrs": {
+      "Locales": [],
+      "Version": 221102761,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "msg": {
+      "Locales": [],
+      "Type": "Message",
+      "Version": 20,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "jcns": {
+      "Locales": [],
+      "Type": "JointConstraints",
+      "Version": 22,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "havokcloth": {
+      "Locales": [],
+      "Version": 1,
+      "CanHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ncf": {
+      "Locales": [],
+      "Type": "NetworkConfig",
+      "Version": 10,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rcf": {
+      "Locales": [],
+      "Type": "RagdollController",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "bhvt": {
+      "Locales": [],
+      "Type": "BehaviorTree",
+      "Version": 41,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ainvm": {
+      "Locales": [],
+      "Type": "AiMap",
+      "Version": 17,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "swms": {
+      "Locales": [],
+      "Type": "MemorySettings",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sbnk": {
+      "Locales": [
+        "en",
+        "ja"
+      ],
+      "Type": "SoundBank",
+      "Version": 1,
+      "CanHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "spck": {
+      "Locales": [
+        "en",
+        "ja"
+      ],
+      "Type": "SoundPackage",
+      "Version": 1,
+      "CanHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "vsdf": {
+      "Locales": [],
+      "Type": "VfxShader",
+      "Version": 221102763,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fxct": {
+      "Locales": [],
+      "Type": "fxct",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "eem": {
+      "Locales": [],
+      "Type": "EffectEmitMask",
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "efcsv": {
+      "Locales": [],
+      "Type": "EffectCsv",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "lfa": {
+      "Locales": [],
+      "Type": "Lensflare",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sdf": {
+      "Locales": [
+        "stm"
+      ],
+      "Type": "sdf",
+      "Version": 221102761,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "rtmr": {
+      "Locales": [],
+      "Type": "RayTraceMaterialRedirect",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rcfg": {
+      "Locales": [],
+      "Type": "rcfg",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "aiwayp": {
+      "Locales": [],
+      "Type": "AiMap",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    }
+  }
+}

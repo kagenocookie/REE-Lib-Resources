@@ -86,18 +86,21 @@
   "Info": {
     "mdf2": {
       "Locales": [],
+      "Type": "MaterialDefinition",
       "Version": 10,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "mesh": {
       "Locales": [],
+      "Type": "Mesh",
       "Version": 1808312334,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "tex": {
       "Locales": [],
+      "Type": "Texture",
       "Version": 10,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -105,12 +108,14 @@
     },
     "mmtr": {
       "Locales": [],
+      "Type": "MasterMaterial",
       "Version": 1808160001,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "mov": {
       "Locales": [],
+      "Type": "Movie",
       "Version": 1,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -118,6 +123,7 @@
     },
     "pfb": {
       "Locales": [],
+      "Type": "Prefab",
       "Version": 16,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -125,120 +131,140 @@
     },
     "cfil": {
       "Locales": [],
+      "Type": "CollisionFilter",
       "Version": 7,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "cmat": {
       "Locales": [],
+      "Type": "CollisionMaterial",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "cdef": {
       "Locales": [],
+      "Type": "CollisionDefinition",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "def": {
       "Locales": [],
+      "Type": "DynamicsDefinition",
       "Version": 5,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "motfsm2": {
       "Locales": [],
+      "Type": "MotionFsm2",
       "Version": 30,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "uvar": {
       "Locales": [],
+      "Type": "Uvar",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "fsmv2": {
       "Locales": [],
+      "Type": "Fsm2",
       "Version": 30,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "scn": {
       "Locales": [],
+      "Type": "Scene",
       "Version": 19,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "mot": {
       "Locales": [],
+      "Type": "Motion",
       "Version": 65,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "mcol": {
       "Locales": [],
+      "Type": "MeshCollider",
       "Version": 3017,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "rtex": {
       "Locales": [],
+      "Type": "RenderTexture",
       "Version": 4,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "rmesh": {
       "Locales": [],
+      "Type": "RigidBodyMesh",
       "Version": 10008,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "motlist": {
       "Locales": [],
+      "Type": "MotionList",
       "Version": 85,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "rbs": {
       "Locales": [],
+      "Type": "RigidBodySet",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "motbank": {
       "Locales": [],
+      "Type": "MotionBank",
       "Version": 1,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "rcol": {
       "Locales": [],
+      "Type": "Rcol",
       "Version": 10,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "rdd": {
       "Locales": [],
+      "Type": "Ragdoll",
       "Version": 27019,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "mcamlist": {
       "Locales": [],
+      "Type": "MotionCameraList",
       "Version": 13,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "chain": {
       "Locales": [],
+      "Type": "Chain",
       "Version": 21,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "jmap": {
       "Locales": [],
+      "Type": "JointMap",
       "Version": 10,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -251,114 +277,133 @@
     },
     "clip": {
       "Locales": [],
+      "Type": "Clip",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "lod": {
       "Locales": [],
+      "Type": "Lod",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "ncf": {
       "Locales": [],
+      "Type": "NetworkConfig",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "sss": {
       "Locales": [],
+      "Type": "SSSProfile",
       "Version": 1,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "tml": {
       "Locales": [],
+      "Type": "Timeline",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "efx": {
       "Locales": [],
+      "Type": "Efx",
       "Version": 1769669,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "uvs": {
       "Locales": [],
+      "Type": "UVSequence",
       "Version": 7,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "mcambank": {
       "Locales": [],
+      "Type": "MotionCameraBank",
       "Version": 1,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "bhvt": {
       "Locales": [],
+      "Type": "BehaviorTree",
       "Version": 30,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "fbxskel": {
       "Locales": [],
+      "Type": "FbxSkeleton",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "jcns": {
       "Locales": [],
+      "Type": "JointConstraints",
       "Version": 11,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "gpuc": {
       "Locales": [],
+      "Type": "GpuCloth",
       "Version": 5,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "ucurve": {
       "Locales": [],
+      "Type": "UserCurve",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "aimap": {
       "Locales": [],
+      "Type": "AiMap",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "aimapattr": {
       "Locales": [],
+      "Type": "AiMapAttribute",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "ies": {
       "Locales": [],
+      "Type": "IESLight",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "lprb": {
       "Locales": [],
+      "Type": "LightProbe",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "prb": {
       "Locales": [],
+      "Type": "Probe",
       "Version": 9,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "msg": {
       "Locales": [],
+      "Type": "Message",
       "Version": 14,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -511,6 +556,7 @@
         "ja",
         "zhcn"
       ],
+      "Type": "SoundBank",
       "Version": 2,
       "CanHaveX64": true,
       "CanHaveLang": true,
@@ -526,6 +572,7 @@
         "ja",
         "zhcn"
       ],
+      "Type": "SoundPackage",
       "Version": 3,
       "CanHaveX64": true,
       "CanHaveLang": true,
@@ -545,18 +592,21 @@
     },
     "gcf": {
       "Locales": [],
+      "Type": "GUIConfig",
       "Version": 15,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "gui": {
       "Locales": [],
+      "Type": "Gui",
       "Version": 270020,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "oft": {
       "Locales": [],
+      "Type": "OutlineFont",
       "Version": 1,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -570,12 +620,14 @@
     },
     "ift": {
       "Locales": [],
+      "Type": "IconFont",
       "Version": 1,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "sdf": {
       "Locales": [],
+      "Type": "sdf",
       "Version": 1808160001,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -589,12 +641,14 @@
     },
     "fxct": {
       "Locales": [],
+      "Type": "fxct",
       "Version": 1,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "lfa": {
       "Locales": [],
+      "Type": "Lensflare",
       "Version": 4,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true

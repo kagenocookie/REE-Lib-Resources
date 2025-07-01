@@ -120,5 +120,17 @@
       "PropertyId": 131075,
       "AutoDetected": true
     }
+  },
+  "via.render.LightShaft": {
+    "LightGameObject": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
+  },
+  "via.motion.ConstraintParent": {
+    "TargetGameObject": {
+      "PropertyId": 262146,
+      "AutoDetected": true
+    }
   }
 }

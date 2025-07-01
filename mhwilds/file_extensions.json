@@ -1,0 +1,993 @@
+{
+  "Versions": {
+    "user": 3,
+    "tex": 241106027,
+    "pfb": 18,
+    "mdf2": 45,
+    "csdf": 250206177,
+    "gui": 850041,
+    "msg": 23,
+    "mmtr": 250206176,
+    "ocioc": 491312434,
+    "mcol": 24022,
+    "rmesh": 26013,
+    "cfil": 7,
+    "rtex": 6,
+    "ucurve": 86,
+    "mesh": 241111606,
+    "sdftex": 481229356,
+    "rtmr": 7,
+    "star": 3,
+    "scn": 21,
+    "clip": 85,
+    "ies": 2,
+    "mpci": 241003001,
+    "prb": 9,
+    "lprb": 8,
+    "tmlbld": 85013,
+    "pog": 12,
+    "poglst": 0,
+    "gpbf": 3,
+    "jcns": 29,
+    "chain2": 13,
+    "motbank": 4,
+    "motlist": 992,
+    "jmap": 26,
+    "jointlodgroup": 2,
+    "mot": 932,
+    "fbxskel": 7,
+    "clsp": 3,
+    "gpuc": 241111744,
+    "sfur": 5,
+    "jntexprgraph": 6,
+    "vmap": 240724984,
+    "zivacomb": 240321828,
+    "ziva": 240220828,
+    "lod": 3,
+    "fol": 240718001,
+    "stmesh": 241111606,
+    "rbs": 2038,
+    "rdd": 2038024,
+    "hf": 4,
+    "chf": 2,
+    "gml": 241106040,
+    "grnd": 241106053,
+    "gtl": 241106045,
+    "fxct": 4,
+    "efx": 5571972,
+    "efcsv": 1,
+    "abcmesh": 12,
+    "uvs": 8,
+    "eem": 0,
+    "uvar": 3,
+    "vsdf": 250206180,
+    "vsdflist": 1,
+    "dlgcf": 1,
+    "dlglist": 30007,
+    "dlg": 30011,
+    "dlgtml": 85002,
+    "fsmv2": 41,
+    "rcol": 28,
+    "tmlfsm2": 41085004,
+    "mcamlist": 22,
+    "clrp": 1,
+    "cset": 6,
+    "mov": 1,
+    "fpolygon": 30001,
+    "ccbk": 3,
+    "iklookat2": 26,
+    "ainvm": 30,
+    "ainvmmgr": 8,
+    "chainwnd": 0,
+    "psop": 3,
+    "gcp": 2,
+    "gcf": 28,
+    "gsty": 4,
+    "oft": 1,
+    "fslt": 4,
+    "ift": 7,
+    "sss": 5,
+    "motcam": 12,
+    "mcambank": 3,
+    "ikls": 28,
+    "ikmulti": 4,
+    "ikfs": 3,
+    "fbik": 6,
+    "iklizard": 6,
+    "ikwagon": 1,
+    "ikleg2": 24,
+    "retargetrig": 9,
+    "skeleton": 7,
+    "ord": 1,
+    "rcf": 3,
+    "ncf": 11,
+    "vsrc": 21,
+    "amix": 3,
+    "swms": 1,
+    "ucurvelist": 85,
+    "sbnk": 1,
+    "spck": 1,
+    "aimapattr": 46,
+    "cdef": 7,
+    "def": 6,
+    "finf": 2,
+    "sts": 1,
+    "htex": 1,
+    "sdf": 250206176,
+    "rcfg": 10
+  },
+  "Info": {
+    "user": {
+      "Locales": [],
+      "Type": "Userdata",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "tex": {
+      "Locales": [
+        "en",
+        "ja",
+        "ar",
+        "de",
+        "es",
+        "es419",
+        "fr",
+        "it",
+        "ko",
+        "pl",
+        "ptbr",
+        "ru",
+        "zhcn",
+        "zhtw"
+      ],
+      "Type": "Texture",
+      "Version": 241106027,
+      "CanHaveX64": true,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "pfb": {
+      "Locales": [],
+      "Type": "Prefab",
+      "Version": 18,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mdf2": {
+      "Locales": [],
+      "Type": "MaterialDefinition",
+      "Version": 45,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "csdf": {
+      "Locales": [],
+      "Version": 250206177,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gui": {
+      "Locales": [],
+      "Type": "Gui",
+      "Version": 850041,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "msg": {
+      "Locales": [],
+      "Type": "Message",
+      "Version": 23,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mmtr": {
+      "Locales": [],
+      "Type": "MasterMaterial",
+      "Version": 250206176,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ocioc": {
+      "Locales": [],
+      "Type": "OpenColorIOConfig",
+      "Version": 491312434,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mcol": {
+      "Locales": [],
+      "Type": "MeshCollider",
+      "Version": 24022,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rmesh": {
+      "Locales": [],
+      "Type": "RigidBodyMesh",
+      "Version": 26013,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "cfil": {
+      "Locales": [],
+      "Type": "CollisionFilter",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rtex": {
+      "Locales": [],
+      "Type": "RenderTexture",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ucurve": {
+      "Locales": [],
+      "Type": "UserCurve",
+      "Version": 86,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mesh": {
+      "Locales": [],
+      "Type": "Mesh",
+      "Version": 241111606,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sdftex": {
+      "Locales": [],
+      "Type": "SdfTexture",
+      "Version": 481229356,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rtmr": {
+      "Locales": [],
+      "Type": "RayTraceMaterialRedirect",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "star": {
+      "Locales": [],
+      "Type": "StarCatalogue",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "scn": {
+      "Locales": [],
+      "Type": "Scene",
+      "Version": 21,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "clip": {
+      "Locales": [],
+      "Type": "Clip",
+      "Version": 85,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ies": {
+      "Locales": [],
+      "Type": "IESLight",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mpci": {
+      "Locales": [],
+      "Type": "MaterialPointCloud",
+      "Version": 241003001,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "prb": {
+      "Locales": [],
+      "Type": "Probe",
+      "Version": 9,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "lprb": {
+      "Locales": [],
+      "Type": "LightProbe",
+      "Version": 8,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "tmlbld": {
+      "Locales": [],
+      "Type": "TimelineBlend",
+      "Version": 85013,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "pog": {
+      "Locales": [],
+      "Type": "pog",
+      "Version": 12,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "poglst": {
+      "Locales": [],
+      "Type": "poglst",
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gpbf": {
+      "Locales": [],
+      "Type": "GpuBuffer",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "jcns": {
+      "Locales": [],
+      "Type": "JointConstraints",
+      "Version": 29,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "chain2": {
+      "Locales": [],
+      "Type": "Chain2",
+      "Version": 13,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "motbank": {
+      "Locales": [],
+      "Type": "MotionBank",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "motlist": {
+      "Locales": [
+        "en",
+        "de",
+        "fc",
+        "it",
+        "ja"
+      ],
+      "Type": "MotionList",
+      "Version": 992,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "jmap": {
+      "Locales": [],
+      "Type": "JointMap",
+      "Version": 26,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "jointlodgroup": {
+      "Locales": [],
+      "Type": "JointLodGroup",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mot": {
+      "Locales": [],
+      "Type": "Motion",
+      "Version": 932,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fbxskel": {
+      "Locales": [],
+      "Type": "FbxSkeleton",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "clsp": {
+      "Locales": [],
+      "Type": "CollisionShapePreset",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gpuc": {
+      "Locales": [],
+      "Type": "GpuCloth",
+      "Version": 241111744,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sfur": {
+      "Locales": [],
+      "Type": "ShellFur",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "jntexprgraph": {
+      "Locales": [],
+      "Type": "JointExpressionGraph",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "vmap": {
+      "Locales": [],
+      "Type": "MeshVertexMaping",
+      "Version": 240724984,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "zivacomb": {
+      "Locales": [
+        "stm"
+      ],
+      "Type": "ZivaCombiner",
+      "Version": 240321828,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "ziva": {
+      "Locales": [],
+      "Type": "ZivaRT",
+      "Version": 240220828,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "lod": {
+      "Locales": [],
+      "Type": "Lod",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fol": {
+      "Locales": [],
+      "Type": "Foliage",
+      "Version": 240718001,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "stmesh": {
+      "Locales": [],
+      "Type": "SpeedTreeMesh",
+      "Version": 241111606,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rbs": {
+      "Locales": [],
+      "Type": "RigidBodySet",
+      "Version": 2038,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rdd": {
+      "Locales": [],
+      "Type": "Ragdoll",
+      "Version": 2038024,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "hf": {
+      "Locales": [],
+      "Type": "HeightField",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "chf": {
+      "Locales": [],
+      "Type": "ColliderHeightField",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gml": {
+      "Locales": [],
+      "Type": "GroundMaterialList",
+      "Version": 241106040,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "grnd": {
+      "Locales": [],
+      "Type": "Ground",
+      "Version": 241106053,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gtl": {
+      "Locales": [],
+      "Type": "GroundTextureList",
+      "Version": 241106045,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fxct": {
+      "Locales": [],
+      "Type": "fxct",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "efx": {
+      "Locales": [],
+      "Type": "Efx",
+      "Version": 5571972,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "efcsv": {
+      "Locales": [],
+      "Type": "EffectCsv",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "abcmesh": {
+      "Locales": [],
+      "Type": "AlembicMesh",
+      "Version": 12,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "uvs": {
+      "Locales": [],
+      "Type": "UVSequence",
+      "Version": 8,
+      "CanHaveX64": true,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "eem": {
+      "Locales": [],
+      "Type": "EffectEmitMask",
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "uvar": {
+      "Locales": [],
+      "Type": "Uvar",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "vsdf": {
+      "Locales": [],
+      "Type": "VfxShader",
+      "Version": 250206180,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "vsdflist": {
+      "Locales": [],
+      "Type": "VfxShaderList",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "dlgcf": {
+      "Locales": [],
+      "Type": "DialogueConfig",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "dlglist": {
+      "Locales": [],
+      "Type": "DialogueList",
+      "Version": 30007,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "dlg": {
+      "Locales": [],
+      "Type": "Dialogue",
+      "Version": 30011,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "dlgtml": {
+      "Locales": [],
+      "Type": "DialogueTimeline",
+      "Version": 85002,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fsmv2": {
+      "Locales": [],
+      "Type": "Fsm2",
+      "Version": 41,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rcol": {
+      "Locales": [],
+      "Type": "Rcol",
+      "Version": 28,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "tmlfsm2": {
+      "Locales": [],
+      "Type": "TimelineFsm2",
+      "Version": 41085004,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mcamlist": {
+      "Locales": [],
+      "Type": "MotionCameraList",
+      "Version": 22,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "clrp": {
+      "Locales": [],
+      "Type": "ClothResetPose",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "cset": {
+      "Locales": [],
+      "Type": "ColliderSet",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mov": {
+      "Locales": [
+        "en",
+        "stm",
+        "ar",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ko",
+        "pl",
+        "ptbr",
+        "ru",
+        "zhcn",
+        "zhtw",
+        "es419"
+      ],
+      "Type": "Movie",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "fpolygon": {
+      "Locales": [],
+      "Type": "FreePolygon",
+      "Version": 30001,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ccbk": {
+      "Locales": [],
+      "Type": "CharacterColliderBank",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "iklookat2": {
+      "Locales": [],
+      "Type": "IKLookat2",
+      "Version": 26,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ainvm": {
+      "Locales": [],
+      "Type": "AiMap",
+      "Version": 30,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ainvmmgr": {
+      "Locales": [],
+      "Type": "AiMap",
+      "Version": 8,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "chainwnd": {
+      "Locales": [],
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "psop": {
+      "Locales": [],
+      "Type": "PSOPatch",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gcp": {
+      "Locales": [],
+      "Type": "GUIColorPreset",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gcf": {
+      "Locales": [],
+      "Type": "GUIConfig",
+      "Version": 28,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "gsty": {
+      "Locales": [
+        "zhcn",
+        "zhtw"
+      ],
+      "Type": "GUIStyleList",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "oft": {
+      "Locales": [],
+      "Type": "OutlineFont",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fslt": {
+      "Locales": [],
+      "Type": "FontSlot",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ift": {
+      "Locales": [],
+      "Type": "IconFont",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sss": {
+      "Locales": [],
+      "Type": "SSSProfile",
+      "Version": 5,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "motcam": {
+      "Locales": [],
+      "Version": 12,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "mcambank": {
+      "Locales": [],
+      "Type": "MotionCameraBank",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ikls": {
+      "Locales": [],
+      "Type": "IKLegSpine",
+      "Version": 28,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ikmulti": {
+      "Locales": [],
+      "Type": "IKMulti",
+      "Version": 4,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ikfs": {
+      "Locales": [],
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "fbik": {
+      "Locales": [],
+      "Type": "FullBodyIK",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "iklizard": {
+      "Locales": [],
+      "Type": "IKLizard",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ikwagon": {
+      "Locales": [],
+      "Type": "IKWagon",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ikleg2": {
+      "Locales": [],
+      "Type": "IKLeg2",
+      "Version": 24,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "retargetrig": {
+      "Locales": [],
+      "Type": "RetargetRig",
+      "Version": 9,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "skeleton": {
+      "Locales": [],
+      "Type": "Skeleton",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ord": {
+      "Locales": [],
+      "Type": "ord",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "rcf": {
+      "Locales": [],
+      "Type": "RagdollController",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ncf": {
+      "Locales": [],
+      "Type": "NetworkConfig",
+      "Version": 11,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "vsrc": {
+      "Locales": [],
+      "Type": "VibrationSource",
+      "Version": 21,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "amix": {
+      "Locales": [],
+      "Type": "AudioMixer",
+      "Version": 3,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "swms": {
+      "Locales": [],
+      "Type": "MemorySettings",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "ucurvelist": {
+      "Locales": [],
+      "Type": "UserCurveList",
+      "Version": 85,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sbnk": {
+      "Locales": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ja",
+        "ptbr",
+        "ru",
+        "zhcn"
+      ],
+      "Type": "SoundBank",
+      "Version": 1,
+      "CanHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "spck": {
+      "Locales": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "ja",
+        "ptbr",
+        "ru",
+        "zhcn"
+      ],
+      "Type": "SoundPackage",
+      "Version": 1,
+      "CanHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "aimapattr": {
+      "Locales": [],
+      "Type": "AiMapAttribute",
+      "Version": 46,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "cdef": {
+      "Locales": [],
+      "Type": "CollisionDefinition",
+      "Version": 7,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "def": {
+      "Locales": [],
+      "Type": "DynamicsDefinition",
+      "Version": 6,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "finf": {
+      "Locales": [],
+      "Type": "FilterInfo",
+      "Version": 2,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sts": {
+      "Locales": [],
+      "Type": "Strands",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "htex": {
+      "Locales": [],
+      "Type": "HeightTexture",
+      "Version": 1,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    },
+    "sdf": {
+      "Locales": [
+        "stm"
+      ],
+      "Type": "sdf",
+      "Version": 250206176,
+      "CanHaveX64": true,
+      "CanNotHaveX64": true,
+      "CanHaveLang": true,
+      "CanNotHaveLang": true
+    },
+    "rcfg": {
+      "Locales": [],
+      "Type": "rcfg",
+      "Version": 10,
+      "CanNotHaveX64": true,
+      "CanNotHaveLang": true
+    }
+  }
+}
