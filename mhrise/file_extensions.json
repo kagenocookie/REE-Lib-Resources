@@ -120,7 +120,7 @@
       "Locales": [
         "stm"
       ],
-      "Type": "Userdata",
+      "Type": "UserData",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanHaveLang": true,
@@ -162,7 +162,7 @@
     },
     "rcol": {
       "Locales": [],
-      "Type": "Rcol",
+      "Type": "RequestSetCollider",
       "Version": 20,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -245,21 +245,21 @@
     },
     "uvar": {
       "Locales": [],
-      "Type": "Uvar",
+      "Type": "UserVariables",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "ikls": {
       "Locales": [],
-      "Type": "IKLegSpine",
+      "Type": "IkLegSpine",
       "Version": 13,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "iklookat2": {
       "Locales": [],
-      "Type": "IKLookat2",
+      "Type": "IkLookAt2",
       "Version": 14,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -293,7 +293,7 @@
     },
     "aimap": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 41,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -342,7 +342,7 @@
       "Locales": [
         "stm"
       ],
-      "Type": "Gui",
+      "Type": "GUI",
       "Version": 430033,
       "CanNotHaveX64": true,
       "CanHaveLang": true,
@@ -350,7 +350,7 @@
     },
     "efx": {
       "Locales": [],
-      "Type": "Efx",
+      "Type": "Effect",
       "Version": 2818730,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -411,7 +411,7 @@
     },
     "mcol": {
       "Locales": [],
-      "Type": "MeshCollider",
+      "Type": "CollisionMesh",
       "Version": 13020,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -454,7 +454,7 @@
     },
     "aimapattr": {
       "Locales": [],
-      "Type": "AiMapAttribute",
+      "Type": "AIMapAttribute",
       "Version": 42,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -482,7 +482,7 @@
     },
     "jointlodgroup": {
       "Locales": [],
-      "Type": "JointLodGroup",
+      "Type": "JointLODGroup",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -607,14 +607,14 @@
     },
     "lprb": {
       "Locales": [],
-      "Type": "LightProbe",
+      "Type": "LightProbes",
       "Version": 6,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "prb": {
       "Locales": [],
-      "Type": "Probe",
+      "Type": "Probes",
       "Version": 9,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -628,7 +628,7 @@
     },
     "ainvm": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 14,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -651,7 +651,7 @@
     },
     "gpbf": {
       "Locales": [],
-      "Type": "GpuBuffer",
+      "Type": "ByteBuffer",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true

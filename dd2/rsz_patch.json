@@ -694,7 +694,7 @@
       {
         "Name": "v15",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -1193,7 +1193,7 @@
       {
         "Name": "Mesh",
         "Type": "Resource",
-        "FileFormat": "MeshCollider"
+        "FileFormat": "CollisionMesh"
       }
     ]
   },
@@ -1242,7 +1242,7 @@
       {
         "Name": "v4",
         "Type": "Resource",
-        "FileFormat": "AiMapAttribute"
+        "FileFormat": "AIMapAttribute"
       }
     ]
   },
@@ -1936,7 +1936,7 @@
       {
         "Name": "v5",
         "Type": "Resource",
-        "FileFormat": "IKLeg2"
+        "FileFormat": "IkLeg2"
       },
       {
         "Name": "v18",
@@ -2072,7 +2072,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "IKLookat2"
+        "FileFormat": "IkLookAt2"
       }
     ]
   },
@@ -2427,7 +2427,7 @@
       {
         "Name": "v1",
         "Type": "Resource",
-        "FileFormat": "Gui"
+        "FileFormat": "GUI"
       },
       {
         "Name": "v7",
@@ -2570,7 +2570,7 @@
       {
         "Name": "v5",
         "Type": "Resource",
-        "FileFormat": "IKHand"
+        "FileFormat": "IkHand2"
       }
     ]
   },
@@ -3175,7 +3175,7 @@
       {
         "Name": "v4",
         "Type": "Resource",
-        "FileFormat": "IKTrain2"
+        "FileFormat": "IkTrain2"
       }
     ]
   },
@@ -3839,7 +3839,7 @@
       {
         "Name": "v5",
         "Type": "Resource",
-        "FileFormat": "IKLegSpine"
+        "FileFormat": "IkLegSpine"
       }
     ]
   },
@@ -4083,7 +4083,7 @@
       {
         "Name": "v4",
         "Type": "Resource",
-        "FileFormat": "IKMulti"
+        "FileFormat": "IkMulti"
       }
     ]
   },
@@ -4314,7 +4314,7 @@
       {
         "Name": "v16",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -4424,7 +4424,7 @@
       {
         "Name": "v4",
         "Type": "Resource",
-        "FileFormat": "FullBodyIK"
+        "FileFormat": "FullBodyIKRig"
       }
     ]
   },
@@ -5105,7 +5105,7 @@
       {
         "Name": "v14_IkBodyRigResource",
         "Type": "Resource",
-        "FileFormat": "IKBodyRig"
+        "FileFormat": "IkBodyRig"
       }
     ]
   },
@@ -5657,7 +5657,7 @@
       {
         "Name": "v1",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -5743,7 +5743,7 @@
       {
         "Name": "HeightField",
         "Type": "Resource",
-        "FileFormat": "ColliderHeightField"
+        "FileFormat": "CollisionHeightField"
       }
     ]
   },
@@ -7066,7 +7066,7 @@
       {
         "Name": "File",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       }
     ]
   },
@@ -7545,7 +7545,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "GpuBuffer"
+        "FileFormat": "ByteBuffer"
       }
     ]
   },
@@ -7614,7 +7614,7 @@
       {
         "Name": "_CharacterColliderAsset",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       }
     ]
   },
@@ -7721,7 +7721,7 @@
       {
         "Name": "byteBuffer",
         "Type": "Resource",
-        "FileFormat": "GpuBuffer"
+        "FileFormat": "ByteBuffer"
       }
     ]
   },
@@ -8210,7 +8210,7 @@
       {
         "Name": "UserVariableResource",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -8246,7 +8246,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8264,7 +8264,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8300,7 +8300,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8309,7 +8309,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8318,7 +8318,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8327,7 +8327,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8336,7 +8336,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8345,7 +8345,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8354,7 +8354,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8363,7 +8363,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8372,7 +8372,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8381,7 +8381,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8390,7 +8390,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8399,7 +8399,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8408,7 +8408,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8417,7 +8417,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8426,7 +8426,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8435,7 +8435,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8444,7 +8444,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8453,7 +8453,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8598,7 +8598,7 @@
       {
         "Name": "v3_AttributeResource",
         "Type": "Resource",
-        "FileFormat": "AiMapAttribute"
+        "FileFormat": "AIMapAttribute"
       }
     ]
   },
@@ -8685,17 +8685,17 @@
       {
         "Name": "RequestSetColliderData",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       },
       {
         "Name": "AttackNoticeRequestSetColliderData",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       },
       {
         "Name": "AttackNoticeRequestSetColliderDataForMove",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       }
     ]
   },
@@ -8737,7 +8737,7 @@
       {
         "Name": "CollisionMeshAsset",
         "Type": "Resource",
-        "FileFormat": "MeshCollider"
+        "FileFormat": "CollisionMesh"
       },
       {
         "Name": "CollisionFilterAsset",
@@ -8747,7 +8747,7 @@
       {
         "Name": "TCollisionMeshAsset",
         "Type": "Resource",
-        "FileFormat": "MeshCollider"
+        "FileFormat": "CollisionMesh"
       },
       {
         "Name": "TCollisionFilterAsset",
@@ -8770,7 +8770,7 @@
       {
         "Name": "_RequestSetCollider",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       }
     ]
   },
@@ -8860,7 +8860,7 @@
       {
         "Name": "_DisableEffect",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },

@@ -142,7 +142,7 @@
     },
     "aimap": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 41,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -198,7 +198,7 @@
     },
     "uvar": {
       "Locales": [],
-      "Type": "Uvar",
+      "Type": "UserVariables",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -212,7 +212,7 @@
     },
     "user": {
       "Locales": [],
-      "Type": "Userdata",
+      "Type": "UserData",
       "Version": 2,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -235,7 +235,7 @@
     },
     "rcol": {
       "Locales": [],
-      "Type": "Rcol",
+      "Type": "RequestSetCollider",
       "Version": 20,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -277,21 +277,21 @@
     },
     "mcol": {
       "Locales": [],
-      "Type": "MeshCollider",
+      "Type": "CollisionMesh",
       "Version": 13020,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "prb": {
       "Locales": [],
-      "Type": "Probe",
+      "Type": "Probes",
       "Version": 9,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "lprb": {
       "Locales": [],
-      "Type": "LightProbe",
+      "Type": "LightProbes",
       "Version": 6,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -312,7 +312,7 @@
     },
     "gui": {
       "Locales": [],
-      "Type": "Gui",
+      "Type": "GUI",
       "Version": 430027,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -325,7 +325,7 @@
     },
     "efx": {
       "Locales": [],
-      "Type": "Efx",
+      "Type": "Effect",
       "Version": 2818689,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -573,7 +573,7 @@
     },
     "gpbf": {
       "Locales": [],
-      "Type": "GpuBuffer",
+      "Type": "ByteBuffer",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true

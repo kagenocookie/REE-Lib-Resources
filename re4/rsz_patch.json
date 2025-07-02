@@ -410,7 +410,7 @@
       {
         "Name": "v12",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "v13",
@@ -424,7 +424,7 @@
       {
         "Name": "UserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "JointMap",
@@ -470,7 +470,7 @@
       {
         "Name": "AttributeResource",
         "Type": "Resource",
-        "FileFormat": "AiMapAttribute"
+        "FileFormat": "AIMapAttribute"
       }
     ]
   },
@@ -618,7 +618,7 @@
       {
         "Name": "Mesh",
         "Type": "Resource",
-        "FileFormat": "MeshCollider"
+        "FileFormat": "CollisionMesh"
       },
       {
         "Name": "Resource",
@@ -1293,7 +1293,7 @@
       {
         "Name": "IkLookAtResource",
         "Type": "Resource",
-        "FileFormat": "IKLookat2"
+        "FileFormat": "IkLookAt2"
       }
     ]
   },
@@ -2423,22 +2423,22 @@
       {
         "Name": "v2",
         "Type": "Resource",
-        "FileFormat": "LightProbe"
+        "FileFormat": "LightProbes"
       },
       {
         "Name": "v3",
         "Type": "Resource",
-        "FileFormat": "Probe"
+        "FileFormat": "Probes"
       },
       {
         "Name": "LightProbes",
         "Type": "Resource",
-        "FileFormat": "LightProbe"
+        "FileFormat": "LightProbes"
       },
       {
         "Name": "Probes",
         "Type": "Resource",
-        "FileFormat": "Probe"
+        "FileFormat": "Probes"
       }
     ]
   },
@@ -2538,7 +2538,7 @@
       {
         "Name": "v1",
         "Type": "Resource",
-        "FileFormat": "Gui"
+        "FileFormat": "GUI"
       },
       {
         "Name": "v8",
@@ -2548,7 +2548,7 @@
       {
         "Name": "Asset",
         "Type": "Resource",
-        "FileFormat": "Gui"
+        "FileFormat": "GUI"
       },
       {
         "Name": "RenderTarget",
@@ -2598,27 +2598,27 @@
       {
         "Name": "v2",
         "Type": "Resource",
-        "FileFormat": "LightProbe"
+        "FileFormat": "LightProbes"
       },
       {
         "Name": "v3",
         "Type": "Resource",
-        "FileFormat": "Probe"
+        "FileFormat": "Probes"
       },
       {
         "Name": "v22_SecondaryLightProbes",
         "Type": "Resource",
-        "FileFormat": "LightProbe"
+        "FileFormat": "LightProbes"
       },
       {
         "Name": "LightProbes",
         "Type": "Resource",
-        "FileFormat": "LightProbe"
+        "FileFormat": "LightProbes"
       },
       {
         "Name": "Probes",
         "Type": "Resource",
-        "FileFormat": "Probe"
+        "FileFormat": "Probes"
       }
     ]
   },
@@ -3015,12 +3015,12 @@
       {
         "Name": "v2",
         "Type": "Resource",
-        "FileFormat": "Probe"
+        "FileFormat": "Probes"
       },
       {
         "Name": "Probes",
         "Type": "Resource",
-        "FileFormat": "Probe"
+        "FileFormat": "Probes"
       }
     ]
   },
@@ -4758,7 +4758,7 @@
       {
         "Name": "v16",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "UserVariables",
@@ -4776,7 +4776,7 @@
       {
         "Name": "MotionVariablesHub",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "unknown",
@@ -4867,7 +4867,7 @@
       {
         "Name": "v2",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "unknown",
@@ -4876,7 +4876,7 @@
       {
         "Name": "UserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -5686,7 +5686,7 @@
       {
         "Name": "IkDamageActionAsset",
         "Type": "Resource",
-        "FileFormat": "IKDamage"
+        "FileFormat": "IkDamageAction"
       }
     ]
   },
@@ -5776,12 +5776,12 @@
       {
         "Name": "v1",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resource",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -7045,7 +7045,7 @@
       {
         "Name": "File",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       },
       {
         "Name": "Resource",
@@ -7253,7 +7253,7 @@
       {
         "Name": "SDFTextureAsset",
         "Type": "Resource",
-        "FileFormat": "SdfTexture"
+        "FileFormat": "SDFTexture"
       }
     ]
   },
@@ -7483,7 +7483,7 @@
       {
         "Name": "JackCommon",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -7492,17 +7492,17 @@
       {
         "Name": "_PlayerUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "_EnemyUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "_PartnerUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -7511,7 +7511,7 @@
       {
         "Name": "_CrewUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -7520,7 +7520,7 @@
       {
         "Name": "_JackEnemyVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -7529,7 +7529,7 @@
       {
         "Name": "_EnemyUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -7538,7 +7538,7 @@
       {
         "Name": "_EnemyUVRHolder",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -8509,12 +8509,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8537,12 +8537,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8551,12 +8551,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8565,12 +8565,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8579,12 +8579,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8593,12 +8593,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8607,12 +8607,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8621,12 +8621,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8644,12 +8644,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -8658,12 +8658,12 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       },
       {
         "Name": "Resources",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -9175,7 +9175,7 @@
       {
         "Name": "v3_AttributeResource",
         "Type": "Resource",
-        "FileFormat": "AiMapAttribute"
+        "FileFormat": "AIMapAttribute"
       }
     ]
   },
@@ -9333,7 +9333,7 @@
       {
         "Name": "_Resource",
         "Type": "Resource",
-        "FileFormat": "IKLookat2"
+        "FileFormat": "IkLookAt2"
       }
     ]
   },
@@ -9342,7 +9342,7 @@
       {
         "Name": "v0_Attributes",
         "Type": "Resource",
-        "FileFormat": "AiMapAttribute"
+        "FileFormat": "AIMapAttribute"
       }
     ]
   },
@@ -9351,7 +9351,7 @@
       {
         "Name": "_Resource",
         "Type": "Resource",
-        "FileFormat": "IKLeg2"
+        "FileFormat": "IkLeg2"
       }
     ]
   },
@@ -9518,47 +9518,47 @@
       {
         "Name": "PlayerUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "SearchPlayerUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "SearchEnemyUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "SearchBoatUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "CapsizePlayerUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "CapsizeBoatUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "CapsizeEnemyUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "CrashPlayerUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "CrashBoatUserVariables",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -9612,7 +9612,7 @@
       {
         "Name": "_Resource",
         "Type": "Resource",
-        "FileFormat": "IKLegSpine"
+        "FileFormat": "IkLegSpine"
       }
     ]
   },

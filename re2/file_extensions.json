@@ -166,7 +166,7 @@
     },
     "uvar": {
       "Locales": [],
-      "Type": "Uvar",
+      "Type": "UserVariables",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -194,7 +194,7 @@
     },
     "mcol": {
       "Locales": [],
-      "Type": "MeshCollider",
+      "Type": "CollisionMesh",
       "Version": 3017,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -236,7 +236,7 @@
     },
     "rcol": {
       "Locales": [],
-      "Type": "Rcol",
+      "Type": "RequestSetCollider",
       "Version": 10,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -312,7 +312,7 @@
     },
     "efx": {
       "Locales": [],
-      "Type": "Efx",
+      "Type": "Effect",
       "Version": 1769669,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -368,14 +368,14 @@
     },
     "aimap": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "aimapattr": {
       "Locales": [],
-      "Type": "AiMapAttribute",
+      "Type": "AIMapAttribute",
       "Version": 27,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -389,14 +389,14 @@
     },
     "lprb": {
       "Locales": [],
-      "Type": "LightProbe",
+      "Type": "LightProbes",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "prb": {
       "Locales": [],
-      "Type": "Probe",
+      "Type": "Probes",
       "Version": 9,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -599,7 +599,7 @@
     },
     "gui": {
       "Locales": [],
-      "Type": "Gui",
+      "Type": "GUI",
       "Version": 270020,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true

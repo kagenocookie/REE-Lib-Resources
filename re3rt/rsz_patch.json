@@ -376,7 +376,7 @@
       {
         "Name": "Mesh",
         "Type": "Resource",
-        "FileFormat": "MeshCollider"
+        "FileFormat": "CollisionMesh"
       }
     ]
   },
@@ -513,7 +513,7 @@
       {
         "Name": "File",
         "Type": "Resource",
-        "FileFormat": "Rcol"
+        "FileFormat": "RequestSetCollider"
       }
     ]
   },
@@ -712,7 +712,7 @@
       {
         "Name": "v10",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "v11",
@@ -2025,12 +2025,12 @@
       {
         "Name": "v2",
         "Type": "Resource",
-        "FileFormat": "LightProbe"
+        "FileFormat": "LightProbes"
       },
       {
         "Name": "v3",
         "Type": "Resource",
-        "FileFormat": "Probe"
+        "FileFormat": "Probes"
       }
     ]
   },
@@ -2371,7 +2371,7 @@
       {
         "Name": "v2",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -2400,7 +2400,7 @@
       {
         "Name": "v1",
         "Type": "Resource",
-        "FileFormat": "Gui"
+        "FileFormat": "GUI"
       },
       {
         "Name": "v7",
@@ -2557,12 +2557,12 @@
       {
         "Name": "v16",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       },
       {
         "Name": "v2",
         "Type": "Resource",
-        "FileFormat": "Uvar"
+        "FileFormat": "UserVariables"
       }
     ]
   },
@@ -4731,7 +4731,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "AiMapAttribute"
+        "FileFormat": "AIMapAttribute"
       }
     ]
   },
@@ -5562,7 +5562,7 @@
       {
         "Name": "v3",
         "Type": "Resource",
-        "FileFormat": "AiMapAttribute"
+        "FileFormat": "AIMapAttribute"
       }
     ]
   },
@@ -5789,7 +5789,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -5950,7 +5950,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -5959,7 +5959,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -5968,7 +5968,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -5977,7 +5977,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -5986,7 +5986,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -5995,7 +5995,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -6004,7 +6004,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -6013,7 +6013,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -6022,7 +6022,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -6031,7 +6031,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "Efx"
+        "FileFormat": "Effect"
       }
     ]
   },

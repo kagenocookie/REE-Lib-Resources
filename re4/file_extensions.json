@@ -108,7 +108,7 @@
     },
     "user": {
       "Locales": [],
-      "Type": "Userdata",
+      "Type": "UserData",
       "Version": 2,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -162,14 +162,14 @@
     },
     "rcol": {
       "Locales": [],
-      "Type": "Rcol",
+      "Type": "RequestSetCollider",
       "Version": 25,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "ikdamage": {
       "Locales": [],
-      "Type": "IKDamage",
+      "Type": "IkDamageAction",
       "Version": 4,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -183,21 +183,21 @@
     },
     "ikleg2": {
       "Locales": [],
-      "Type": "IKLeg2",
+      "Type": "IkLeg2",
       "Version": 21,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "iklookat2": {
       "Locales": [],
-      "Type": "IKLookat2",
+      "Type": "IkLookAt2",
       "Version": 21,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "uvar": {
       "Locales": [],
-      "Type": "Uvar",
+      "Type": "UserVariables",
       "Version": 3,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -225,7 +225,7 @@
     },
     "ainvm": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 18,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -240,14 +240,14 @@
     },
     "aiwayp": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 5,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "aivspc": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 6,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -339,7 +339,7 @@
     },
     "mcol": {
       "Locales": [],
-      "Type": "MeshCollider",
+      "Type": "CollisionMesh",
       "Version": 20021,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -409,7 +409,7 @@
     },
     "lprb": {
       "Locales": [],
-      "Type": "LightProbe",
+      "Type": "LightProbes",
       "Version": 6,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -422,7 +422,7 @@
     },
     "prb": {
       "Locales": [],
-      "Type": "Probe",
+      "Type": "Probes",
       "Version": 9,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -439,7 +439,7 @@
       "Locales": [
         "ar"
       ],
-      "Type": "Gui",
+      "Type": "GUI",
       "Version": 540034,
       "CanHaveX64": true,
       "CanNotHaveX64": true,
@@ -448,7 +448,7 @@
     },
     "efx": {
       "Locales": [],
-      "Type": "Efx",
+      "Type": "Effect",
       "Version": 3539837,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -468,21 +468,21 @@
     },
     "ikls": {
       "Locales": [],
-      "Type": "IKLegSpine",
+      "Type": "IkLegSpine",
       "Version": 21,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "aimap": {
       "Locales": [],
-      "Type": "AiMap",
+      "Type": "AIMap",
       "Version": 43,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
     },
     "aimapattr": {
       "Locales": [],
-      "Type": "AiMapAttribute",
+      "Type": "AIMapAttribute",
       "Version": 44,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -577,7 +577,7 @@
     },
     "sdftex": {
       "Locales": [],
-      "Type": "SdfTexture",
+      "Type": "SDFTexture",
       "Version": 1628766211,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
@@ -742,7 +742,7 @@
     },
     "gpbf": {
       "Locales": [],
-      "Type": "GpuBuffer",
+      "Type": "ByteBuffer",
       "Version": 2,
       "CanNotHaveX64": true,
       "CanNotHaveLang": true
