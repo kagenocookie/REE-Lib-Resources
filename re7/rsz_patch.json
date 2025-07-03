@@ -929,7 +929,7 @@
       {
         "Name": "v0",
         "Type": "Resource",
-        "FileFormat": "AiMap"
+        "FileFormat": "AIMap"
       }
     ]
   },

@@ -190,7 +190,7 @@
       },
       {
         "Name": "Path",
-        "Type": "Resource",
+        "Type": "String",
         "FileFormat": "Prefab"
       }
     ]
@@ -289,11 +289,13 @@
       },
       {
         "Name": "Mesh",
+        "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
       }
@@ -418,16 +420,19 @@
       },
       {
         "Name": "MotionBankAsset",
+        "OriginalType": "via.motion.MotionBankResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBank"
       },
       {
         "Name": "UserVariables",
+        "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
       },
       {
         "Name": "JointMap",
+        "OriginalType": "via.motion.JointMapResourceHolder",
         "Type": "Resource",
         "FileFormat": "JointMap"
       }
@@ -469,6 +474,7 @@
       },
       {
         "Name": "AttributeResource",
+        "OriginalType": "via.navigation.AIMapAttributeResourceHolder",
         "Type": "Resource",
         "FileFormat": "AIMapAttribute"
       }
@@ -579,6 +585,7 @@
       },
       {
         "Name": "TextureResource",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -617,6 +624,7 @@
       },
       {
         "Name": "Mesh",
+        "OriginalType": "via.physics.CollisionMeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionMesh"
       },
@@ -654,6 +662,7 @@
       },
       {
         "Name": "CollisionFilter",
+        "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
       },
@@ -664,6 +673,7 @@
       },
       {
         "Name": "CollisionMaterialResource",
+        "OriginalType": "via.physics.CollisionMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionMaterial"
       }
@@ -734,6 +744,7 @@
       },
       {
         "Name": "MeshResources",
+        "OriginalType": "via.dynamics.RigidBodyMeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "RigidBodyMesh"
       }
@@ -772,6 +783,7 @@
       },
       {
         "Name": "FoliageData",
+        "OriginalType": "via.landscape.FoliageResourceHolder",
         "Type": "Resource",
         "FileFormat": "Foliage"
       },
@@ -803,11 +815,13 @@
       },
       {
         "Name": "Mesh",
+        "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       },
@@ -889,6 +903,7 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.dynamics.RigidBodySetResourceHolder",
         "Type": "Resource",
         "FileFormat": "RigidBodySet"
       }
@@ -953,11 +968,13 @@
       },
       {
         "Name": "Cubemap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "BlendTargetCubemap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -1045,6 +1062,7 @@
       },
       {
         "Name": "Resource (.mot)",
+        "OriginalType": "via.motion.MotionBaseResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBase"
       }
@@ -1087,6 +1105,7 @@
       },
       {
         "Name": "MotionFsm2Resource",
+        "OriginalType": "via.motion.MotionFsm2ResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionFsm2"
       }
@@ -1292,6 +1311,7 @@
       },
       {
         "Name": "IkLookAtResource",
+        "OriginalType": "via.motion.IkLookAt2ResourceHolder",
         "Type": "Resource",
         "FileFormat": "IkLookAt2"
       }
@@ -1313,6 +1333,7 @@
       },
       {
         "Name": "JointConstraintsAsset",
+        "OriginalType": "via.motion.JointConstraintsResourceHolder",
         "Type": "Resource",
         "FileFormat": "JointConstraints"
       }
@@ -1379,6 +1400,7 @@
       },
       {
         "Name": "ChainAsset",
+        "OriginalType": "via.motion.ChainResourceHolder",
         "Type": "Resource",
         "FileFormat": "Chain"
       }
@@ -1397,6 +1419,7 @@
       },
       {
         "Name": "ValueT",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -1510,6 +1533,7 @@
       },
       {
         "Name": "IES",
+        "OriginalType": "via.render.IESLightResourceHolder",
         "Type": "Resource",
         "FileFormat": "IESLight"
       }
@@ -1568,6 +1592,7 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.motion.MotionListResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionList"
       }
@@ -1647,11 +1672,13 @@
       },
       {
         "Name": "Texture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "RenderTarget",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       }
@@ -1674,6 +1701,7 @@
       },
       {
         "Name": "Mesh",
+        "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
       }
@@ -1749,11 +1777,13 @@
       },
       {
         "Name": "RenderTarget",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       },
       {
         "Name": "MaskTexture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -1925,11 +1955,13 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.dynamics.GpuClothResourceHolder",
         "Type": "Resource",
         "FileFormat": "GpuCloth"
       },
       {
         "Name": "FilterInfoResource",
+        "OriginalType": "via.dynamics.FilterInfoResourceHolder",
         "Type": "Resource",
         "FileFormat": "FilterInfo"
       }
@@ -2116,6 +2148,7 @@
       },
       {
         "Name": "CustomMaterial",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -2244,36 +2277,43 @@
       },
       {
         "Name": "BaseColorMap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "NormalRoughnessMap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "AlphaMaskMap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "NormalMap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "EmissiveMap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "RoughnessMap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "HeightMap",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -2316,6 +2356,7 @@
       },
       {
         "Name": "TimelineResource",
+        "OriginalType": "via.timeline.TimelineBaseResourceHolder",
         "Type": "Resource",
         "FileFormat": "TimelineBase"
       }
@@ -2377,6 +2418,7 @@
       },
       {
         "Name": "MotionCameraBankAsset",
+        "OriginalType": "via.motion.MotionCameraBankResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionCameraBank"
       }
@@ -2432,11 +2474,13 @@
       },
       {
         "Name": "LightProbes",
+        "OriginalType": "via.render.LightProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "LightProbes"
       },
       {
         "Name": "Probes",
+        "OriginalType": "via.render.ProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "Probes"
       }
@@ -2499,11 +2543,13 @@
       },
       {
         "Name": "Mesh",
+        "OriginalType": "via.speedtree.SpeedTreeMeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "SpeedTreeMesh"
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -2547,11 +2593,13 @@
       },
       {
         "Name": "Asset",
+        "OriginalType": "via.gui.GUIResourceHolder",
         "Type": "Resource",
         "FileFormat": "GUI"
       },
       {
         "Name": "RenderTarget",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       }
@@ -2607,16 +2655,19 @@
       },
       {
         "Name": "v22_SecondaryLightProbes",
+        "OriginalType": "via.render.LightProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "LightProbes"
       },
       {
         "Name": "LightProbes",
+        "OriginalType": "via.render.LightProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "LightProbes"
       },
       {
         "Name": "Probes",
+        "OriginalType": "via.render.ProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "Probes"
       }
@@ -2911,6 +2962,7 @@
       },
       {
         "Name": "TimelineResource1",
+        "OriginalType": "via.timeline.TimelineResourceHolder",
         "Type": "Resource",
         "FileFormat": "Timeline"
       }
@@ -2989,6 +3041,7 @@
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -3019,8 +3072,13 @@
       },
       {
         "Name": "Probes",
+        "OriginalType": "via.render.ProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "Probes"
+      },
+      {
+        "Name": "Blocker",
+        "Type": "Resource"
       }
     ]
   },
@@ -3313,8 +3371,17 @@
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
+      },
+      {
+        "Name": "Strand",
+        "Type": "Resource"
+      },
+      {
+        "Name": "StrandBindingData",
+        "Type": "Resource"
       }
     ]
   },
@@ -3830,16 +3897,19 @@
       },
       {
         "Name": "AlphaTexture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "StaticBoundary",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -3875,11 +3945,13 @@
       },
       {
         "Name": "InputTextures",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       },
       {
         "Name": "OutputTexture",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       }
@@ -3978,8 +4050,13 @@
       },
       {
         "Name": "GroundFilter",
+        "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
+      },
+      {
+        "Name": "IkSpineConformGroundAsset",
+        "Type": "Resource"
       }
     ]
   },
@@ -4250,16 +4327,19 @@
       },
       {
         "Name": "ColorCube0",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "ColorCube1",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "ColorCube2",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -4329,6 +4409,7 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.render.ShellFurResourceHolder",
         "Type": "Resource",
         "FileFormat": "ShellFur"
       }
@@ -4471,6 +4552,7 @@
       },
       {
         "Name": "Texture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -4770,11 +4852,13 @@
       },
       {
         "Name": "MotionBankAsset",
+        "OriginalType": "via.motion.MotionBankResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBank"
       },
       {
         "Name": "MotionVariablesHub",
+        "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
       },
@@ -4833,6 +4917,7 @@
       },
       {
         "Name": "RenderTarget",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       }
@@ -4875,6 +4960,7 @@
       },
       {
         "Name": "UserVariables",
+        "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
       }
@@ -5005,6 +5091,7 @@
       },
       {
         "Name": "Filter",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -5110,6 +5197,7 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.dynamics.RagdollResourceHolder",
         "Type": "Resource",
         "FileFormat": "Ragdoll"
       }
@@ -5191,6 +5279,7 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.effect.lensflare.LensflareResourceHolder",
         "Type": "Resource",
         "FileFormat": "Lensflare"
       }
@@ -5346,6 +5435,7 @@
       },
       {
         "Name": "FilterResource",
+        "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
       }
@@ -5517,11 +5607,13 @@
       },
       {
         "Name": "VolumeNoiseTexture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "HazeSrc",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -5592,6 +5684,7 @@
       },
       {
         "Name": "TimelineFsm2Resource",
+        "OriginalType": "via.timeline.TimelineFsm2ResourceHolder",
         "Type": "Resource",
         "FileFormat": "TimelineFsm2"
       }
@@ -5685,6 +5778,7 @@
       },
       {
         "Name": "IkDamageActionAsset",
+        "OriginalType": "via.motion.IkDamageActionResourceHolder",
         "Type": "Resource",
         "FileFormat": "IkDamageAction"
       }
@@ -5698,8 +5792,9 @@
       },
       {
         "Name": "v10_Resource",
+        "OriginalType": "via.navigation.AIMapWaypointResourceHolder",
         "Type": "Resource",
-        "FileFormat": "AiMap"
+        "FileFormat": "AIMap"
       }
     ]
   },
@@ -5780,6 +5875,7 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -5960,16 +6056,19 @@
       },
       {
         "Name": "TurbulenceNoise",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "OutputVelocityField",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       },
       {
         "Name": "OutputDensityField",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       }
@@ -6072,11 +6171,13 @@
       },
       {
         "Name": "ResourceHandle",
+        "OriginalType": "via.movie.MovieResourceHolder",
         "Type": "Resource",
         "FileFormat": "Movie"
       },
       {
         "Name": "MovieTextureResource",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       }
@@ -6120,11 +6221,13 @@
       },
       {
         "Name": "Mesh",
+        "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -6307,6 +6410,7 @@
       },
       {
         "Name": "MultiZoneMeteringTexture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -6336,6 +6440,7 @@
       },
       {
         "Name": "Resource",
+        "OriginalType": "via.behaviortree.BehaviorTreeBaseResourceHolder",
         "Type": "Resource",
         "FileFormat": "BehaviorTreeBase"
       }
@@ -6362,6 +6467,7 @@
       },
       {
         "Name": "MotionList",
+        "OriginalType": "via.motion.MotionBaseResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBase"
       }
@@ -6551,11 +6657,13 @@
       },
       {
         "Name": "v7_MotionBank",
+        "OriginalType": "via.motion.MotionBankResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBank"
       },
       {
         "Name": "v8_MotionList",
+        "OriginalType": "via.motion.MotionListResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionList"
       }
@@ -6831,11 +6939,13 @@
       },
       {
         "Name": "DstRenderTarget",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -6950,6 +7060,7 @@
       },
       {
         "Name": "WeatherTexture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -7044,6 +7155,7 @@
       },
       {
         "Name": "File",
+        "OriginalType": "via.physics.RequestSetColliderResourceHolder",
         "Type": "Resource",
         "FileFormat": "RequestSetCollider"
       },
@@ -7202,6 +7314,7 @@
       },
       {
         "Name": "SkeletonResourceHandle",
+        "OriginalType": "via.motion.SkeletonResourceHolder",
         "Type": "Resource",
         "FileFormat": "Skeleton"
       }
@@ -7215,6 +7328,7 @@
       },
       {
         "Name": "SkeletonResourceHandle",
+        "OriginalType": "via.motion.FbxSkeletonResourceHolder",
         "Type": "Resource",
         "FileFormat": "FbxSkeleton"
       }
@@ -7234,11 +7348,13 @@
       },
       {
         "Name": "Mesh",
+        "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
       },
       {
         "Name": "Material",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
       }
@@ -7252,6 +7368,7 @@
       },
       {
         "Name": "SDFTextureAsset",
+        "OriginalType": "via.render.SDFTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "SDFTexture"
       }
@@ -7261,6 +7378,10 @@
     "FieldPatches": [
       {
         "Name": "v0",
+        "Type": "Resource"
+      },
+      {
+        "Name": "Resource",
         "Type": "Resource"
       }
     ]
@@ -7273,6 +7394,7 @@
       },
       {
         "Name": "UserCurveResource",
+        "OriginalType": "via.timeline.UserCurveResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserCurve"
       }
@@ -7342,11 +7464,13 @@
     "FieldPatches": [
       {
         "Name": "v1_Filter",
+        "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
       },
       {
         "Name": "v0_SkinningMesh",
+        "OriginalType": "via.physics.CollisionSkinningMeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionSkinningMesh"
       }
@@ -7374,6 +7498,7 @@
     "FieldPatches": [
       {
         "Name": "v5_GroomingTexture",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -7393,11 +7518,13 @@
       },
       {
         "Name": "IBLTextureResource",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "AddBlendIBLTextureResource",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -7592,11 +7719,13 @@
     "FieldPatches": [
       {
         "Name": "v5_Base",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
         "Name": "v6_Alpha",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -7606,6 +7735,7 @@
     "FieldPatches": [
       {
         "Name": "v3_ResourceHandle",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -8513,6 +8643,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8541,6 +8672,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8555,6 +8687,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8569,6 +8702,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8583,6 +8717,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8597,6 +8732,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8611,6 +8747,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8625,6 +8762,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8648,6 +8786,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -8662,6 +8801,7 @@
       },
       {
         "Name": "Resources",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
       }
@@ -9101,6 +9241,7 @@
     "FieldPatches": [
       {
         "Name": "v0_MessageList",
+        "OriginalType": "via.gui.MessageResourceHolder",
         "Type": "Resource",
         "FileFormat": "Message"
       }
@@ -9174,6 +9315,7 @@
     "FieldPatches": [
       {
         "Name": "v3_AttributeResource",
+        "OriginalType": "via.navigation.AIMapAttributeResourceHolder",
         "Type": "Resource",
         "FileFormat": "AIMapAttribute"
       }
@@ -9192,6 +9334,7 @@
     "FieldPatches": [
       {
         "Name": "v0_IconFont",
+        "OriginalType": "via.gui.IconFontResourceHolder",
         "Type": "Resource",
         "FileFormat": "IconFont"
       }
@@ -9341,6 +9484,7 @@
     "FieldPatches": [
       {
         "Name": "v0_Attributes",
+        "OriginalType": "via.navigation.AIMapAttributeResourceHolder",
         "Type": "Resource",
         "FileFormat": "AIMapAttribute"
       }
@@ -9690,6 +9834,14 @@
     "FieldPatches": [
       {
         "Name": "_Url",
+        "Type": "Resource"
+      }
+    ]
+  },
+  "chainsaw.IkSpineUnitUserData": {
+    "FieldPatches": [
+      {
+        "Name": "_Resource",
         "Type": "Resource"
       }
     ]
