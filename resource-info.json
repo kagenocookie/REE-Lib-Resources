@@ -50,9 +50,9 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"re2":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-06T05:19:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre2.json",
+          		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE2_STM_Release.list",
@@ -63,9 +63,9 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.5"
 		},
 		"re2rt":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-06T05:19:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre2rt.json",
+          		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2rt.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE2_RT_STM_Release.list",
