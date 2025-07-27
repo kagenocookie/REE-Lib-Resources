@@ -226,13 +226,13 @@
         "Type": "Object"
       },
       {
-        "Name": "CollisionFilter",
+        "Name": "CollisionFilterResource",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
       },
       {
-        "Name": "v6",
+        "Name": "CollisionMaterialResource",
         "OriginalType": "via.physics.CollisionMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionMaterial"
@@ -321,7 +321,7 @@
         "Type": "S32"
       },
       {
-        "Name": "Mesh",
+        "Name": "Resource",
         "OriginalType": "via.physics.CollisionMeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionMesh"
@@ -436,7 +436,7 @@
         "Type": "Resource"
       },
       {
-        "Name": "File",
+        "Name": "Resource",
         "OriginalType": "via.physics.RequestSetColliderResourceHolder",
         "Type": "Resource",
         "FileFormat": "RequestSetCollider"
@@ -554,7 +554,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v3",
+        "Name": "Resource",
         "OriginalType": "via.motion.MotionBaseResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBase"
@@ -608,19 +608,19 @@
         "Type": "Object"
       },
       {
-        "Name": "v10",
+        "Name": "MotionBankAsset",
         "OriginalType": "via.motion.MotionBankResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBank"
       },
       {
-        "Name": "v11",
+        "Name": "UserVariables",
         "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
       },
       {
-        "Name": "v12",
+        "Name": "JointMap",
         "OriginalType": "via.motion.JointMapResourceHolder",
         "Type": "Resource",
         "FileFormat": "JointMap"
@@ -694,7 +694,7 @@
         "Type": "F32"
       },
       {
-        "Name": "v2",
+        "Name": "JointConstraintsAsset",
         "OriginalType": "via.motion.JointConstraintsResourceHolder",
         "Type": "Resource",
         "FileFormat": "JointConstraints"
@@ -808,7 +808,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v30",
+        "Name": "v30_Texture",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -854,7 +854,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v10",
+        "Name": "TextureResource",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -940,7 +940,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v9",
+        "Name": "IES",
         "OriginalType": "via.render.IESLightResourceHolder",
         "Type": "Resource",
         "FileFormat": "IESLight"
@@ -1110,7 +1110,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v0",
+        "Name": "MotionList",
         "OriginalType": "via.motion.MotionBaseResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBase"
@@ -1124,7 +1124,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v3",
+        "Name": "ValueT",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -1178,7 +1178,7 @@
         "Type": "F32"
       },
       {
-        "Name": "v4",
+        "Name": "ChainAsset",
         "OriginalType": "via.motion.ChainResourceHolder",
         "Type": "Resource",
         "FileFormat": "Chain"
@@ -1248,13 +1248,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v9",
+        "Name": "RenderTarget",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       },
       {
-        "Name": "v10",
+        "Name": "Texture",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -1268,7 +1268,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v9",
+        "Name": "Mesh",
         "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
@@ -1314,13 +1314,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v10",
+        "Name": "RenderTarget",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       },
       {
-        "Name": "v11",
+        "Name": "SourceTexture",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -1386,7 +1386,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v9",
+        "Name": "RenderTarget",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -1424,7 +1424,7 @@
         "Type": "F32"
       },
       {
-        "Name": "v8",
+        "Name": "MotionFsm2Resource",
         "OriginalType": "via.motion.MotionFsm2ResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionFsm2"
@@ -1442,7 +1442,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v9",
+        "Name": "RenderTarget",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -1480,7 +1480,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v3",
+        "Name": "TimelineResource",
         "OriginalType": "via.timeline.TimelineResourceHolder",
         "Type": "Resource",
         "FileFormat": "Timeline"
@@ -1594,7 +1594,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v0",
+        "Name": "MotionBank",
         "OriginalType": "via.motion.MotionBankResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBank"
@@ -1756,13 +1756,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v18",
+        "Name": "GroundFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
       },
       {
-        "Name": "v19",
+        "Name": "GroundDetailFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
@@ -1848,13 +1848,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v2",
+        "Name": "LightProbes",
         "OriginalType": "via.render.LightProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "LightProbes"
       },
       {
-        "Name": "v3",
+        "Name": "Probes",
         "OriginalType": "via.render.ProbesResourceHolder",
         "Type": "Resource",
         "FileFormat": "Probes"
@@ -2020,7 +2020,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v1",
+        "Name": "Cubemap",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -2070,7 +2070,7 @@
         "Type": "F32"
       },
       {
-        "Name": "v2",
+        "Name": "Resource",
         "OriginalType": "via.dynamics.RigidBodySetResourceHolder",
         "Type": "Resource",
         "FileFormat": "RigidBodySet"
@@ -2096,7 +2096,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v1",
+        "Name": "v1_IBLTextureResource",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -2114,7 +2114,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v1",
+        "Name": "Resource",
         "OriginalType": "via.behaviortree.BehaviorTreeBaseResourceHolder",
         "Type": "Resource",
         "FileFormat": "BehaviorTreeBase"
@@ -2140,7 +2140,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v2",
+        "Name": "UserVariables",
         "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
@@ -2170,13 +2170,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v1",
+        "Name": "Asset",
         "OriginalType": "via.gui.GUIResourceHolder",
         "Type": "Resource",
         "FileFormat": "GUI"
       },
       {
-        "Name": "v7",
+        "Name": "RenderTarget",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -2262,7 +2262,7 @@
         "Type": "F32"
       },
       {
-        "Name": "v3",
+        "Name": "v3_ResourceHandle",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -2284,7 +2284,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v0",
+        "Name": "Resource",
         "Type": "Resource",
         "FileFormat": "AIMap"
       }
@@ -2337,19 +2337,33 @@
         "Type": "Object"
       },
       {
-        "Name": "v15",
+        "Name": "UserVariables",
+        "ReplaceName": "UserVariables1"
+      },
+      {
+        "Name": "UserVariables",
+        "ReplaceName": "UserVariables2"
+      },
+      {
+        "Name": "MotionBankAsset",
         "OriginalType": "via.motion.MotionBankResourceHolder",
         "Type": "Resource",
         "FileFormat": "MotionBank"
       },
       {
-        "Name": "v16",
+        "Name": "MotionUserVariables",
         "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
       },
       {
-        "Name": "v2",
+        "Name": "UserVariables1",
+        "OriginalType": "via.userdata.UserVariablesResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "UserVariables"
+      },
+      {
+        "Name": "UserVariables2",
         "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
@@ -2615,7 +2629,7 @@
         "Type": "F32"
       },
       {
-        "Name": "v23",
+        "Name": "FilterResource",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
@@ -2713,37 +2727,37 @@
         "Type": "S32"
       },
       {
-        "Name": "v9",
+        "Name": "BaseColorMap",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v10",
+        "Name": "NormalMap",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v11",
+        "Name": "RoughnessMap",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v12",
+        "Name": "NormalRoughnessMap",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v14",
+        "Name": "AlphaMaskMap",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v13",
+        "Name": "EmissiveMap",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -2765,13 +2779,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v9",
+        "Name": "v9_Mesh",
         "OriginalType": "via.render.MeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "Mesh"
       },
       {
-        "Name": "v10",
+        "Name": "v10_Material",
         "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
@@ -2805,13 +2819,13 @@
         "Type": "Object"
       },
       {
-        "Name": "v1",
+        "Name": "ResourceHandle",
         "OriginalType": "via.movie.MovieResourceHolder",
         "Type": "Resource",
         "FileFormat": "Movie"
       },
       {
-        "Name": "v2",
+        "Name": "MovieTextureResource",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -2877,19 +2891,19 @@
         "Type": "F32"
       },
       {
-        "Name": "v27",
+        "Name": "TurbulenceNoise",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v28",
+        "Name": "OutputVelocityField",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
       },
       {
-        "Name": "v29",
+        "Name": "OutputDensityField",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -3059,7 +3073,7 @@
         "Type": "F32"
       },
       {
-        "Name": "v18",
+        "Name": "MultiZoneMeteringTexture",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -3317,19 +3331,19 @@
         "Type": "Object"
       },
       {
-        "Name": "v2",
+        "Name": "ColorCube0",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v3",
+        "Name": "ColorCube1",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v5",
+        "Name": "ColorCube2",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -3363,13 +3377,13 @@
         "Type": "F32"
       },
       {
-        "Name": "v5",
+        "Name": "v5_Base",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v6",
+        "Name": "v6_Alpha",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -3795,7 +3809,7 @@
         "Type": "Object"
       },
       {
-        "Name": "v35",
+        "Name": "Material",
         "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
@@ -3941,7 +3955,7 @@
         "Type": "Object"
       },
       {
-        "Name": "v0",
+        "Name": "v0_Attributes",
         "OriginalType": "via.navigation.AIMapAttributeResourceHolder",
         "Type": "Resource",
         "FileFormat": "AIMapAttribute"
@@ -4219,13 +4233,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v25",
+        "Name": "GroundFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
       },
       {
-        "Name": "v26",
+        "Name": "GroundDetailFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
@@ -4259,8 +4273,8 @@
         "Type": "S32"
       },
       {
-        "Name": "v2",
-        "OriginalType": "via.havok.RagdollResourceHolder",
+        "Name": "Resource",
+        "OriginalType": "via.dynamics.RagdollResourceHolder",
         "Type": "Resource",
         "FileFormat": "Ragdoll"
       }
@@ -4421,11 +4435,11 @@
         "Type": "S32"
       },
       {
-        "Name": "v4",
+        "Name": "v4_CalcType",
         "Type": "S32"
       },
       {
-        "Name": "v5",
+        "Name": "v5_WeightType",
         "Type": "S32"
       },
       {
@@ -4537,7 +4551,7 @@
         "Type": "Object"
       },
       {
-        "Name": "v12",
+        "Name": "GroundFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
@@ -4707,13 +4721,13 @@
         "Type": "S32"
       },
       {
-        "Name": "v28",
+        "Name": "GroundFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
       },
       {
-        "Name": "v29",
+        "Name": "GroundDetailFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
@@ -4783,7 +4797,7 @@
         "Type": "Object"
       },
       {
-        "Name": "v3",
+        "Name": "v3_AttributeResource",
         "OriginalType": "via.navigation.AIMapAttributeResourceHolder",
         "Type": "Resource",
         "FileFormat": "AIMapAttribute"
@@ -4885,7 +4899,7 @@
         "Type": "S32"
       },
       {
-        "Name": "v1",
+        "Name": "Resource",
         "OriginalType": "via.effect.lensflare.LensflareResourceHolder",
         "Type": "Resource",
         "FileFormat": "Lensflare"
@@ -4927,7 +4941,7 @@
   "via.motion.DummySkeleton": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "SkeletonResourceHandle",
         "OriginalType": "via.motion.FbxSkeletonResourceHolder",
         "Type": "Resource",
         "FileFormat": "FbxSkeleton"
@@ -4937,7 +4951,7 @@
   "offline.WwiseContainerApp": {
     "FieldPatches": [
       {
-        "Name": "v1",
+        "Name": "ContainableAsset",
         "Type": "Resource"
       }
     ]
@@ -4945,7 +4959,7 @@
   "via.gui.AdditionalMessage": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "v0_MessageList",
         "OriginalType": "via.gui.MessageResourceHolder",
         "Type": "Resource",
         "FileFormat": "Message"
@@ -4973,7 +4987,7 @@
   "via.wwise.WwiseTargetOperationTrigger": {
     "FieldPatches": [
       {
-        "Name": "v1",
+        "Name": "v1_TargetOperationTriggerAsset",
         "Type": "Resource"
       }
     ]
@@ -5006,7 +5020,7 @@
   "via.dynamics.RigidBodyMeshSet": {
     "FieldPatches": [
       {
-        "Name": "v1",
+        "Name": "MeshResources",
         "OriginalType": "via.dynamics.RigidBodyMeshResourceHolder",
         "Type": "Resource",
         "FileFormat": "RigidBodyMesh"
@@ -5016,7 +5030,7 @@
   "via.timeline.UserCurve": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "UserCurveResource",
         "OriginalType": "via.timeline.UserCurveResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserCurve"
@@ -5026,7 +5040,7 @@
   "offline.effect.script.EPVStandardData.Element": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5036,7 +5050,7 @@
   "via.render.Mirror": {
     "FieldPatches": [
       {
-        "Name": "v1",
+        "Name": "v1_RenderTarget",
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
@@ -5073,7 +5087,7 @@
   "via.render.SubsurfaceSettings": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "v0_Profile",
         "OriginalType": "via.render.SSSProfileResourceHolder",
         "Type": "Resource",
         "FileFormat": "SSSProfile"
@@ -5083,7 +5097,7 @@
   "via.render.ColorCubeElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "v0_ColorCubeHandle",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -5093,7 +5107,7 @@
   "via.wwise.WwiseSetStateListParam": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "v0_SetStateList",
         "Type": "Resource"
       }
     ]
@@ -5110,7 +5124,7 @@
   "via.physics.SensorTarget": {
     "FieldPatches": [
       {
-        "Name": "v2",
+        "Name": "CollisionFilter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
@@ -5192,7 +5206,7 @@
   "offline.effect.script.EPVExpertBiteData.EPVExpertBiteElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5202,7 +5216,7 @@
   "offline.effect.script.EsEPVExpertEm0000BreakPartsEffectData.EsEPVExpertEm0000BreakPartsEffectDataElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5212,7 +5226,7 @@
   "offline.effect.script.EPVExpertDamageEffectData.EPVExpertDamageEffectElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5222,7 +5236,7 @@
   "offline.effect.script.EPVExpertDestructedBodyEffectData.EPVExpertDestructedBodyEffectDataElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5232,7 +5246,7 @@
   "offline.EPVExpertDragBloodEffectData.EPVExpertDragBloodEffectDataElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5242,7 +5256,7 @@
   "offline.effect.script.EPVExpertObjectLandingCustomData.EPVExpertObjectLandingCustomElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5252,7 +5266,7 @@
   "offline.effect.script.EPVExpertFootLandingData.FootStepElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5262,7 +5276,7 @@
   "offline.effect.script.EPVExpertAutoData.AutoDataElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5272,7 +5286,7 @@
   "offline.effect.script.EPVExpertMuzzleFlashCustomData.MuzzleFlashElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"
@@ -5282,7 +5296,7 @@
   "offline.effect.script.EPVExpertStandWaveData.EPVExpertStandWaveElement": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "Resources",
         "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
         "FileFormat": "Effect"

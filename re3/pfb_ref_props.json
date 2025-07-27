@@ -24,5 +24,11 @@
     "LightShaftRef": {
       "PropertyId": 458761
     }
+  },
+  "offline.ChoreographPlayer.ChoreographMotion": {
+    "HideThenPlayed": {
+      "PropertyId": 196610,
+      "AutoDetected": true
+    }
   }
 }

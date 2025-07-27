@@ -50,7 +50,7 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"re2":{
-			"LastUpdatedAtUtc": "2025-07-06T05:19:00Z",
+			"LastUpdatedAtUtc": "2025-07-27T17:00:00Z",
 			"RszPatchFiles": [
           		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/rsz_patch.json"
@@ -76,9 +76,9 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
 		},
 		"re3":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-07-27T17:00:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre3.json",
+          		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre3.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE3_STM_Release.list",
