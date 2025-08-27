@@ -181,7 +181,7 @@
       {
         "Name": "v1",
         "ReplaceName": "Path",
-        "Type": "Resource",
+        "Type": "String",
         "FileFormat": "Prefab"
       },
       {
@@ -613,6 +613,26 @@
       {
         "Name": "BackgroundShadowEnable",
         "Type": "F32"
+      },
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
       }
     ]
   },
@@ -665,6 +685,11 @@
       {
         "Name": "v4",
         "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v4_ValueT",
         "Type": "Resource",
         "FileFormat": "Texture"
       }
@@ -791,6 +816,10 @@
         "OriginalType": "via.motion.JointMapResourceHolder",
         "Type": "Resource",
         "FileFormat": "JointMap"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
       }
     ]
   },
@@ -839,6 +868,11 @@
       {
         "Name": "v3",
         "OriginalType": "via.motion.MotionBaseResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionBase"
+      },
+      {
+        "Name": "v3_Resource",
         "Type": "Resource",
         "FileFormat": "MotionBase"
       }
@@ -1145,7 +1179,11 @@
       {
         "Name": "FBXSkelFile",
         "ReplaceName": "v5",
-        "Type": "S32"
+        "Type": "Object"
+      },
+      {
+        "Name": "v4",
+        "Type": "Object"
       }
     ]
   },
@@ -1379,6 +1417,12 @@
       },
       {
         "Name": "v3",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v3_ResourceHandle",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
@@ -2321,6 +2365,14 @@
       },
       {
         "Name": "v8",
+        "Type": "Object"
+      },
+      {
+        "Name": "v4_CalcType",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5_WeightType",
         "Type": "Object"
       }
     ]
@@ -3327,6 +3379,18 @@
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
+      },
+      {
+        "Name": "v1_IBLTextureResource",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v7_AddBlendIBLTextureResource",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
       }
     ]
   },
@@ -4088,6 +4152,12 @@
         "OriginalType": "via.render.RenderTargetTextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "RenderTexture"
+      },
+      {
+        "Name": "v1_RenderTarget",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RenderTexture"
       }
     ]
   },
@@ -4209,6 +4279,12 @@
       {
         "Name": "v10",
         "Type": "S32"
+      },
+      {
+        "Name": "v3_Resource",
+        "OriginalType": "via.motion.MotionCameraListResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionCameraList"
       }
     ]
   },
@@ -4260,6 +4336,10 @@
       {
         "Name": "v9",
         "Type": "Object"
+      },
+      {
+        "Name": "v6",
+        "Type": "Object"
       }
     ]
   },
@@ -4292,6 +4372,18 @@
       {
         "Name": "v4",
         "Type": "F32"
+      },
+      {
+        "Name": "v5_Base",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v6_Alpha",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
       }
     ]
   },
@@ -4402,6 +4494,18 @@
       },
       {
         "Name": "v1",
+        "OriginalType": "via.physics.CollisionFilterResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "CollisionFilter"
+      },
+      {
+        "Name": "v0_SkinningMesh",
+        "OriginalType": "via.physics.CollisionSkinningMeshResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "CollisionSkinningMesh"
+      },
+      {
+        "Name": "v1_Filter",
         "OriginalType": "via.physics.CollisionFilterResourceHolder",
         "Type": "Resource",
         "FileFormat": "CollisionFilter"
@@ -4664,6 +4768,12 @@
       {
         "Name": "v16",
         "Type": "S32"
+      },
+      {
+        "Name": "v15_SecondaryLightProbes",
+        "OriginalType": "via.render.LightProbesResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "LightProbes"
       }
     ]
   },
@@ -4859,6 +4969,12 @@
       {
         "Name": "v30",
         "Type": "S32"
+      },
+      {
+        "Name": "v29_Texture",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
       }
     ]
   },
@@ -5029,6 +5145,10 @@
     "FieldPatches": [
       {
         "Name": "v0",
+        "Type": "Resource"
+      },
+      {
+        "Name": "v0_SetStateList",
         "Type": "Resource"
       }
     ]
@@ -6204,6 +6324,12 @@
         "OriginalType": "via.gui.MessageResourceHolder",
         "Type": "Resource",
         "FileFormat": "Message"
+      },
+      {
+        "Name": "v0_MessageList",
+        "OriginalType": "via.gui.MessageResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Message"
       }
     ]
   },
@@ -6229,6 +6355,12 @@
     "FieldPatches": [
       {
         "Name": "v0",
+        "OriginalType": "via.userdata.UserVariablesResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "UserVariables"
+      },
+      {
+        "Name": "v0_Resource",
         "OriginalType": "via.userdata.UserVariablesResourceHolder",
         "Type": "Resource",
         "FileFormat": "UserVariables"
@@ -6507,6 +6639,102 @@
         "Name": "Shaders",
         "Type": "Resource",
         "FileFormat": "sdf"
+      }
+    ]
+  },
+  "via.render.ColorCubeElement": {
+    "FieldPatches": [
+      {
+        "Name": "v0_ColorCubeHandle",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "via.render.PolynomialLens": {
+    "FieldPatches": [
+      {
+        "Name": "v9_LensMask",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "via.render.FFTBloom": {
+    "FieldPatches": [
+      {
+        "Name": "v1_KernelTex",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "via.render.SubsurfaceSettings": {
+    "FieldPatches": [
+      {
+        "Name": "v0_Profile",
+		    "OriginalType": "via.render.SSSProfileResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "SSSProfile"
+      }
+    ]
+  },
+  "via.render.FakeLensflare": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.GeometryAOControl": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.SSAOControl": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "F32"
       }
     ]
   }

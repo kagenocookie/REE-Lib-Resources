@@ -158,5 +158,11 @@
       "PropertyId": 327688,
       "AutoDetected": true
     }
+  },
+  "via.render.SpotLight": {
+    "v27_DetailFocusTarget": {
+      "PropertyId": 262162,
+      "AutoDetected": true
+    }
   }
 }
