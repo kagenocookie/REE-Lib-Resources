@@ -9061,72 +9061,72 @@
           "FlagTarget": "14"
         },
         {
-          "Name": "colorR",
+          "Name": "Color",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "colorG",
+          "Name": "ColorAlpha",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "colorB",
+          "Name": "ColorRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "colorA",
+          "Name": "ColorRangeAlpha",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "colorRate",
+          "Name": "ColorRate_EmissionRate_ContrastRate_InnerIntensity_MultiplyColorRate",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "alpha2",
+          "Name": "BackIntensity_OuterIntensity_MultiplyBlackRate",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "particleSize",
+          "Name": "SizeScalar",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "particleSizeRand",
+          "Name": "SizeScalarRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn9",
+          "Name": "SizeX",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn10",
+          "Name": "SizeXRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn11",
+          "Name": "SizeY",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn12",
+          "Name": "SizeYRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn13",
+          "Name": "OffsetX",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn14",
+          "Name": "OffsetY",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
