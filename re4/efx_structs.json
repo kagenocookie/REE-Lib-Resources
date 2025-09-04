@@ -1783,127 +1783,127 @@
           "FlagTarget": "25"
         },
         {
-          "Name": "color1",
+          "Name": "Color",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "color1Rand",
+          "Name": "ColorRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "alpha",
+          "Name": "Alpha",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "alphaRand",
+          "Name": "AlphaRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn5",
+          "Name": "ColorRate",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn6",
+          "Name": "PlaySpeed",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn7",
+          "Name": "PlaySpeedRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn8",
+          "Name": "PlaySpeedCoef",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn9",
+          "Name": "PlaySpeedCoefRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn10",
+          "Name": "RotationX",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn11",
+          "Name": "RotationXRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn12",
+          "Name": "RotationY",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn13",
+          "Name": "RotationYRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn14",
+          "Name": "RotationZ",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn15",
+          "Name": "RotationZRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn16",
+          "Name": "SizeX",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn17",
+          "Name": "SizeXRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn18",
+          "Name": "SizeY",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn19",
+          "Name": "SizeYRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn20",
+          "Name": "SizeZ",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn21",
+          "Name": "SizeZRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn22",
+          "Name": "SizeScalar",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn23",
+          "Name": "SizeScalarRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn24",
+          "Name": "PartStartNo",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
         {
-          "Name": "unkn25",
+          "Name": "PartStartNoRange",
           "FieldType": "S32",
           "Classname": "ReeLib.Efx.Structs.Common.ExpressionAssignType"
         },
