@@ -18,9 +18,9 @@
 			"DynamicsDefinition": "config/dynamics/towerdynamics.def.6"
 		},
 		"dmc5":{
-			"LastUpdatedAtUtc": "2025-08-27T17:28:00Z",
+			"LastUpdatedAtUtc": "2025-09-11T19:54:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszdmc5.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszdmc5.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/DMC5_STM_Release.list",
@@ -40,9 +40,9 @@
 			"CollisionDefinition": "natives/stm/physics/collisiondefinition.cdef.4"
 		},
 		"mhwilds":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-09-11T19:54:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszmhwilds.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhwilds.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/MHWs_STM_Release.list",
