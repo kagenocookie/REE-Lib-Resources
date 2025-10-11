@@ -5,7 +5,7 @@
 	},
 	"resources": {
 		"dd2": {
-			"LastUpdatedAtUtc": "2025-07-02T18:21:00Z",
+			"LastUpdatedAtUtc": "2025-10-11T09:45:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/rszdd2.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/rsz_patch.json"

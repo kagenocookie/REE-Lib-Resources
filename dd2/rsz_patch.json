@@ -142,6 +142,10 @@
       {
         "Name": "v3",
         "ReplaceName": "ParentJoint"
+      },
+      {
+        "Name": "v5",
+        "ReplaceName": "AbsoluteScaling"
       }
     ]
   },
