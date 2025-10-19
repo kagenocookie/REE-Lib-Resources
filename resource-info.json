@@ -18,7 +18,7 @@
 			"DynamicsDefinition": "config/dynamics/towerdynamics.def.6"
 		},
 		"dmc5":{
-			"LastUpdatedAtUtc": "2025-09-11T19:54:00Z",
+			"LastUpdatedAtUtc": "2025-10-18T00:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszdmc5.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/rsz_patch.json"
@@ -31,16 +31,16 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"mhrise":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-10-19T03:43:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszmhrise.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhrise.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/MHR_STM_Release.list",
 			"CollisionDefinition": "natives/stm/physics/collisiondefinition.cdef.4"
 		},
 		"mhwilds":{
-			"LastUpdatedAtUtc": "2025-09-11T19:54:00Z",
+			"LastUpdatedAtUtc": "2025-10-05T00:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhwilds.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
@@ -50,7 +50,7 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"re2":{
-			"LastUpdatedAtUtc": "2025-07-27T17:00:00Z",
+			"LastUpdatedAtUtc": "2025-10-13T00:00:00Z",
 			"RszPatchFiles": [
           		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/rsz_patch.json"
@@ -63,7 +63,7 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.5"
 		},
 		"re2rt":{
-			"LastUpdatedAtUtc": "2025-07-06T05:19:00Z",
+			"LastUpdatedAtUtc": "2025-09-08T00:00:00Z",
 			"RszPatchFiles": [
           		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2rt.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2rt/rsz_patch.json"
@@ -76,7 +76,7 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
 		},
 		"re3":{
-			"LastUpdatedAtUtc": "2025-07-27T17:00:00Z",
+			"LastUpdatedAtUtc": "2025-10-14T00:00:00Z",
 			"RszPatchFiles": [
           		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre3.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3/rsz_patch.json"
@@ -89,9 +89,9 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.5"
 		},
 		"re3rt":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-10-19T03:43:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre3rt.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre3rt.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re3rt/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE3_RT_STM_Release.list",
@@ -102,7 +102,7 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
 		},
 		"re4":{
-			"LastUpdatedAtUtc": "2025-08-28T16:12:00Z",
+			"LastUpdatedAtUtc": "2025-10-05T00:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre4.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/rsz_patch.json"
@@ -115,9 +115,9 @@
 			"DynamicsDefinition": "_share/config/dynamics/appdynamicsdefinition.def.6"
 		},
 		"re7":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-10-19T03:43:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre7.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre7.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE7_STM_Release.list",
@@ -127,9 +127,9 @@
 			"CollisionDefinition": "collision/harawatacollision.cdef.1"
 		},
 		"re7rt":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-10-19T03:43:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre7rt.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre7rt.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re7rt/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE7_RT_STM_Release.list",
@@ -139,9 +139,9 @@
 			"CollisionDefinition": "collision/harawatacollision.cdef.4"
 		},
 		"re8":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-10-19T03:43:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre8.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre8.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/RE8_STM_Release.list",
@@ -152,9 +152,9 @@
 			"DynamicsDefinition": "collisionfilter/villagedynamics.def.6"
 		},
 		"sf6":{
-			"LastUpdatedAtUtc": "2025-07-02T18:01:00Z",
+			"LastUpdatedAtUtc": "2025-10-19T03:43:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszsf6.json",
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszsf6.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/SF6_STM_Release.list",
