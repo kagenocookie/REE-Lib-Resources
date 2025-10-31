@@ -1578,6 +1578,7 @@
       },
       "mottree": {
         "Locales": [],
+        "Type": "MotionTree",
         "Version": 5,
         "CanNotHaveX64": true,
         "CanNotHaveLang": true
@@ -2269,6 +2270,7 @@
       },
       "mottree": {
         "Locales": [],
+        "Type": "MotionTree",
         "Version": 13,
         "CanNotHaveX64": true,
         "CanNotHaveLang": true
