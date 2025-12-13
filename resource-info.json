@@ -1,7 +1,7 @@
 {
 	"file_extensions": {
 		"Uri": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/global/file_extensions.json",
-		"LastUpdatedAt": "2025-07-05T18:52:00Z"
+		"LastUpdatedAt": "2025-12-13T14:15:00Z"
 	},
 	"resources": {
 		"dd2": {
@@ -160,6 +160,22 @@
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/SF6_STM_Release.list",
 			"CollisionDefinition": "natives/stm/product/collision/collision.cdef.5",
 			"DynamicsDefinition": "natives/stm/product/dynamicssys/definition/dynamicsdefinition.def.6"
+		},
+		"oni2":{
+			"LastUpdatedAtUtc": "2025-12-13T16:30:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszo2.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/O2_STM.list"
+		},
+		"pragmata":{
+			"LastUpdatedAtUtc": "2025-12-13T16:30:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszpragmata.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/rsz_patch.json"
+			],
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/il2cpp_cache.json",
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/PS_STM_Demo.list"
 		}
 	}
 }
