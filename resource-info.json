@@ -18,7 +18,7 @@
 			"DynamicsDefinition": "config/dynamics/towerdynamics.def.6"
 		},
 		"dmc5":{
-			"LastUpdatedAtUtc": "2025-10-25T00:00:00Z",
+			"LastUpdatedAtUtc": "2025-12-18T05:19:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszdmc5.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/rsz_patch.json"

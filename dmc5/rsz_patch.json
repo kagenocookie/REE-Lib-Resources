@@ -258,6 +258,11 @@
         "OriginalType": "via.render.MeshMaterialResourceHolder",
         "Type": "Resource",
         "FileFormat": "MaterialDefinition"
+      },
+      {
+        "Name": "Materials",
+        "OriginalType": "via.render.MaterialParam",
+        "Type": "Object"
       }
     ]
   },
