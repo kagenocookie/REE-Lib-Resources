@@ -74,6 +74,14 @@
         "Name": "CollisionMaterial",
         "Type": "Resource",
         "FileFormat": "CollisionMaterial"
+      },
+      {
+        "Name": "v2",
+        "Type": "Object"
+      },
+      {
+        "Name": "FilterInfo",
+        "Type": "Object"
       }
     ]
   },
@@ -304,6 +312,10 @@
       },
       {
         "Name": "v5",
+        "Type": "Object"
+      },
+      {
+        "Name": "v7",
         "Type": "Object"
       }
     ]
@@ -565,7 +577,7 @@
       },
       {
         "Name": "v41",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v42",
@@ -789,7 +801,7 @@
       },
       {
         "Name": "v19",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v20",
@@ -941,11 +953,11 @@
       },
       {
         "Name": "v69",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v70",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v74",
@@ -965,7 +977,7 @@
       },
       {
         "Name": "v78",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v79",
@@ -994,7 +1006,7 @@
       },
       {
         "Name": "v2",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v5",
@@ -1026,11 +1038,11 @@
       },
       {
         "Name": "v12",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v13",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v14",
@@ -1106,7 +1118,7 @@
       },
       {
         "Name": "v40",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v41",
@@ -1146,7 +1158,7 @@
       },
       {
         "Name": "v54",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v55",
@@ -1182,11 +1194,11 @@
       },
       {
         "Name": "v69",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v70",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v72",
@@ -1226,11 +1238,11 @@
       },
       {
         "Name": "v86",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v87",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v98",
@@ -1660,7 +1672,7 @@
       },
       {
         "Name": "v2",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v5",
@@ -1692,11 +1704,11 @@
       },
       {
         "Name": "v12",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v13",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v14",
@@ -1792,7 +1804,7 @@
       },
       {
         "Name": "v45",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v47",
@@ -2229,7 +2241,7 @@
     "FieldPatches": [
       {
         "Name": "v0",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v2",
@@ -2237,11 +2249,11 @@
       },
       {
         "Name": "v13",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v14",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v15",
@@ -2265,7 +2277,7 @@
       },
       {
         "Name": "v22",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v23",
@@ -2285,7 +2297,7 @@
       },
       {
         "Name": "v27",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v28",
@@ -2813,7 +2825,7 @@
     "FieldPatches": [
       {
         "Name": "v0",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v7",
@@ -3049,7 +3061,7 @@
       },
       {
         "Name": "v24",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v25",
@@ -3105,7 +3117,7 @@
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v2",
@@ -3257,7 +3269,7 @@
     "FieldPatches": [
       {
         "Name": "v2",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v3",
@@ -3265,7 +3277,7 @@
       },
       {
         "Name": "v4",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v6",
@@ -3277,7 +3289,7 @@
     "FieldPatches": [
       {
         "Name": "v0",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v2",
@@ -3285,7 +3297,7 @@
       },
       {
         "Name": "v13",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v14",
@@ -3409,7 +3421,7 @@
       },
       {
         "Name": "v81",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v82",
@@ -3481,7 +3493,7 @@
       },
       {
         "Name": "v120",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v121",
@@ -3489,7 +3501,7 @@
       },
       {
         "Name": "v122",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v123",
@@ -3525,11 +3537,11 @@
       },
       {
         "Name": "v133",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v136",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v137",
@@ -3537,11 +3549,11 @@
       },
       {
         "Name": "v139",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v142",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v143",
@@ -3549,7 +3561,7 @@
       },
       {
         "Name": "v145",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v147",
@@ -3581,7 +3593,7 @@
       },
       {
         "Name": "v155",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v156",
@@ -3593,7 +3605,7 @@
       },
       {
         "Name": "v161",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v162",
@@ -3609,7 +3621,7 @@
       },
       {
         "Name": "v169",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v170",
@@ -3749,7 +3761,7 @@
       },
       {
         "Name": "v11",
-        "Type": "Object"
+        "Type": "U32"
       },
       {
         "Name": "v14",
@@ -4042,6 +4054,12 @@
       {
         "Name": "v61",
         "Type": "S32"
+      },
+      {
+        "Name": "v38",
+        "OriginalType": "via.render.IESLightResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "IESLight"
       }
     ]
   },
@@ -4233,7 +4251,7 @@
       },
       {
         "Name": "v2",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v4",
@@ -4313,7 +4331,7 @@
     "FieldPatches": [
       {
         "Name": "v0",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v2",
@@ -4333,7 +4351,7 @@
       },
       {
         "Name": "v19",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v20",
@@ -4397,7 +4415,7 @@
       },
       {
         "Name": "v36",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v37",
@@ -4441,7 +4459,7 @@
       },
       {
         "Name": "v48",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v49",
@@ -4533,7 +4551,7 @@
       },
       {
         "Name": "v75",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v78",
@@ -4585,7 +4603,7 @@
       },
       {
         "Name": "v90",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v91",
@@ -4613,11 +4631,11 @@
       },
       {
         "Name": "v99",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v100",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v101",
@@ -4689,7 +4707,7 @@
     "FieldPatches": [
       {
         "Name": "v0",
-        "Type": "Object"
+        "Type": "U32"
       },
       {
         "Name": "v2",
@@ -5226,6 +5244,10 @@
       {
         "Name": "v2",
         "Type": "S32"
+      },
+      {
+        "Name": "Maps",
+        "Type": "Object"
       }
     ]
   },
@@ -5726,7 +5748,7 @@
       },
       {
         "Name": "v36",
-        "Type": "Object"
+        "Type": "S32"
       }
     ]
   },
@@ -5740,7 +5762,7 @@
       },
       {
         "Name": "v0",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v2",
@@ -5896,7 +5918,7 @@
       },
       {
         "Name": "v52",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v53",
@@ -6117,7 +6139,7 @@
       },
       {
         "Name": "v2",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v3",
@@ -6995,11 +7017,11 @@
       },
       {
         "Name": "v80",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v81",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v82",
@@ -7699,7 +7721,7 @@
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "S32"
+        "Type": "Object"
       }
     ]
   },
@@ -7707,7 +7729,7 @@
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "S32"
+        "Type": "Object"
       }
     ]
   },
@@ -7723,7 +7745,16 @@
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "S32"
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.physics.RequestSetCollider.RequestSetGroup": {
+    "FieldPatches": [
+      {
+        "Name": "Resource",
+        "Type": "Resource",
+        "FileFormat": "RequestSetCollider"
       }
     ]
   }
