@@ -55,6 +55,28 @@
       }
     ]
   },
+  "via.physics.Collider": {
+    "FieldPatches": [
+      {
+        "Name": "CollisionFilter",
+        "Type": "Resource",
+        "FileFormat": "CollisionFilter"
+      },
+      {
+        "Name": "v3",
+        "Type": "Object"
+      },
+      {
+        "Name": "v4",
+        "Type": "Object"
+      },
+      {
+        "Name": "CollisionMaterial",
+        "Type": "Resource",
+        "FileFormat": "CollisionMaterial"
+      }
+    ]
+  },
   "app.posteffect.ColorCorrectParam": {
     "FieldPatches": [
       {
@@ -73,6 +95,15 @@
       }
     ]
   },
+  "via.navigation.MapHandle": {
+    "FieldPatches": [
+      {
+        "Name": "v1_Resource",
+        "Type": "Resource",
+        "FileFormat": "AIMap"
+      }
+    ]
+  },
   "via.Prefab": {
     "FieldPatches": [
       {
@@ -82,17 +113,13 @@
       }
     ]
   },
-  "soundlib.SoundVibrationManager": {
+  "via.effect.script.EventEffectDataElement": {
     "FieldPatches": [
       {
-        "Name": "_SineWavResource_0",
+        "Name": "v0",
+        "OriginalType": "via.effect.EffectResourceHolder",
         "Type": "Resource",
-        "FileFormat": "VibrationSource"
-      },
-      {
-        "Name": "_SineWavResource_1",
-        "Type": "Resource",
-        "FileFormat": "VibrationSource"
+        "FileFormat": "Effect"
       }
     ]
   },
@@ -102,6 +129,11 @@
         "Name": "v2",
         "Type": "Resource",
         "FileFormat": "Mesh"
+      },
+      {
+        "Name": "v3",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
       },
       {
         "Name": "v0",
@@ -141,10 +173,320 @@
       },
       {
         "Name": "v47",
+        "Type": "Object"
+      },
+      {
+        "Name": "v50",
         "Type": "S32"
       },
       {
-        "Name": "v48",
+        "Name": "v51",
+        "Type": "S32"
+      },
+      {
+        "Name": "v53",
+        "Type": "S32"
+      },
+      {
+        "Name": "v56",
+        "Type": "S32"
+      },
+      {
+        "Name": "v59",
+        "Type": "S32"
+      },
+      {
+        "Name": "v60",
+        "Type": "S32"
+      },
+      {
+        "Name": "v61",
+        "Type": "S32"
+      },
+      {
+        "Name": "v65",
+        "Type": "S32"
+      },
+      {
+        "Name": "v66",
+        "Type": "S32"
+      },
+      {
+        "Name": "v69",
+        "Type": "S32"
+      },
+      {
+        "Name": "v79",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.physics.MeshShape": {
+    "FieldPatches": [
+      {
+        "Name": "v5",
+        "Type": "Resource",
+        "FileFormat": "CollisionMesh"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.dynamics.RigidBodyMeshSet": {
+    "FieldPatches": [
+      {
+        "Name": "v8",
+        "OriginalType": "via.dynamics.RigidBodyMeshResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RigidBodyMesh"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.timeline.TimelineFsm2": {
+    "FieldPatches": [
+      {
+        "Name": "v9",
+        "OriginalType": "via.timeline.TimelineFsm2ResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "TimelineFsm2"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.CompositeMeshInstanceGroup": {
+    "FieldPatches": [
+      {
+        "Name": "v3",
+        "Type": "Resource",
+        "FileFormat": "Mesh"
+      },
+      {
+        "Name": "v4",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
+      },
+      {
+        "Name": "v5",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.dynamics.CompositeRigidBodyMeshSet.MeshInfo": {
+    "FieldPatches": [
+      {
+        "Name": "Resource",
+        "Type": "Resource",
+        "FileFormat": "RigidBodyMesh"
+      }
+    ]
+  },
+  "soundlib.SoundVibrationManager": {
+    "FieldPatches": [
+      {
+        "Name": "_SineWavResource_0",
+        "Type": "Resource",
+        "FileFormat": "VibrationSource"
+      },
+      {
+        "Name": "_SineWavResource_1",
+        "Type": "Resource",
+        "FileFormat": "VibrationSource"
+      }
+    ]
+  },
+  "via.effect.lensflare.LensflarePlayer": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.effect.lensflare.LensflareResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Lensflare"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "S32"
+      },
+      {
+        "Name": "v22",
+        "Type": "S32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      }
+    ]
+  },
+  "app.light.DirectionalLightParam": {
+    "FieldPatches": [
+      {
+        "Name": "_BakedShadowMap",
+        "Type": "Resource",
+        "FileFormat": "SetStateList"
+      }
+    ]
+  },
+  "app.light.IBLParam": {
+    "FieldPatches": [
+      {
+        "Name": "_IBLTextureResource",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "_AddBlendIBLTextureResource",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "app.light.StarrySkyParam": {
+    "FieldPatches": [
+      {
+        "Name": "_Catalogue",
+        "Type": "Resource",
+        "FileFormat": "StarCatalogue"
+      }
+    ]
+  },
+  "via.character.CollisionShapePresetInfo": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.character.CollisionShapePresetResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "CollisionShapePreset"
+      }
+    ]
+  },
+  "via.render.MaterialParam": {
+    "FieldPatches": [
+      {
+        "Name": "v3",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.render.CompositeMeshMaterialController": {
+    "FieldPatches": [
+      {
+        "Name": "v3",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v4",
         "Type": "S32"
       }
     ]
@@ -223,7 +565,7 @@
       },
       {
         "Name": "v41",
-        "Type": "S32"
+        "Type": "Object"
       },
       {
         "Name": "v42",
@@ -251,178 +593,96 @@
       }
     ]
   },
-  "app.FadeController": {
+  "via.render.LDRHazeFilter": {
     "FieldPatches": [
-      {
-        "Name": "_TextureResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "Texture"
-      }
-    ]
-  },
-  "via.gui.GUI": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "OriginalType": "via.gui.GUIResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "GUI"
-      },
       {
         "Name": "v2",
-        "Type": "F32"
-      },
-      {
-        "Name": "v3",
-        "Type": "S32"
-      },
-      {
-        "Name": "v4",
-        "Type": "S32"
-      },
-      {
-        "Name": "v5",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      },
-      {
-        "Name": "v9",
-        "Type": "S32"
-      }
-    ]
-  },
-  "app.SimpleFadeController": {
-    "FieldPatches": [
-      {
-        "Name": "_TextureResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "Texture"
-      }
-    ]
-  },
-  "via.timeline.Timeline": {
-    "FieldPatches": [
-      {
-        "Name": "v3",
-        "OriginalType": "via.timeline.ClipResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "Clip"
-      },
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v4",
-        "Type": "S32"
-      },
-      {
-        "Name": "v5",
-        "Type": "F32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      },
-      {
-        "Name": "v7",
-        "Type": "F32"
-      },
-      {
-        "Name": "v11",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.behaviortree.BehaviorTree.CoreHandle": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "OriginalType": "via.behaviortree.FSMv2TreeResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "Fsm2"
-      },
-      {
-        "Name": "v3",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.render.LocalCubemap": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
         "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
         "FileFormat": "Texture"
       },
       {
-        "Name": "v7",
-        "Type": "F32"
-      },
-      {
-        "Name": "v8",
-        "Type": "F32"
-      },
-      {
-        "Name": "v9",
-        "Type": "F32"
-      },
-      {
-        "Name": "v10",
-        "Type": "S32"
-      },
-      {
-        "Name": "v11",
-        "Type": "S32"
-      },
-      {
-        "Name": "v12",
-        "Type": "S32"
-      },
-      {
-        "Name": "v13",
-        "Type": "F32"
-      },
-      {
-        "Name": "v23",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.render.PointLight": {
-    "FieldPatches": [
-      {
-        "Name": "v35",
-        "OriginalType": "via.render.IESLightResourceHolder",
+        "Name": "v3",
+        "OriginalType": "via.render.TextureResourceHolder",
         "Type": "Resource",
-        "FileFormat": "IESLight"
+        "FileFormat": "Texture"
       },
       {
         "Name": "v1",
         "Type": "F32"
       },
       {
-        "Name": "v2",
-        "Type": "Object"
-      },
-      {
-        "Name": "v5",
+        "Name": "v6",
         "Type": "F32"
       },
       {
-        "Name": "v6",
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "F32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "S32"
+      },
+      {
+        "Name": "v19",
+        "Type": "S32"
+      },
+      {
+        "Name": "v20",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.LDRColorCorrect": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v3",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v5",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
         "Type": "S32"
       },
       {
@@ -435,11 +695,65 @@
       },
       {
         "Name": "v9",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.render.LDRImagePlane": {
+    "FieldPatches": [
+      {
+        "Name": "v5_Base",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v6_Alpha",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "via.render.ToneMapping": {
+    "FieldPatches": [
+      {
+        "Name": "v21",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
         "Type": "S32"
       },
       {
-        "Name": "v10",
+        "Name": "v4",
         "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "Object"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
+        "Type": "F32"
       },
       {
         "Name": "v11",
@@ -447,15 +761,15 @@
       },
       {
         "Name": "v12",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v13",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v14",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v15",
@@ -475,155 +789,18 @@
       },
       {
         "Name": "v19",
-        "Type": "F32"
+        "Type": "Object"
       },
       {
         "Name": "v20",
-        "Type": "F32"
-      },
-      {
-        "Name": "v21",
-        "Type": "F32"
-      },
-      {
-        "Name": "v22",
-        "Type": "F32"
-      },
-      {
-        "Name": "v23",
-        "Type": "F32"
-      },
-      {
-        "Name": "v25",
-        "Type": "S32"
-      },
-      {
-        "Name": "v26",
-        "Type": "S32"
-      },
-      {
-        "Name": "v27",
-        "Type": "F32"
-      },
-      {
-        "Name": "v28",
-        "Type": "F32"
-      },
-      {
-        "Name": "v29",
-        "Type": "F32"
-      },
-      {
-        "Name": "v30",
-        "Type": "F32"
-      },
-      {
-        "Name": "v33",
-        "Type": "F32"
-      },
-      {
-        "Name": "v34",
-        "Type": "F32"
-      },
-      {
-        "Name": "v36",
-        "Type": "F32"
-      },
-      {
-        "Name": "v41",
-        "Type": "F32"
-      },
-      {
-        "Name": "v42",
-        "Type": "S32"
-      },
-      {
-        "Name": "v43",
-        "Type": "F32"
-      },
-      {
-        "Name": "v44",
-        "Type": "F32"
-      },
-      {
-        "Name": "v45",
-        "Type": "F32"
-      },
-      {
-        "Name": "v46",
-        "Type": "F32"
-      },
-      {
-        "Name": "v47",
-        "Type": "F32"
-      },
-      {
-        "Name": "v48",
-        "Type": "F32"
-      },
-      {
-        "Name": "v49",
-        "Type": "F32"
-      },
-      {
-        "Name": "v56",
-        "Type": "S32"
-      }
-    ]
-  },
-  "app.GuiClipControl_EnemyView": {
-    "FieldPatches": [
-      {
-        "Name": "_RenderTargetTextureResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "RenderTexture"
-      }
-    ]
-  },
-  "via.render.MaterialParam": {
-    "FieldPatches": [
-      {
-        "Name": "v4",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.StaticCompoundShape": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v3",
-        "Type": "Object"
-      }
-    ]
-  },
-  "via.render.LightShaft": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "F32"
-      },
-      {
-        "Name": "v19",
-        "Type": "S32"
-      },
-      {
-        "Name": "v23",
         "Type": "S32"
       },
       {
         "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
         "Type": "F32"
       },
       {
@@ -636,6 +813,10 @@
       },
       {
         "Name": "v28",
+        "Type": "S32"
+      },
+      {
+        "Name": "v30",
         "Type": "F32"
       },
       {
@@ -643,24 +824,28 @@
         "Type": "F32"
       },
       {
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
         "Name": "v33",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v34",
         "Type": "F32"
       },
       {
-        "Name": "v36",
+        "Name": "v35",
         "Type": "F32"
       },
       {
         "Name": "v37",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v40",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v41",
@@ -668,68 +853,141 @@
       },
       {
         "Name": "v42",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.render.SwingWind": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v3",
-        "Type": "S32"
-      },
-      {
-        "Name": "v4",
-        "Type": "S32"
-      },
-      {
-        "Name": "v5",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.effect.script.EffectCustomExternParameter": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
         "Type": "F32"
       },
       {
-        "Name": "v3",
+        "Name": "v43",
+        "Type": "S32"
+      },
+      {
+        "Name": "v44",
+        "Type": "S32"
+      },
+      {
+        "Name": "v45",
         "Type": "F32"
       },
       {
-        "Name": "v5",
+        "Name": "v46",
         "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.BoxShape": {
-    "FieldPatches": [
+      },
       {
-        "Name": "v1",
+        "Name": "v47",
+        "Type": "S32"
+      },
+      {
+        "Name": "v48",
+        "Type": "F32"
+      },
+      {
+        "Name": "v49",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "F32"
+      },
+      {
+        "Name": "v51",
+        "Type": "F32"
+      },
+      {
+        "Name": "v53",
+        "Type": "F32"
+      },
+      {
+        "Name": "v54",
+        "Type": "F32"
+      },
+      {
+        "Name": "v55",
+        "Type": "F32"
+      },
+      {
+        "Name": "v56",
+        "Type": "F32"
+      },
+      {
+        "Name": "v57",
+        "Type": "F32"
+      },
+      {
+        "Name": "v58",
+        "Type": "F32"
+      },
+      {
+        "Name": "v59",
+        "Type": "F32"
+      },
+      {
+        "Name": "v61",
+        "Type": "S32"
+      },
+      {
+        "Name": "v63",
+        "Type": "S32"
+      },
+      {
+        "Name": "v66",
+        "Type": "F32"
+      },
+      {
+        "Name": "v67",
+        "Type": "F32"
+      },
+      {
+        "Name": "v68",
+        "Type": "F32"
+      },
+      {
+        "Name": "v69",
+        "Type": "Object"
+      },
+      {
+        "Name": "v70",
+        "Type": "Object"
+      },
+      {
+        "Name": "v74",
+        "Type": "F32"
+      },
+      {
+        "Name": "v75",
+        "Type": "F32"
+      },
+      {
+        "Name": "v76",
+        "Type": "F32"
+      },
+      {
+        "Name": "v77",
+        "Type": "S32"
+      },
+      {
+        "Name": "v78",
+        "Type": "Object"
+      },
+      {
+        "Name": "v79",
+        "Type": "F32"
+      },
+      {
+        "Name": "v80",
+        "Type": "F32"
+      },
+      {
+        "Name": "v84",
         "Type": "S32"
       }
     ]
   },
   "via.render.DirectionalLight": {
     "FieldPatches": [
+      {
+        "Name": "v75",
+        "Type": "Resource",
+        "FileFormat": "SetStateList"
+      },
       {
         "Name": "v1",
         "Type": "F32"
@@ -744,7 +1002,7 @@
       },
       {
         "Name": "v6",
-        "Type": "F32"
+        "Type": "S32"
       },
       {
         "Name": "v7",
@@ -752,7 +1010,7 @@
       },
       {
         "Name": "v8",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v9",
@@ -816,7 +1074,7 @@
       },
       {
         "Name": "v25",
-        "Type": "F32"
+        "Type": "S32"
       },
       {
         "Name": "v27",
@@ -904,7 +1162,7 @@
       },
       {
         "Name": "v58",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v59",
@@ -920,56 +1178,103 @@
       },
       {
         "Name": "v68",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v69",
-        "Type": "S32"
+        "Type": "Object"
       },
       {
         "Name": "v70",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.effect.script.EPVStandardData.Element": {
-    "FieldPatches": [
+        "Type": "Object"
+      },
       {
-        "Name": "v0",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.Camera": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
+        "Name": "v72",
         "Type": "F32"
       },
       {
-        "Name": "v1",
+        "Name": "v73",
+        "Type": "S32"
+      },
+      {
+        "Name": "v74",
         "Type": "F32"
+      },
+      {
+        "Name": "v76",
+        "Type": "S32"
+      },
+      {
+        "Name": "v78",
+        "Type": "S32"
+      },
+      {
+        "Name": "v80",
+        "Type": "F32"
+      },
+      {
+        "Name": "v82",
+        "Type": "F32"
+      },
+      {
+        "Name": "v84",
+        "Type": "F32"
+      },
+      {
+        "Name": "v85",
+        "Type": "F32"
+      },
+      {
+        "Name": "v86",
+        "Type": "Object"
+      },
+      {
+        "Name": "v87",
+        "Type": "Object"
+      },
+      {
+        "Name": "v98",
+        "Type": "F32"
+      },
+      {
+        "Name": "v99",
+        "Type": "F32"
+      },
+      {
+        "Name": "v100",
+        "Type": "S32"
+      }
+    ]
+  },
+  "app.FadeController": {
+    "FieldPatches": [
+      {
+        "Name": "_TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "via.gui.GUI": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "OriginalType": "via.gui.GUIResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "GUI"
       },
       {
         "Name": "v2",
         "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
       },
       {
         "Name": "v4",
-        "Type": "F32"
-      },
-      {
-        "Name": "v5",
-        "Type": "F32"
-      },
-      {
-        "Name": "v6",
         "Type": "S32"
-      }
-    ]
-  },
-  "via.render.CompositeMeshInstanceGroup": {
-    "FieldPatches": [
+      },
       {
         "Name": "v5",
         "Type": "S32"
@@ -977,18 +1282,85 @@
       {
         "Name": "v6",
         "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
       }
     ]
   },
-  "via.render.CapsuleSpotLight": {
+  "app.SimpleFadeController": {
     "FieldPatches": [
+      {
+        "Name": "_TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "via.render.LocalCubemap": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v22",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.PointLight": {
+    "FieldPatches": [
+      {
+        "Name": "v35",
+        "OriginalType": "via.render.IESLightResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "IESLight"
+      },
       {
         "Name": "v1",
         "Type": "F32"
       },
       {
         "Name": "v2",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v5",
@@ -1004,11 +1376,311 @@
       },
       {
         "Name": "v8",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
         "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "F32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v28",
+        "Type": "F32"
+      },
+      {
+        "Name": "v29",
+        "Type": "F32"
+      },
+      {
+        "Name": "v30",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "S32"
+      },
+      {
+        "Name": "v34",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "F32"
+      },
+      {
+        "Name": "v42",
+        "Type": "S32"
+      },
+      {
+        "Name": "v43",
+        "Type": "F32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "F32"
+      },
+      {
+        "Name": "v46",
+        "Type": "F32"
+      },
+      {
+        "Name": "v47",
+        "Type": "F32"
+      },
+      {
+        "Name": "v48",
+        "Type": "F32"
+      },
+      {
+        "Name": "v49",
+        "Type": "F32"
+      },
+      {
+        "Name": "v56",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.RenderTargetOperator": {
+    "FieldPatches": [
+      {
+        "Name": "v13",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RenderTexture"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "S32"
+      },
+      {
+        "Name": "v18",
+        "Type": "S32"
+      },
+      {
+        "Name": "v19",
+        "Type": "S32"
+      },
+      {
+        "Name": "v20",
+        "Type": "S32"
+      },
+      {
+        "Name": "v21",
+        "Type": "S32"
+      },
+      {
+        "Name": "v22",
+        "Type": "S32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      },
+      {
+        "Name": "v27",
+        "Type": "S32"
+      },
+      {
+        "Name": "v28",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.timeline.Timeline": {
+    "FieldPatches": [
+      {
+        "Name": "v3",
+        "OriginalType": "via.timeline.ClipResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Clip"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.FilterShader": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.render.ProjectionSpotLight": {
+    "FieldPatches": [
+      {
+        "Name": "v70",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v2",
+        "Type": "Object"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
       },
       {
         "Name": "v10",
@@ -1068,7 +1740,1180 @@
       },
       {
         "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      },
+      {
+        "Name": "v27",
         "Type": "F32"
+      },
+      {
+        "Name": "v28",
+        "Type": "F32"
+      },
+      {
+        "Name": "v29",
+        "Type": "F32"
+      },
+      {
+        "Name": "v30",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v34",
+        "Type": "F32"
+      },
+      {
+        "Name": "v35",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "F32"
+      },
+      {
+        "Name": "v37",
+        "Type": "F32"
+      },
+      {
+        "Name": "v39",
+        "Type": "F32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "Object"
+      },
+      {
+        "Name": "v47",
+        "Type": "S32"
+      },
+      {
+        "Name": "v49",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "F32"
+      },
+      {
+        "Name": "v51",
+        "Type": "F32"
+      },
+      {
+        "Name": "v52",
+        "Type": "S32"
+      },
+      {
+        "Name": "v53",
+        "Type": "S32"
+      },
+      {
+        "Name": "v54",
+        "Type": "F32"
+      },
+      {
+        "Name": "v55",
+        "Type": "F32"
+      },
+      {
+        "Name": "v61",
+        "Type": "S32"
+      },
+      {
+        "Name": "v62",
+        "Type": "S32"
+      },
+      {
+        "Name": "v71",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.motion.Motion": {
+    "FieldPatches": [
+      {
+        "Name": "v13",
+        "OriginalType": "via.motion.MotionBankResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionBank"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v20",
+        "Type": "S32"
+      },
+      {
+        "Name": "v21",
+        "Type": "S32"
+      },
+      {
+        "Name": "v23",
+        "Type": "Object"
+      },
+      {
+        "Name": "v27",
+        "Type": "S32"
+      },
+      {
+        "Name": "v28",
+        "Type": "S32"
+      },
+      {
+        "Name": "v29",
+        "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "OriginalType": "via.userdata.UserVariablesResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "UserVariables"
+      },
+      {
+        "Name": "v15",
+        "OriginalType": "via.motion.JointMapResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "JointMap"
+      }
+    ]
+  },
+  "app.CustomFilterParamUpdater": {
+    "FieldPatches": [
+      {
+        "Name": "_ScanMaterialResource",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
+      },
+      {
+        "Name": "_MissionModeMaterialResource",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
+      }
+    ]
+  },
+  "via.motion.DummySkeleton": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.motion.RefSkeletonResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RefSkeleton"
+      }
+    ]
+  },
+  "via.behaviortree.BehaviorTree.CoreHandle": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "OriginalType": "via.behaviortree.FSMv2TreeResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Fsm2"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.effect.script.EPVStandardData.Element": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.effect.EffectResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Effect"
+      }
+    ]
+  },
+  "via.dynamics.RigidBodySet": {
+    "FieldPatches": [
+      {
+        "Name": "v14",
+        "OriginalType": "via.dynamics.RigidBodySetResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RigidBodySet"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "S32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      }
+    ]
+  },
+  "app.OptionManagerBehavior": {
+    "FieldPatches": [
+      {
+        "Name": "_BrightnessLimitTexture",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "_BrightnessSecondaryLimitTexture",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "via.render.SubsurfaceSettings": {
+    "FieldPatches": [
+      {
+        "Name": "v1_Profile",
+        "OriginalType": "via.render.SSSProfileResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "SSSProfile"
+      }
+    ]
+  },
+  "app.GuiClipControl_EnemyView": {
+    "FieldPatches": [
+      {
+        "Name": "_RenderTargetTextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RenderTexture"
+      }
+    ]
+  },
+  "via.physics.StaticCompoundShape": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.motion.MotionCamera": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "Object"
+      },
+      {
+        "Name": "v12",
+        "Type": "Object"
+      },
+      {
+        "Name": "v13",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.render.LightProbes": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "S32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "S32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      },
+      {
+        "Name": "v28",
+        "Type": "F32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v34",
+        "Type": "F32"
+      },
+      {
+        "Name": "v35",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "F32"
+      },
+      {
+        "Name": "v37",
+        "Type": "S32"
+      },
+      {
+        "Name": "v38",
+        "Type": "S32"
+      },
+      {
+        "Name": "v39",
+        "Type": "S32"
+      },
+      {
+        "Name": "v43",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.render.LDRPostProcess": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      },
+      {
+        "Name": "v2",
+        "Type": "Object"
+      },
+      {
+        "Name": "v3",
+        "Type": "Object"
+      },
+      {
+        "Name": "v4",
+        "Type": "Object"
+      },
+      {
+        "Name": "v5",
+        "Type": "Object"
+      },
+      {
+        "Name": "v6",
+        "Type": "Object"
+      },
+      {
+        "Name": "v7",
+        "Type": "Object"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.geometry.GeometryBrush": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "Object"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "Object"
+      },
+      {
+        "Name": "v14",
+        "Type": "Object"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "Object"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v25",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "Object"
+      },
+      {
+        "Name": "v28",
+        "Type": "F32"
+      },
+      {
+        "Name": "v29",
+        "Type": "F32"
+      },
+      {
+        "Name": "v30",
+        "Type": "Object"
+      },
+      {
+        "Name": "v32",
+        "Type": "S32"
+      },
+      {
+        "Name": "v33",
+        "Type": "S32"
+      },
+      {
+        "Name": "v40",
+        "Type": "Object"
+      },
+      {
+        "Name": "v45",
+        "Type": "F32"
+      },
+      {
+        "Name": "v46",
+        "Type": "F32"
+      },
+      {
+        "Name": "v49",
+        "Type": "S32"
+      },
+      {
+        "Name": "v50",
+        "Type": "F32"
+      },
+      {
+        "Name": "v52",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.render.LightShaft": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "S32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v28",
+        "Type": "F32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "S32"
+      },
+      {
+        "Name": "v34",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "F32"
+      },
+      {
+        "Name": "v37",
+        "Type": "S32"
+      },
+      {
+        "Name": "v40",
+        "Type": "S32"
+      },
+      {
+        "Name": "v41",
+        "Type": "F32"
+      },
+      {
+        "Name": "v42",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.SwingWind": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.motion.ActorCameraLayer": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.effect.script.EffectCustomExternParameter": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.VolumetricFog": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "Object"
+      },
+      {
+        "Name": "v17",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.physics.BoxShape": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.Atmosphere2": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "F32"
+      },
+      {
+        "Name": "v12",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v29",
+        "Type": "F32"
+      },
+      {
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v38",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "F32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "F32"
+      },
+      {
+        "Name": "v47",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "F32"
+      },
+      {
+        "Name": "v51",
+        "Type": "F32"
+      },
+      {
+        "Name": "v52",
+        "Type": "S32"
+      },
+      {
+        "Name": "v53",
+        "Type": "S32"
+      },
+      {
+        "Name": "v54",
+        "Type": "S32"
+      },
+      {
+        "Name": "v56",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.CustomFilter": {
+    "FieldPatches": [
+      {
+        "Name": "v4",
+        "Type": "Object"
+      },
+      {
+        "Name": "v5",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.Camera": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "F32"
+      },
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.GIPointCloudControl": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.render.SSRControl": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "Object"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.render.LightShaftFilterControl": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.CaptureToTexture": {
+    "FieldPatches": [
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.geometry.Face": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "Object"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.CapsuleSpotLight": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "F32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
       },
       {
         "Name": "v26",
@@ -1108,7 +2953,7 @@
       },
       {
         "Name": "v40",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v42",
@@ -1144,10 +2989,10 @@
       }
     ]
   },
-  "via.render.LDRColorCorrect": {
+  "via.render.DepthOfField": {
     "FieldPatches": [
       {
-        "Name": "v1",
+        "Name": "v3",
         "Type": "S32"
       },
       {
@@ -1155,12 +3000,184 @@
         "Type": "S32"
       },
       {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
         "Name": "v6",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v7",
         "Type": "F32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "S32"
+      },
+      {
+        "Name": "v22",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "Object"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v28",
+        "Type": "F32"
+      },
+      {
+        "Name": "v29",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v38",
+        "Type": "S32"
+      },
+      {
+        "Name": "v39",
+        "Type": "S32"
+      },
+      {
+        "Name": "v40",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "S32"
+      },
+      {
+        "Name": "v42",
+        "Type": "F32"
+      },
+      {
+        "Name": "v44",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.SoftBloom": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.render.FFTBloom": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
       }
     ]
   },
@@ -1213,18 +3230,546 @@
       {
         "Name": "v1",
         "Type": "Object"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
       }
     ]
   },
-  "via.effect.script.EventEffectDataElement": {
+  "via.motion.DynamicMotionCameraBank": {
     "FieldPatches": [
       {
         "Name": "v0",
         "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.motion.ActorMotion": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "Object"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "Object"
+      },
+      {
+        "Name": "v6",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.render.ExperimentalRayTrace": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "Object"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "Object"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "S32"
+      },
+      {
+        "Name": "v18",
+        "Type": "S32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v37",
+        "Type": "S32"
+      },
+      {
+        "Name": "v38",
+        "Type": "S32"
+      },
+      {
+        "Name": "v39",
+        "Type": "S32"
+      },
+      {
+        "Name": "v40",
+        "Type": "F32"
+      },
+      {
+        "Name": "v43",
+        "Type": "F32"
+      },
+      {
+        "Name": "v47",
+        "Type": "S32"
+      },
+      {
+        "Name": "v53",
+        "Type": "F32"
+      },
+      {
+        "Name": "v54",
+        "Type": "F32"
+      },
+      {
+        "Name": "v58",
+        "Type": "F32"
+      },
+      {
+        "Name": "v60",
+        "Type": "F32"
+      },
+      {
+        "Name": "v62",
+        "Type": "F32"
+      },
+      {
+        "Name": "v64",
+        "Type": "F32"
+      },
+      {
+        "Name": "v67",
+        "Type": "F32"
+      },
+      {
+        "Name": "v68",
+        "Type": "F32"
+      },
+      {
+        "Name": "v69",
+        "Type": "F32"
+      },
+      {
+        "Name": "v70",
+        "Type": "F32"
+      },
+      {
+        "Name": "v73",
+        "Type": "S32"
+      },
+      {
+        "Name": "v74",
+        "Type": "S32"
+      },
+      {
+        "Name": "v75",
+        "Type": "F32"
+      },
+      {
+        "Name": "v76",
+        "Type": "F32"
+      },
+      {
+        "Name": "v77",
+        "Type": "S32"
+      },
+      {
+        "Name": "v78",
+        "Type": "F32"
+      },
+      {
+        "Name": "v80",
+        "Type": "S32"
+      },
+      {
+        "Name": "v81",
+        "Type": "Object"
+      },
+      {
+        "Name": "v82",
+        "Type": "S32"
+      },
+      {
+        "Name": "v83",
+        "Type": "S32"
+      },
+      {
+        "Name": "v84",
+        "Type": "F32"
+      },
+      {
+        "Name": "v85",
+        "Type": "F32"
+      },
+      {
+        "Name": "v86",
+        "Type": "F32"
+      },
+      {
+        "Name": "v89",
+        "Type": "S32"
+      },
+      {
+        "Name": "v90",
+        "Type": "S32"
+      },
+      {
+        "Name": "v91",
+        "Type": "S32"
+      },
+      {
+        "Name": "v92",
+        "Type": "S32"
+      },
+      {
+        "Name": "v93",
+        "Type": "S32"
+      },
+      {
+        "Name": "v102",
+        "Type": "S32"
+      },
+      {
+        "Name": "v108",
+        "Type": "S32"
+      },
+      {
+        "Name": "v110",
+        "Type": "S32"
+      },
+      {
+        "Name": "v111",
+        "Type": "S32"
+      },
+      {
+        "Name": "v114",
+        "Type": "S32"
+      },
+      {
+        "Name": "v118",
+        "Type": "F32"
+      },
+      {
+        "Name": "v119",
+        "Type": "Object"
+      },
+      {
+        "Name": "v120",
+        "Type": "Object"
+      },
+      {
+        "Name": "v121",
+        "Type": "S32"
+      },
+      {
+        "Name": "v122",
+        "Type": "Object"
+      },
+      {
+        "Name": "v123",
+        "Type": "F32"
+      },
+      {
+        "Name": "v124",
+        "Type": "F32"
+      },
+      {
+        "Name": "v127",
+        "Type": "F32"
+      },
+      {
+        "Name": "v128",
+        "Type": "F32"
+      },
+      {
+        "Name": "v129",
+        "Type": "F32"
+      },
+      {
+        "Name": "v130",
+        "Type": "F32"
+      },
+      {
+        "Name": "v131",
+        "Type": "F32"
+      },
+      {
+        "Name": "v132",
+        "Type": "S32"
+      },
+      {
+        "Name": "v133",
+        "Type": "Object"
+      },
+      {
+        "Name": "v136",
+        "Type": "Object"
+      },
+      {
+        "Name": "v137",
+        "Type": "F32"
+      },
+      {
+        "Name": "v139",
+        "Type": "Object"
+      },
+      {
+        "Name": "v142",
+        "Type": "Object"
+      },
+      {
+        "Name": "v143",
+        "Type": "F32"
+      },
+      {
+        "Name": "v145",
+        "Type": "Object"
+      },
+      {
+        "Name": "v147",
+        "Type": "F32"
+      },
+      {
+        "Name": "v148",
+        "Type": "S32"
+      },
+      {
+        "Name": "v149",
+        "Type": "F32"
+      },
+      {
+        "Name": "v150",
+        "Type": "F32"
+      },
+      {
+        "Name": "v151",
+        "Type": "S32"
+      },
+      {
+        "Name": "v152",
+        "Type": "F32"
+      },
+      {
+        "Name": "v153",
+        "Type": "F32"
+      },
+      {
+        "Name": "v155",
+        "Type": "Object"
+      },
+      {
+        "Name": "v156",
+        "Type": "S32"
+      },
+      {
+        "Name": "v160",
+        "Type": "Object"
+      },
+      {
+        "Name": "v161",
+        "Type": "Object"
+      },
+      {
+        "Name": "v162",
+        "Type": "F32"
+      },
+      {
+        "Name": "v164",
+        "Type": "S32"
+      },
+      {
+        "Name": "v168",
+        "Type": "F32"
+      },
+      {
+        "Name": "v169",
+        "Type": "Object"
+      },
+      {
+        "Name": "v170",
+        "Type": "Object"
+      },
+      {
+        "Name": "v172",
+        "Type": "S32"
+      },
+      {
+        "Name": "v179",
+        "Type": "S32"
+      },
+      {
+        "Name": "v181",
+        "Type": "S32"
+      },
+      {
+        "Name": "v182",
+        "Type": "S32"
+      },
+      {
+        "Name": "v183",
+        "Type": "S32"
+      },
+      {
+        "Name": "v184",
+        "Type": "F32"
+      },
+      {
+        "Name": "v185",
+        "Type": "F32"
+      },
+      {
+        "Name": "v186",
+        "Type": "S32"
+      },
+      {
+        "Name": "v188",
+        "Type": "F32"
+      },
+      {
+        "Name": "v189",
+        "Type": "F32"
+      },
+      {
+        "Name": "v190",
+        "Type": "F32"
+      },
+      {
+        "Name": "v191",
+        "Type": "S32"
+      },
+      {
+        "Name": "v194",
+        "Type": "F32"
+      },
+      {
+        "Name": "v195",
+        "Type": "S32"
+      },
+      {
+        "Name": "v198",
+        "Type": "S32"
+      },
+      {
+        "Name": "v200",
+        "Type": "F32"
+      },
+      {
+        "Name": "v201",
+        "Type": "F32"
+      },
+      {
+        "Name": "v202",
+        "Type": "F32"
+      },
+      {
+        "Name": "v203",
+        "Type": "S32"
+      },
+      {
+        "Name": "v204",
+        "Type": "S32"
+      },
+      {
+        "Name": "v205",
+        "Type": "S32"
+      },
+      {
+        "Name": "v206",
+        "Type": "S32"
+      },
+      {
+        "Name": "v211",
+        "Type": "F32"
+      },
+      {
+        "Name": "v212",
+        "Type": "F32"
+      },
+      {
+        "Name": "v214",
+        "Type": "S32"
+      },
+      {
+        "Name": "v215",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.LDRRadialBlur": {
+    "FieldPatches": [
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "Object"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.IntermediateTarget": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "Object"
+      },
+      {
+        "Name": "v1",
+        "Type": "F32"
       }
     ]
   },
@@ -1296,19 +3841,7 @@
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
         "Type": "Object"
-      }
-    ]
-  },
-  "via.render.SubsurfaceSettings": {
-    "FieldPatches": [
-      {
-        "Name": "v2",
-        "Type": "S32"
       },
       {
         "Name": "v3",
@@ -1317,33 +3850,17 @@
       {
         "Name": "v4",
         "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
       }
     ]
   },
-  "via.render.RenderTargetOperator": {
+  "via.render.FakeLensflare": {
     "FieldPatches": [
       {
-        "Name": "v0",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "F32"
-      },
-      {
-        "Name": "v14",
-        "Type": "S32"
-      },
-      {
-        "Name": "v16",
-        "Type": "S32"
-      },
-      {
-        "Name": "v17",
-        "Type": "S32"
-      },
-      {
-        "Name": "v18",
+        "Name": "v1",
         "Type": "S32"
       }
     ]
@@ -1364,7 +3881,7 @@
       },
       {
         "Name": "v6",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v7",
@@ -1388,11 +3905,11 @@
       },
       {
         "Name": "v12",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v13",
-        "Type": "Object"
+        "Type": "S32"
       },
       {
         "Name": "v14",
@@ -1528,7 +4045,7 @@
       }
     ]
   },
-  "via.effect.lensflare.LensflarePlayer": {
+  "via.motion.TreeCameraLayer": {
     "FieldPatches": [
       {
         "Name": "v2",
@@ -1536,23 +4053,83 @@
       },
       {
         "Name": "v3",
-        "Type": "F32"
-      },
-      {
-        "Name": "v5",
         "Type": "S32"
       },
       {
-        "Name": "v6",
+        "Name": "v4",
         "Type": "F32"
       },
       {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
         "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.physics.Colliders": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.VolumetricFogControl": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
         "Type": "F32"
       },
       {
         "Name": "v9",
-        "Type": "F32"
+        "Type": "S32"
       },
       {
         "Name": "v12",
@@ -1560,7 +4137,11 @@
       },
       {
         "Name": "v13",
-        "Type": "S32"
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "F32"
       },
       {
         "Name": "v15",
@@ -1579,16 +4160,12 @@
         "Type": "F32"
       },
       {
-        "Name": "v19",
-        "Type": "F32"
-      },
-      {
         "Name": "v20",
         "Type": "F32"
       },
       {
         "Name": "v21",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v22",
@@ -1604,81 +4181,99 @@
       },
       {
         "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v28",
+        "Type": "S32"
+      },
+      {
+        "Name": "v30",
+        "Type": "S32"
+      },
+      {
+        "Name": "v31",
         "Type": "F32"
       },
       {
-        "Name": "v26",
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
         "Type": "S32"
       },
       {
-        "Name": "v0",
-        "OriginalType": "via.effect.lensflare.LensflareResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "Lensflare"
+        "Name": "v38",
+        "Type": "S32"
+      },
+      {
+        "Name": "v39",
+        "Type": "F32"
+      },
+      {
+        "Name": "v40",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "S32"
+      },
+      {
+        "Name": "v42",
+        "Type": "F32"
       }
     ]
   },
-  "via.physics.Colliders": {
+  "via.render.PolynomialLens": {
     "FieldPatches": [
       {
-        "Name": "v2",
+        "Name": "v0",
         "Type": "S32"
       },
       {
-        "Name": "v3",
-        "Type": "S32"
+        "Name": "v2",
+        "Type": "Object"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
       },
       {
         "Name": "v5",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.render.LDRHazeFilter": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "F32"
-      },
-      {
-        "Name": "v6",
-        "Type": "F32"
-      },
-      {
-        "Name": "v7",
         "Type": "F32"
       },
       {
         "Name": "v8",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v9",
         "Type": "F32"
       },
       {
-        "Name": "v11",
+        "Name": "v10",
         "Type": "F32"
       },
       {
         "Name": "v12",
-        "Type": "S32"
-      },
-      {
-        "Name": "v16",
-        "Type": "S32"
-      },
-      {
-        "Name": "v17",
         "Type": "F32"
       },
       {
-        "Name": "v18",
+        "Name": "v13",
         "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
       },
       {
         "Name": "v19",
@@ -1686,178 +4281,6 @@
       },
       {
         "Name": "v20",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.timeline.TimelineFsm2": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v3",
-        "Type": "S32"
-      },
-      {
-        "Name": "v4",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.SphereShape": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.navigation.MapHandle": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      },
-      {
-        "Name": "v1",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.AabbShape": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.MeshShape": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.dynamics.RigidBodyMeshSet": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      },
-      {
-        "Name": "v8",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.FilterInfo": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "Object"
-      },
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v3",
-        "Type": "S32"
-      },
-      {
-        "Name": "v4",
-        "Type": "Object"
-      }
-    ]
-  },
-  "via.Transform": {
-    "FieldPatches": [
-      {
-        "Name": "v8",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.speedtree.SpeedTreeGlobalController": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      },
-      {
-        "Name": "v7",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.motion.TreeLayer": {
-    "FieldPatches": [
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v3",
-        "Type": "S32"
-      },
-      {
-        "Name": "v4",
-        "Type": "S32"
-      },
-      {
-        "Name": "v7",
-        "Type": "S32"
-      },
-      {
-        "Name": "v8",
-        "Type": "S32"
-      },
-      {
-        "Name": "v9",
-        "Type": "S32"
-      },
-      {
-        "Name": "v11",
-        "Type": "S32"
-      },
-      {
-        "Name": "v12",
-        "Type": "S32"
-      },
-      {
-        "Name": "v16",
-        "Type": "S32"
-      },
-      {
-        "Name": "v17",
-        "Type": "S32"
-      },
-      {
-        "Name": "v23",
         "Type": "S32"
       },
       {
@@ -1869,88 +4292,60 @@
         "Type": "S32"
       },
       {
-        "Name": "v26",
+        "Name": "v29",
         "Type": "S32"
+      },
+      {
+        "Name": "v30",
+        "Type": "F32"
       }
     ]
   },
-  "via.gui.GUICamera": {
+  "via.physics.SphereShape": {
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "F32"
-      },
-      {
-        "Name": "v2",
-        "Type": "F32"
-      },
-      {
-        "Name": "v3",
-        "Type": "F32"
-      },
-      {
-        "Name": "v5",
-        "Type": "F32"
-      },
-      {
-        "Name": "v6",
-        "Type": "F32"
-      },
-      {
-        "Name": "v7",
-        "Type": "S32"
-      },
-      {
-        "Name": "v8",
         "Type": "S32"
       }
     ]
   },
-  "via.AnimationCurve": {
+  "via.render.DynamicProbeGI": {
     "FieldPatches": [
       {
         "Name": "v0",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.motion.Motion": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
+        "Type": "Object"
       },
       {
         "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
         "Type": "S32"
       },
       {
-        "Name": "v4",
+        "Name": "v16",
         "Type": "S32"
       },
       {
-        "Name": "v7",
+        "Name": "v18",
         "Type": "S32"
       },
       {
-        "Name": "v8",
-        "Type": "S32"
-      },
-      {
-        "Name": "v10",
-        "Type": "S32"
-      },
-      {
-        "Name": "v12",
-        "Type": "S32"
+        "Name": "v19",
+        "Type": "Object"
       },
       {
         "Name": "v20",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v21",
-        "Type": "S32"
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
       },
       {
         "Name": "v23",
@@ -1958,232 +4353,331 @@
       },
       {
         "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v25",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v28",
         "Type": "S32"
+      },
+      {
+        "Name": "v30",
+        "Type": "S32"
+      },
+      {
+        "Name": "v31",
+        "Type": "S32"
+      },
+      {
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v34",
+        "Type": "S32"
+      },
+      {
+        "Name": "v35",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "Object"
+      },
+      {
+        "Name": "v37",
+        "Type": "S32"
+      },
+      {
+        "Name": "v38",
+        "Type": "S32"
+      },
+      {
+        "Name": "v39",
+        "Type": "F32"
+      },
+      {
+        "Name": "v40",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "S32"
+      },
+      {
+        "Name": "v42",
+        "Type": "S32"
+      },
+      {
+        "Name": "v43",
+        "Type": "S32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "F32"
+      },
+      {
+        "Name": "v46",
+        "Type": "F32"
+      },
+      {
+        "Name": "v48",
+        "Type": "Object"
+      },
+      {
+        "Name": "v49",
+        "Type": "S32"
+      },
+      {
+        "Name": "v50",
+        "Type": "F32"
+      },
+      {
+        "Name": "v51",
+        "Type": "F32"
+      },
+      {
+        "Name": "v52",
+        "Type": "F32"
+      },
+      {
+        "Name": "v53",
+        "Type": "S32"
+      },
+      {
+        "Name": "v54",
+        "Type": "S32"
+      },
+      {
+        "Name": "v55",
+        "Type": "F32"
+      },
+      {
+        "Name": "v56",
+        "Type": "S32"
+      },
+      {
+        "Name": "v57",
+        "Type": "S32"
+      },
+      {
+        "Name": "v59",
+        "Type": "S32"
+      },
+      {
+        "Name": "v60",
+        "Type": "S32"
+      },
+      {
+        "Name": "v61",
+        "Type": "S32"
+      },
+      {
+        "Name": "v62",
+        "Type": "S32"
+      },
+      {
+        "Name": "v63",
+        "Type": "S32"
+      },
+      {
+        "Name": "v64",
+        "Type": "S32"
+      },
+      {
+        "Name": "v65",
+        "Type": "F32"
+      },
+      {
+        "Name": "v66",
+        "Type": "S32"
+      },
+      {
+        "Name": "v67",
+        "Type": "F32"
+      },
+      {
+        "Name": "v68",
+        "Type": "F32"
+      },
+      {
+        "Name": "v70",
+        "Type": "S32"
+      },
+      {
+        "Name": "v71",
+        "Type": "F32"
+      },
+      {
+        "Name": "v74",
+        "Type": "S32"
+      },
+      {
+        "Name": "v75",
+        "Type": "Object"
+      },
+      {
+        "Name": "v78",
+        "Type": "F32"
+      },
+      {
+        "Name": "v79",
+        "Type": "F32"
+      },
+      {
+        "Name": "v80",
+        "Type": "F32"
+      },
+      {
+        "Name": "v81",
+        "Type": "F32"
+      },
+      {
+        "Name": "v82",
+        "Type": "F32"
+      },
+      {
+        "Name": "v83",
+        "Type": "F32"
+      },
+      {
+        "Name": "v84",
+        "Type": "F32"
+      },
+      {
+        "Name": "v85",
+        "Type": "F32"
+      },
+      {
+        "Name": "v86",
+        "Type": "F32"
+      },
+      {
+        "Name": "v87",
+        "Type": "F32"
+      },
+      {
+        "Name": "v88",
+        "Type": "F32"
+      },
+      {
+        "Name": "v89",
+        "Type": "F32"
+      },
+      {
+        "Name": "v90",
+        "Type": "Object"
+      },
+      {
+        "Name": "v91",
+        "Type": "F32"
+      },
+      {
+        "Name": "v92",
+        "Type": "F32"
+      },
+      {
+        "Name": "v94",
+        "Type": "S32"
+      },
+      {
+        "Name": "v96",
+        "Type": "F32"
+      },
+      {
+        "Name": "v97",
+        "Type": "S32"
+      },
+      {
+        "Name": "v98",
+        "Type": "S32"
+      },
+      {
+        "Name": "v99",
+        "Type": "Object"
+      },
+      {
+        "Name": "v100",
+        "Type": "Object"
+      },
+      {
+        "Name": "v101",
+        "Type": "F32"
       }
     ]
   },
-  "app.TextureHolder": {
+  "via.render.VolumetricFogExpHeightFogProperty": {
     "FieldPatches": [
       {
-        "Name": "_Texture",
-        "Type": "Resource",
-        "FileFormat": "Texture"
-      }
-    ]
-  },
-  "app.RTTAssetHolder": {
-    "FieldPatches": [
+        "Name": "v0",
+        "Type": "S32"
+      },
       {
-        "Name": "_Asset",
-        "Type": "Resource",
-        "FileFormat": "RenderTexture"
-      }
-    ]
-  },
-  "via.motion.MotionFsm2Layer": {
-    "FieldPatches": [
+        "Name": "v1",
+        "Type": "F32"
+      },
       {
-        "Name": "v7",
-        "OriginalType": "via.motion.MotionFsm2ResourceHolder",
-        "Type": "Resource",
-        "FileFormat": "MotionFsm2"
+        "Name": "v2",
+        "Type": "S32"
       },
       {
         "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
         "Type": "S32"
       },
       {
         "Name": "v6",
-        "Type": "S32"
-      },
-      {
-        "Name": "v8",
-        "Type": "S32"
-      },
-      {
-        "Name": "v9",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v11",
         "Type": "S32"
       },
       {
-        "Name": "v13",
-        "Type": "S32"
-      },
-      {
-        "Name": "v15",
-        "Type": "F32"
-      }
-    ]
-  },
-  "app.MovieAssetHolder": {
-    "FieldPatches": [
-      {
-        "Name": "_Asset",
-        "Type": "Resource",
-        "FileFormat": "Movie"
-      }
-    ]
-  },
-  "via.render.SingleClusterMaterialController": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      },
-      {
-        "Name": "v1",
+        "Name": "v12",
         "Type": "S32"
       }
     ]
   },
-  "via.dynamics.cloth.CurveWind": {
+  "via.render.SSSSSControl": {
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      }
-    ]
-  },
-  "app.collision.GimmickDamageUserData": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "Object"
-      }
-    ]
-  },
-  "via.dynamics.GpuCloth": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      }
-    ]
-  },
-  "app.collision.AttackUserData": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "Object"
-      }
-    ]
-  },
-  "via.physics.ContinuousCapsuleShape": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.render.Strands": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "F32"
-      },
-      {
-        "Name": "v15",
-        "Type": "S32"
-      },
-      {
-        "Name": "v16",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.RequestSetCollider": {
-    "FieldPatches": [
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v3",
         "Type": "S32"
       },
       {
         "Name": "v4",
         "Type": "S32"
-      },
-      {
-        "Name": "v5",
-        "Type": "S32"
       }
     ]
   },
-  "via.motion.ActorMotion": {
-    "FieldPatches": [
-      {
-        "Name": "v2",
-        "Type": "Object"
-      },
-      {
-        "Name": "v3",
-        "Type": "S32"
-      },
-      {
-        "Name": "v4",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      },
-      {
-        "Name": "v7",
-        "Type": "Object"
-      }
-    ]
-  },
-  "via.motion.MotionJackFsm2": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v5",
-        "Type": "S32"
-      },
-      {
-        "Name": "v6",
-        "Type": "S32"
-      },
-      {
-        "Name": "v7",
-        "Type": "S32"
-      }
-    ]
-  },
-  "app.EPVExpertObjectLandingCustomData.Element": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.CapsuleShape": {
+  "via.dynamics.StaticCompoundRigidBody": {
     "FieldPatches": [
       {
         "Name": "v1",
@@ -2191,23 +4685,19 @@
       }
     ]
   },
-  "via.effect.VolumeDecalVfx": {
+  "via.render.StarrySky": {
     "FieldPatches": [
       {
         "Name": "v0",
-        "Type": "S32"
+        "Type": "Object"
       },
       {
         "Name": "v2",
-        "Type": "S32"
-      },
-      {
-        "Name": "v13",
-        "Type": "Object"
+        "Type": "F32"
       },
       {
         "Name": "v14",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v15",
@@ -2219,119 +4709,27 @@
       },
       {
         "Name": "v17",
-        "Type": "F32"
+        "Type": "S32"
       },
       {
         "Name": "v18",
-        "Type": "S32"
-      },
-      {
-        "Name": "v27",
         "Type": "F32"
       },
       {
-        "Name": "v28",
-        "Type": "S32"
-      },
-      {
-        "Name": "v29",
+        "Name": "v19",
         "Type": "F32"
       },
       {
-        "Name": "v30",
-        "Type": "S32"
-      },
-      {
-        "Name": "v32",
-        "Type": "S32"
-      },
-      {
-        "Name": "v33",
+        "Name": "v22",
         "Type": "F32"
-      },
-      {
-        "Name": "v34",
-        "Type": "S32"
-      },
-      {
-        "Name": "v41",
-        "Type": "S32"
-      },
-      {
-        "Name": "v43",
-        "Type": "F32"
-      },
-      {
-        "Name": "v44",
-        "Type": "S32"
-      },
-      {
-        "Name": "v45",
-        "Type": "S32"
-      },
-      {
-        "Name": "v46",
-        "Type": "S32"
-      },
-      {
-        "Name": "v49",
-        "Type": "S32"
-      },
-      {
-        "Name": "v50",
-        "Type": "S32"
       }
     ]
   },
-  "via.network.HttpClient": {
-    "FieldPatches": [
-      {
-        "Name": "v6",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.network.SessionSteam": {
-    "FieldPatches": [
-      {
-        "Name": "v6",
-        "Type": "S32"
-      }
-    ]
-  },
-  "app.collision.WeaponAttackUserData": {
+  "via.physics.AabbShape": {
     "FieldPatches": [
       {
         "Name": "v1",
-        "Type": "Object"
-      }
-    ]
-  },
-  "via.dynamics.GpuStrandsDynamics": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
         "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "S32"
-      }
-    ]
-  },
-  "app.EPVExpertDamageEffectElement": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.movie.Movie": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "Object"
       }
     ]
   },
@@ -2383,22 +4781,6 @@
       }
     ]
   },
-  "app.EPVExpertFootLandingData.FootStepElement": {
-    "FieldPatches": [
-      {
-        "Name": "v0",
-        "Type": "S32"
-      }
-    ]
-  },
-  "via.physics.ContinuousSphereShape": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      }
-    ]
-  },
   "via.motion.MotionBank": {
     "FieldPatches": [
       {
@@ -2412,11 +4794,1257 @@
       {
         "Name": "v3",
         "Type": "S32"
+      },
+      {
+        "Name": "v0",
+        "OriginalType": "via.motion.MotionListResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionList"
       }
     ]
   },
-  "via.dynamics.RigidBodySet": {
+  "via.motion.ActorMotionCamera": {
     "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.Fog": {
+    "FieldPatches": [
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "F32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "S32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "F32"
+      },
+      {
+        "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v25",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v28",
+        "Type": "S32"
+      },
+      {
+        "Name": "v29",
+        "Type": "S32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
+        "Name": "v35",
+        "Type": "S32"
+      },
+      {
+        "Name": "v37",
+        "Type": "F32"
+      },
+      {
+        "Name": "v39",
+        "Type": "F32"
+      },
+      {
+        "Name": "v42",
+        "Type": "F32"
+      },
+      {
+        "Name": "v43",
+        "Type": "S32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.dynamics.CompositeRigidBodyMeshSet": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.physics.FilterInfo": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.Transform": {
+    "FieldPatches": [
+      {
+        "Name": "v8",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.render.CompositeMesh": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v18",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.speedtree.SpeedTreeGlobalController": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.motion.TreeLayer": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "OriginalType": "via.motion.MotionBaseResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionBase"
+      }
+    ]
+  },
+  "via.render.SSAOControl": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "S32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.gui.GUICamera": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.AnimationCurve": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.navigation.AIMap": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "Type": "Object"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.movie.Movie": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "OriginalType": "via.movie.MovieResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Movie"
+      },
+      {
+        "Name": "v2",
+        "OriginalType": "via.render.RenderTargetTextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RenderTexture"
+      },
+      {
+        "Name": "v0",
+        "Type": "Object"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      }
+    ]
+  },
+  "app.gui.ui0430_01_Supporter": {
+    "FieldPatches": [
+      {
+        "Name": "_RTT",
+        "Type": "Resource",
+        "FileFormat": "RenderTexture"
+      }
+    ]
+  },
+  "app.TextureHolder": {
+    "FieldPatches": [
+      {
+        "Name": "_Texture",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      }
+    ]
+  },
+  "app.EPVExpertDamageEffectElement": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.effect.EffectResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Effect"
+      }
+    ]
+  },
+  "via.physics.CharacterController": {
+    "FieldPatches": [
+      {
+        "Name": "v24",
+        "OriginalType": "via.physics.CollisionFilterResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "CollisionFilter"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.motion.MotionFsm2Layer": {
+    "FieldPatches": [
+      {
+        "Name": "v7",
+        "OriginalType": "via.motion.MotionFsm2ResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionFsm2"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.motion.IkLeg2": {
+    "FieldPatches": [
+      {
+        "Name": "v5",
+        "OriginalType": "via.motion.IkLeg2ResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "IkLeg2"
+      },
+      {
+        "Name": "v18",
+        "OriginalType": "via.physics.CollisionFilterResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "CollisionFilter"
+      },
+      {
+        "Name": "v2",
+        "Type": "Object"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "S32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "F32"
+      },
+      {
+        "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v30",
+        "Type": "S32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v35",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "F32"
+      },
+      {
+        "Name": "v37",
+        "Type": "F32"
+      },
+      {
+        "Name": "v38",
+        "Type": "F32"
+      },
+      {
+        "Name": "v40",
+        "Type": "S32"
+      },
+      {
+        "Name": "v41",
+        "Type": "S32"
+      },
+      {
+        "Name": "v42",
+        "Type": "F32"
+      },
+      {
+        "Name": "v43",
+        "Type": "F32"
+      },
+      {
+        "Name": "v46",
+        "Type": "S32"
+      },
+      {
+        "Name": "v47",
+        "Type": "S32"
+      },
+      {
+        "Name": "v48",
+        "Type": "S32"
+      },
+      {
+        "Name": "v49",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "F32"
+      },
+      {
+        "Name": "v51",
+        "Type": "S32"
+      },
+      {
+        "Name": "v52",
+        "Type": "F32"
+      },
+      {
+        "Name": "v53",
+        "Type": "F32"
+      },
+      {
+        "Name": "v54",
+        "Type": "F32"
+      },
+      {
+        "Name": "v55",
+        "Type": "F32"
+      },
+      {
+        "Name": "v56",
+        "Type": "F32"
+      },
+      {
+        "Name": "v58",
+        "Type": "S32"
+      },
+      {
+        "Name": "v59",
+        "Type": "S32"
+      },
+      {
+        "Name": "v60",
+        "Type": "F32"
+      },
+      {
+        "Name": "v61",
+        "Type": "F32"
+      },
+      {
+        "Name": "v62",
+        "Type": "S32"
+      },
+      {
+        "Name": "v63",
+        "Type": "S32"
+      },
+      {
+        "Name": "v65",
+        "Type": "F32"
+      },
+      {
+        "Name": "v74",
+        "Type": "S32"
+      },
+      {
+        "Name": "v75",
+        "Type": "S32"
+      },
+      {
+        "Name": "v77",
+        "Type": "F32"
+      },
+      {
+        "Name": "v78",
+        "Type": "S32"
+      },
+      {
+        "Name": "v79",
+        "Type": "S32"
+      },
+      {
+        "Name": "v80",
+        "Type": "F32"
+      }
+    ]
+  },
+  "app.MotionCameraContainer": {
+    "FieldPatches": [
+      {
+        "Name": "_BankAsset",
+        "Type": "Resource",
+        "FileFormat": "MotionCameraBank"
+      }
+    ]
+  },
+  "via.motion.JointConstraintsLayer": {
+    "FieldPatches": [
+      {
+        "Name": "v4",
+        "OriginalType": "via.motion.JointConstraintsResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "JointConstraints"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.render.LightingSensor": {
+    "FieldPatches": [
+      {
+        "Name": "v13",
+        "OriginalType": "via.render.ByteBufferResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "ByteBuffer"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.motion.VirtualSkeleton": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.motion.RefSkeletonResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "RefSkeleton"
+      }
+    ]
+  },
+  "via.effect.MeshMaterialEmitter": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.render.MeshResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Mesh"
+      },
+      {
+        "Name": "v1",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
+      }
+    ]
+  },
+  "via.render.Stamp": {
+    "FieldPatches": [
+      {
+        "Name": "v20",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v22",
+        "Type": "S32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "F32"
+      },
+      {
+        "Name": "v25",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "S32"
+      },
+      {
+        "Name": "v28",
+        "Type": "S32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "S32"
+      },
+      {
+        "Name": "v36",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.render.ComputeSkinning": {
+    "FieldPatches": [
+      {
+        "Name": "v13",
+        "OriginalType": "via.render.MeshResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Mesh"
+      },
+      {
+        "Name": "v0",
+        "Type": "Object"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.effect.VolumeDecalVfx": {
+    "FieldPatches": [
+      {
+        "Name": "v51",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
+      },
+      {
+        "Name": "v19",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v22",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v23",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v24",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v20",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v25",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v90",
+        "OriginalType": "via.render.TextureResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Texture"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "Type": "Object"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "S32"
+      },
+      {
+        "Name": "v28",
+        "Type": "F32"
+      },
+      {
+        "Name": "v29",
+        "Type": "S32"
+      },
+      {
+        "Name": "v30",
+        "Type": "F32"
+      },
+      {
+        "Name": "v32",
+        "Type": "S32"
+      },
+      {
+        "Name": "v33",
+        "Type": "S32"
+      },
+      {
+        "Name": "v34",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "F32"
+      },
+      {
+        "Name": "v43",
+        "Type": "F32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "S32"
+      },
+      {
+        "Name": "v46",
+        "Type": "S32"
+      },
+      {
+        "Name": "v49",
+        "Type": "S32"
+      },
+      {
+        "Name": "v50",
+        "Type": "S32"
+      },
+      {
+        "Name": "v52",
+        "Type": "Object"
+      },
+      {
+        "Name": "v53",
+        "Type": "S32"
+      },
+      {
+        "Name": "v54",
+        "Type": "S32"
+      },
+      {
+        "Name": "v55",
+        "Type": "S32"
+      },
+      {
+        "Name": "v56",
+        "Type": "S32"
+      },
+      {
+        "Name": "v57",
+        "Type": "F32"
+      },
+      {
+        "Name": "v58",
+        "Type": "F32"
+      },
+      {
+        "Name": "v59",
+        "Type": "F32"
+      },
+      {
+        "Name": "v60",
+        "Type": "S32"
+      },
+      {
+        "Name": "v61",
+        "Type": "F32"
+      },
+      {
+        "Name": "v62",
+        "Type": "F32"
+      },
+      {
+        "Name": "v65",
+        "Type": "F32"
+      },
+      {
+        "Name": "v66",
+        "Type": "F32"
+      },
+      {
+        "Name": "v67",
+        "Type": "F32"
+      },
+      {
+        "Name": "v68",
+        "Type": "S32"
+      },
+      {
+        "Name": "v69",
+        "Type": "F32"
+      },
+      {
+        "Name": "v70",
+        "Type": "S32"
+      },
+      {
+        "Name": "v71",
+        "Type": "F32"
+      },
+      {
+        "Name": "v72",
+        "Type": "F32"
+      },
+      {
+        "Name": "v73",
+        "Type": "F32"
+      },
+      {
+        "Name": "v74",
+        "Type": "F32"
+      },
+      {
+        "Name": "v75",
+        "Type": "F32"
+      },
+      {
+        "Name": "v76",
+        "Type": "S32"
+      },
+      {
+        "Name": "v77",
+        "Type": "F32"
+      },
+      {
+        "Name": "v78",
+        "Type": "F32"
+      },
+      {
+        "Name": "v79",
+        "Type": "S32"
+      },
+      {
+        "Name": "v80",
+        "Type": "S32"
+      },
+      {
+        "Name": "v82",
+        "Type": "S32"
+      },
+      {
+        "Name": "v84",
+        "Type": "S32"
+      },
+      {
+        "Name": "v91",
+        "Type": "F32"
+      },
+      {
+        "Name": "v92",
+        "Type": "F32"
+      },
+      {
+        "Name": "v93",
+        "Type": "F32"
+      },
+      {
+        "Name": "v94",
+        "Type": "F32"
+      }
+    ]
+  },
+  "app.RTTAssetHolder": {
+    "FieldPatches": [
+      {
+        "Name": "_Asset",
+        "Type": "Resource",
+        "FileFormat": "RenderTexture"
+      }
+    ]
+  },
+  "via.dynamics.Ragdoll": {
+    "FieldPatches": [
+      {
+        "Name": "v14",
+        "OriginalType": "via.dynamics.RagdollResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Ragdoll"
+      },
       {
         "Name": "v1",
         "Type": "S32"
@@ -2431,7 +6059,7 @@
       },
       {
         "Name": "v13",
-        "Type": "S32"
+        "Type": "F32"
       },
       {
         "Name": "v15",
@@ -2447,6 +6075,1272 @@
       },
       {
         "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v27",
+        "Type": "S32"
+      },
+      {
+        "Name": "v29",
+        "Type": "F32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.motion.Chain": {
+    "FieldPatches": [
+      {
+        "Name": "v4",
+        "OriginalType": "via.motion.ChainResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Chain"
+      },
+      {
+        "Name": "v2",
+        "Type": "Object"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "Object"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "S32"
+      },
+      {
+        "Name": "v18",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      }
+    ]
+  },
+  "app.GrappleDemoAction": {
+    "FieldPatches": [
+      {
+        "Name": "_MotionListRes",
+        "Type": "Resource",
+        "FileFormat": "MotionList"
+      }
+    ]
+  },
+  "via.render.Strands": {
+    "FieldPatches": [
+      {
+        "Name": "v13",
+        "OriginalType": "via.render.StrandsResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Strands"
+      },
+      {
+        "Name": "v14",
+        "OriginalType": "via.render.MeshMaterialResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MeshMaterial"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "S32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "F32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v30",
+        "Type": "F32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v35",
+        "Type": "F32"
+      },
+      {
+        "Name": "v36",
+        "Type": "F32"
+      },
+      {
+        "Name": "v37",
+        "Type": "F32"
+      },
+      {
+        "Name": "v38",
+        "Type": "F32"
+      },
+      {
+        "Name": "v39",
+        "Type": "S32"
+      },
+      {
+        "Name": "v40",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "F32"
+      },
+      {
+        "Name": "v42",
+        "Type": "F32"
+      },
+      {
+        "Name": "v43",
+        "Type": "S32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "S32"
+      },
+      {
+        "Name": "v46",
+        "Type": "S32"
+      },
+      {
+        "Name": "v47",
+        "Type": "S32"
+      },
+      {
+        "Name": "v48",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "S32"
+      },
+      {
+        "Name": "v51",
+        "Type": "S32"
+      },
+      {
+        "Name": "v52",
+        "Type": "S32"
+      },
+      {
+        "Name": "v53",
+        "Type": "F32"
+      },
+      {
+        "Name": "v54",
+        "Type": "F32"
+      },
+      {
+        "Name": "v55",
+        "Type": "F32"
+      },
+      {
+        "Name": "v56",
+        "Type": "S32"
+      },
+      {
+        "Name": "v57",
+        "Type": "S32"
+      },
+      {
+        "Name": "v58",
+        "Type": "F32"
+      },
+      {
+        "Name": "v59",
+        "Type": "F32"
+      },
+      {
+        "Name": "v60",
+        "Type": "F32"
+      },
+      {
+        "Name": "v61",
+        "Type": "F32"
+      },
+      {
+        "Name": "v63",
+        "Type": "F32"
+      },
+      {
+        "Name": "v64",
+        "Type": "F32"
+      },
+      {
+        "Name": "v65",
+        "Type": "F32"
+      },
+      {
+        "Name": "v66",
+        "Type": "F32"
+      },
+      {
+        "Name": "v67",
+        "Type": "S32"
+      },
+      {
+        "Name": "v68",
+        "Type": "S32"
+      },
+      {
+        "Name": "v69",
+        "Type": "F32"
+      },
+      {
+        "Name": "v70",
+        "Type": "F32"
+      },
+      {
+        "Name": "v74",
+        "Type": "F32"
+      },
+      {
+        "Name": "v75",
+        "Type": "F32"
+      },
+      {
+        "Name": "v77",
+        "Type": "F32"
+      },
+      {
+        "Name": "v80",
+        "Type": "S32"
+      },
+      {
+        "Name": "v82",
+        "Type": "F32"
+      },
+      {
+        "Name": "v83",
+        "Type": "F32"
+      },
+      {
+        "Name": "v84",
+        "Type": "S32"
+      },
+      {
+        "Name": "v85",
+        "Type": "S32"
+      },
+      {
+        "Name": "v90",
+        "Type": "F32"
+      },
+      {
+        "Name": "v91",
+        "Type": "F32"
+      },
+      {
+        "Name": "v92",
+        "Type": "F32"
+      },
+      {
+        "Name": "v93",
+        "Type": "F32"
+      },
+      {
+        "Name": "v94",
+        "Type": "S32"
+      },
+      {
+        "Name": "v95",
+        "Type": "F32"
+      },
+      {
+        "Name": "v98",
+        "Type": "F32"
+      },
+      {
+        "Name": "v99",
+        "Type": "F32"
+      },
+      {
+        "Name": "v100",
+        "Type": "F32"
+      },
+      {
+        "Name": "v101",
+        "Type": "F32"
+      },
+      {
+        "Name": "v102",
+        "Type": "F32"
+      },
+      {
+        "Name": "v103",
+        "Type": "F32"
+      },
+      {
+        "Name": "v104",
+        "Type": "F32"
+      },
+      {
+        "Name": "v105",
+        "Type": "F32"
+      },
+      {
+        "Name": "v106",
+        "Type": "F32"
+      },
+      {
+        "Name": "v115",
+        "Type": "S32"
+      },
+      {
+        "Name": "v116",
+        "Type": "S32"
+      },
+      {
+        "Name": "v119",
+        "Type": "S32"
+      },
+      {
+        "Name": "v123",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.dynamics.GpuStrandsDynamics": {
+    "FieldPatches": [
+      {
+        "Name": "v13",
+        "OriginalType": "via.render.StrandsBindingResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "StrandsBinding"
+      },
+      {
+        "Name": "v16",
+        "OriginalType": "via.dynamics.GpuStrandsDynamicsResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "GpuStrandsDynamics"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v15",
+        "Type": "S32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "F32"
+      },
+      {
+        "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "F32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v28",
+        "Type": "S32"
+      },
+      {
+        "Name": "v29",
+        "Type": "S32"
+      },
+      {
+        "Name": "v31",
+        "Type": "S32"
+      },
+      {
+        "Name": "v32",
+        "Type": "S32"
+      },
+      {
+        "Name": "v34",
+        "Type": "S32"
+      },
+      {
+        "Name": "v35",
+        "Type": "S32"
+      },
+      {
+        "Name": "v39",
+        "Type": "F32"
+      },
+      {
+        "Name": "v40",
+        "Type": "F32"
+      },
+      {
+        "Name": "v41",
+        "Type": "F32"
+      },
+      {
+        "Name": "v42",
+        "Type": "S32"
+      },
+      {
+        "Name": "v43",
+        "Type": "F32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "S32"
+      },
+      {
+        "Name": "v46",
+        "Type": "F32"
+      },
+      {
+        "Name": "v47",
+        "Type": "F32"
+      },
+      {
+        "Name": "v48",
+        "Type": "F32"
+      },
+      {
+        "Name": "v49",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "F32"
+      },
+      {
+        "Name": "v52",
+        "Type": "F32"
+      },
+      {
+        "Name": "v54",
+        "Type": "F32"
+      },
+      {
+        "Name": "v56",
+        "Type": "F32"
+      },
+      {
+        "Name": "v60",
+        "Type": "F32"
+      },
+      {
+        "Name": "v61",
+        "Type": "F32"
+      },
+      {
+        "Name": "v65",
+        "Type": "F32"
+      },
+      {
+        "Name": "v66",
+        "Type": "S32"
+      },
+      {
+        "Name": "v69",
+        "Type": "F32"
+      },
+      {
+        "Name": "v70",
+        "Type": "S32"
+      },
+      {
+        "Name": "v76",
+        "Type": "F32"
+      },
+      {
+        "Name": "v80",
+        "Type": "S32"
+      },
+      {
+        "Name": "v81",
+        "Type": "S32"
+      },
+      {
+        "Name": "v82",
+        "Type": "S32"
+      },
+      {
+        "Name": "v94",
+        "Type": "F32"
+      },
+      {
+        "Name": "v95",
+        "Type": "F32"
+      },
+      {
+        "Name": "v96",
+        "Type": "F32"
+      },
+      {
+        "Name": "v97",
+        "Type": "F32"
+      },
+      {
+        "Name": "v98",
+        "Type": "F32"
+      },
+      {
+        "Name": "v99",
+        "Type": "F32"
+      },
+      {
+        "Name": "v103",
+        "Type": "F32"
+      },
+      {
+        "Name": "v104",
+        "Type": "F32"
+      },
+      {
+        "Name": "v105",
+        "Type": "S32"
+      },
+      {
+        "Name": "v106",
+        "Type": "S32"
+      },
+      {
+        "Name": "v107",
+        "Type": "S32"
+      },
+      {
+        "Name": "v108",
+        "Type": "S32"
+      },
+      {
+        "Name": "v109",
+        "Type": "F32"
+      },
+      {
+        "Name": "v110",
+        "Type": "F32"
+      },
+      {
+        "Name": "v111",
+        "Type": "S32"
+      },
+      {
+        "Name": "v113",
+        "Type": "F32"
+      },
+      {
+        "Name": "v114",
+        "Type": "F32"
+      },
+      {
+        "Name": "v115",
+        "Type": "F32"
+      },
+      {
+        "Name": "v116",
+        "Type": "F32"
+      },
+      {
+        "Name": "v117",
+        "Type": "S32"
+      },
+      {
+        "Name": "v118",
+        "Type": "S32"
+      },
+      {
+        "Name": "v122",
+        "Type": "S32"
+      },
+      {
+        "Name": "v123",
+        "Type": "S32"
+      },
+      {
+        "Name": "v124",
+        "Type": "S32"
+      },
+      {
+        "Name": "v128",
+        "Type": "S32"
+      },
+      {
+        "Name": "v129",
+        "Type": "S32"
+      },
+      {
+        "Name": "v130",
+        "Type": "F32"
+      },
+      {
+        "Name": "v131",
+        "Type": "F32"
+      }
+    ]
+  },
+  "via.motion.MotionJackFsm2": {
+    "FieldPatches": [
+      {
+        "Name": "v14",
+        "OriginalType": "via.motion.MotionBankResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionBank"
+      },
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "Object"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v16",
+        "Type": "S32"
+      },
+      {
+        "Name": "v18",
+        "Type": "Object"
+      }
+    ]
+  },
+  "app.MovieAssetHolder": {
+    "FieldPatches": [
+      {
+        "Name": "_Asset",
+        "Type": "Resource",
+        "FileFormat": "Movie"
+      }
+    ]
+  },
+  "app.EPVExpertObjectLandingCustomData.Element": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.effect.EffectResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Effect"
+      }
+    ]
+  },
+  "via.motion.DynamicMotionBank": {
+    "FieldPatches": [
+      {
+        "Name": "v7_MotionBank",
+        "OriginalType": "via.motion.MotionBankResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "MotionBank"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.dynamics.GpuCloth": {
+    "FieldPatches": [
+      {
+        "Name": "v75",
+        "OriginalType": "via.dynamics.GpuClothResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "GpuCloth"
+      },
+      {
+        "Name": "v0",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "S32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "S32"
+      },
+      {
+        "Name": "v24",
+        "Type": "S32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v26",
+        "Type": "Object"
+      },
+      {
+        "Name": "v32",
+        "Type": "S32"
+      },
+      {
+        "Name": "v35",
+        "Type": "S32"
+      },
+      {
+        "Name": "v38",
+        "Type": "S32"
+      },
+      {
+        "Name": "v48",
+        "Type": "F32"
+      },
+      {
+        "Name": "v49",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "S32"
+      },
+      {
+        "Name": "v52",
+        "Type": "F32"
+      },
+      {
+        "Name": "v53",
+        "Type": "S32"
+      },
+      {
+        "Name": "v58",
+        "Type": "F32"
+      },
+      {
+        "Name": "v67",
+        "Type": "F32"
+      },
+      {
+        "Name": "v68",
+        "Type": "F32"
+      },
+      {
+        "Name": "v69",
+        "Type": "F32"
+      },
+      {
+        "Name": "v71",
+        "Type": "S32"
+      },
+      {
+        "Name": "v72",
+        "Type": "S32"
+      },
+      {
+        "Name": "v73",
+        "Type": "S32"
+      },
+      {
+        "Name": "v74",
+        "Type": "F32"
+      },
+      {
+        "Name": "v77",
+        "Type": "S32"
+      },
+      {
+        "Name": "v78",
+        "Type": "S32"
+      },
+      {
+        "Name": "v79",
+        "Type": "S32"
+      },
+      {
+        "Name": "v80",
+        "Type": "Object"
+      },
+      {
+        "Name": "v81",
+        "Type": "Object"
+      },
+      {
+        "Name": "v82",
+        "Type": "S32"
+      },
+      {
+        "Name": "v85",
+        "Type": "S32"
+      },
+      {
+        "Name": "v86",
+        "Type": "Object"
+      }
+    ]
+  },
+  "app.EPVExpertFootLandingData.FootStepElement": {
+    "FieldPatches": [
+      {
+        "Name": "v0",
+        "OriginalType": "via.effect.EffectResourceHolder",
+        "Type": "Resource",
+        "FileFormat": "Effect"
+      }
+    ]
+  },
+  "via.render.IESLight": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "F32"
+      },
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v5",
+        "Type": "F32"
+      },
+      {
+        "Name": "v6",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "F32"
+      },
+      {
+        "Name": "v8",
+        "Type": "S32"
+      },
+      {
+        "Name": "v9",
+        "Type": "F32"
+      },
+      {
+        "Name": "v10",
+        "Type": "S32"
+      },
+      {
+        "Name": "v11",
+        "Type": "S32"
+      },
+      {
+        "Name": "v12",
+        "Type": "S32"
+      },
+      {
+        "Name": "v13",
+        "Type": "S32"
+      },
+      {
+        "Name": "v14",
+        "Type": "S32"
+      },
+      {
+        "Name": "v15",
+        "Type": "F32"
+      },
+      {
+        "Name": "v16",
+        "Type": "F32"
+      },
+      {
+        "Name": "v17",
+        "Type": "F32"
+      },
+      {
+        "Name": "v18",
+        "Type": "F32"
+      },
+      {
+        "Name": "v19",
+        "Type": "F32"
+      },
+      {
+        "Name": "v20",
+        "Type": "F32"
+      },
+      {
+        "Name": "v21",
+        "Type": "F32"
+      },
+      {
+        "Name": "v22",
+        "Type": "F32"
+      },
+      {
+        "Name": "v23",
+        "Type": "F32"
+      },
+      {
+        "Name": "v25",
+        "Type": "S32"
+      },
+      {
+        "Name": "v27",
+        "Type": "F32"
+      },
+      {
+        "Name": "v31",
+        "Type": "F32"
+      },
+      {
+        "Name": "v32",
+        "Type": "F32"
+      },
+      {
+        "Name": "v33",
+        "Type": "F32"
+      },
+      {
+        "Name": "v34",
+        "Type": "F32"
+      },
+      {
+        "Name": "v35",
+        "Type": "F32"
+      },
+      {
+        "Name": "v39",
+        "Type": "S32"
+      },
+      {
+        "Name": "v40",
+        "Type": "S32"
+      },
+      {
+        "Name": "v41",
+        "Type": "F32"
+      },
+      {
+        "Name": "v42",
+        "Type": "F32"
+      },
+      {
+        "Name": "v43",
+        "Type": "F32"
+      },
+      {
+        "Name": "v44",
+        "Type": "F32"
+      },
+      {
+        "Name": "v45",
+        "Type": "F32"
+      },
+      {
+        "Name": "v46",
+        "Type": "F32"
+      },
+      {
+        "Name": "v50",
+        "Type": "S32"
+      }
+    ]
+  },
+  "app.collision.GimmickDamageUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "app.collision.AttackUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.physics.ContinuousCapsuleShape": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      }
+    ]
+  },
+  "app.collision.AttackSignUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "app.collision.FillamentRemoveGimmickDamageUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.physics.RequestSetCollider": {
+    "FieldPatches": [
+      {
+        "Name": "v2",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "Object"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      }
+    ]
+  },
+  "app.collision.NoAimTargetDamageUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.physics.CapsuleShape": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.network.HttpClient": {
+    "FieldPatches": [
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.network.SessionSteam": {
+    "FieldPatches": [
+      {
+        "Name": "v6",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.motion.MotionFsm2": {
+    "FieldPatches": [
+      {
+        "Name": "v3",
+        "Type": "S32"
+      },
+      {
+        "Name": "v4",
+        "Type": "S32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v10",
+        "Type": "Object"
+      }
+    ]
+  },
+  "app.collision.WeaponAttackUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "app.collision.PressUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.physics.ContinuousSphereShape": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      }
+    ]
+  },
+  "via.physics.Terrain2dUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.motion.JointConstraints": {
+    "FieldPatches": [
+      {
+        "Name": "v3",
+        "Type": "Object"
+      }
+    ]
+  },
+  "via.effect.ExternParameter": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      },
+      {
+        "Name": "v2",
+        "Type": "F32"
+      },
+      {
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
         "Type": "S32"
       }
     ]
@@ -2613,18 +7507,10 @@
   "via.navigation.ObstacleFilterSet": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "v0_Attributes",
         "OriginalType": "via.navigation.AIMapAttributeResourceHolder",
         "Type": "Resource",
         "FileFormat": "AIMapAttribute"
-      },
-      {
-        "Name": "v1",
-        "Type": "S32"
-      },
-      {
-        "Name": "v2",
-        "Type": "Object"
       }
     ]
   },
@@ -2632,11 +7518,13 @@
     "FieldPatches": [
       {
         "Name": "_VoxelResource",
-        "Type": "Resource"
+        "Type": "Resource",
+        "FileFormat": "SoundVoxel"
       },
       {
         "Name": "_LQGResource",
-        "Type": "Resource"
+        "Type": "Resource",
+        "FileFormat": "SoundStreamingLQG"
       }
     ]
   },
@@ -2751,18 +7639,30 @@
       }
     ]
   },
-  "via.motion.IkJacobian.Effector": {
-    "FieldPatches": [
-      {
-        "Name": "v1",
-        "Type": "S32"
-      }
-    ]
-  },
   "via.AnimationCurve3D": {
     "FieldPatches": [
       {
-        "Name": "v0",
+        "Name": "v3",
+        "Type": "F32"
+      },
+      {
+        "Name": "v4",
+        "Type": "F32"
+      },
+      {
+        "Name": "v5",
+        "Type": "S32"
+      },
+      {
+        "Name": "v6",
+        "Type": "F32"
+      },
+      {
+        "Name": "v7",
+        "Type": "S32"
+      },
+      {
+        "Name": "v8",
         "Type": "S32"
       }
     ]
@@ -2787,11 +7687,35 @@
       }
     ]
   },
-  "app.collision.PressUserData": {
+  "app.collision.TouchUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
+  },
+  "app.collision.EnemyDamageUserData": {
     "FieldPatches": [
       {
         "Name": "v1",
         "Type": "S32"
+      }
+    ]
+  },
+  "app.collision.PlayerDamageUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "S32"
+      }
+    ]
+  },
+  "app.collision.PlayerAttackSignDamageUserData": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
       }
     ]
   },

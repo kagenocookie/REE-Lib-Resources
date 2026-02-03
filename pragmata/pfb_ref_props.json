@@ -1,0 +1,66 @@
+{
+  "app.HitDamageTrigger.HitDamageParam": {
+    "_TargetChildren": {
+      "PropertyId": 262154,
+      "AutoDetected": true
+    }
+  },
+  "app.EliminateDissolveObject": {
+    "_TargetRef": {
+      "PropertyId": 393217,
+      "AutoDetected": true
+    }
+  },
+  "app.sm75_034_10DissolveController": {
+    "_BeforeObjRef": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    },
+    "_AfterObjRef": {
+      "PropertyId": 393217,
+      "AutoDetected": true
+    }
+  },
+  "app.sm75_034_10MaterialController": {
+    "_TargetObjectRef": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    }
+  },
+  "app.HitPulseTrigger.HitPulseParam": {
+    "_TargetChildren": {
+      "PropertyId": 262149,
+      "AutoDetected": true
+    }
+  },
+  "app.EliminateDissolveEventHolder.Param": {
+    "_TargetRef": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
+  },
+  "app.gamesight.GameSightManagerBehavior": {
+    "_AnalysosLogObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.ThrowSightControllerV2": {
+    "_DotRefObjectRefs": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    }
+  },
+  "app.ThrowMarkerPositioner": {
+    "_MarkerObjects": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.RigidBodyObject": {
+    "_TargetObject": {
+      "PropertyId": 393221,
+      "AutoDetected": true
+    }
+  }
+}
