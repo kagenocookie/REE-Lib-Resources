@@ -1,7 +1,7 @@
 {
 	"file_extensions": {
 		"Uri": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/global/file_extensions.json",
-		"LastUpdatedAt": "2025-12-13T14:15:00Z"
+		"LastUpdatedAtUtc": "2026-02-14T20:34:00Z"
 	},
 	"resources": {
 		"dd2": {
@@ -31,12 +31,13 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"mhrise":{
-			"LastUpdatedAtUtc": "2025-10-19T03:43:00Z",
+			"LastUpdatedAtUtc": "2026-02-17T20:55:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhrise.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/MHR_STM_Release.list",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/mhrise/il2cpp_cache.json",
 			"CollisionDefinition": "natives/stm/physics/collisiondefinition.cdef.4"
 		},
 		"mhwilds":{
@@ -148,8 +149,17 @@
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/il2cpp_cache.json",
 			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/pfb_ref_props.json",
 			"EfxStructs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re8/efx_structs.json",
-			"CollisionDefinition": "collisionfilter/villagecollision.cdef.3",
-			"DynamicsDefinition": "collisionfilter/villagedynamics.def.6"
+			"CollisionDefinition": "natives/stm/collisionfilter/villagecollision.cdef.3",
+			"DynamicsDefinition": "natives/stm/collisionfilter/villagedynamics.def.6"
+		},
+		"re9":{
+			"LastUpdatedAtUtc": "2026-02-26T06:50:00Z",
+			"RszPatchFiles": [],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/RE9_STM.list",
+			"Il2cppCache": "",
+			"PfbRefs": "",
+			"CollisionDefinition": "natives/stm/config/physics/appcollisiondefinition.cdef.7",
+			"DynamicsDefinition": "natives/stm/config/dynamics/appdynamicsdefinition.def.6"
 		},
 		"sf6":{
 			"LastUpdatedAtUtc": "2025-10-25T00:00:00Z",
@@ -175,7 +185,14 @@
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/rsz_patch.json"
 			],
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/il2cpp_cache.json",
-			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/PS_STM_Demo.list"
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/PRAGMATA_DEMO_STM.list"
+		},
+		"mhsto3":{
+			"LastUpdatedAtUtc": "2026-02-14T20:34:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhst3.json"
+			],
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/MHST3_DEMO_STM.list"
 		}
 	}
 }
