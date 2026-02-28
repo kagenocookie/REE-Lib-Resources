@@ -153,11 +153,14 @@
 			"DynamicsDefinition": "natives/stm/collisionfilter/villagedynamics.def.6"
 		},
 		"re9":{
-			"LastUpdatedAtUtc": "2026-02-26T06:50:00Z",
-			"RszPatchFiles": [],
+			"LastUpdatedAtUtc": "2026-02-28T06:33:00Z",
+			"RszPatchFiles": [
+				"https://raw.githubusercontent.com/alphazolam/RE_RSZ/refs/heads/main/rszre9.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/rsz_patch.json"
+			],
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/RE9_STM.list",
-			"Il2cppCache": "",
-			"PfbRefs": "",
+			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/il2cpp_cache.json",
+			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/pfb_ref_props.json",
 			"CollisionDefinition": "natives/stm/config/physics/appcollisiondefinition.cdef.7",
 			"DynamicsDefinition": "natives/stm/config/dynamics/appdynamicsdefinition.def.6"
 		},

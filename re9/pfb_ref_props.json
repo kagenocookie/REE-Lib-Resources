@@ -1,0 +1,172 @@
+{
+  "app.GrappleFsmController": {
+    "OrderList": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.FPSShadowMontageChildObject": {
+    "_GameObjectRef": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    }
+  },
+  "app.ItemAttachmentController": {
+    "_RootMeshObjectRef": {
+      "PropertyId": 327691,
+      "AutoDetected": true
+    }
+  },
+  "app.It40_02_000MeshController": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_01_000DetailUpdater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_02_000DetailUpdater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.Arm0300MeshController": {
+    "v1": {
+      "PropertyId": 327685,
+      "AutoDetected": true
+    }
+  },
+  "app.Ds039Controller": {
+    "_TargetRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.Arm0400MeshController": {
+    "_TargetMeshRef": {
+      "PropertyId": 327685,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_01_003DetailUpdater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.FPSShadowCharmUnit": {
+    "_GameObjectRef": {
+      "PropertyId": 458752,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_01_002DetailUpdater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.It70_01_000MeshController": {
+    "_SmallMeshObjectRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    },
+    "_MediumMeshObjectRef": {
+      "PropertyId": 327683,
+      "AutoDetected": true
+    },
+    "_LargeMeshObjectRef": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    }
+  },
+  "app.Arm0350MeshController": {
+    "v1": {
+      "PropertyId": 327685,
+      "AutoDetected": true
+    }
+  },
+  "app.InteractTriggerProcessState": {
+    "_TargetObject": {
+      "PropertyId": 262145,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_00_005DetailUpdater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.DetailSearchCustomizeBGController": {
+    "_CubemapObjRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.Ds040Controller": {
+    "_TargetRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_00_001DetailUpdater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.InteractTriggerDetailSearch": {
+    "_TargetObjectRef": {
+      "PropertyId": 262149,
+      "AutoDetected": true
+    }
+  },
+  "app.It60_00_077ItemLayoutUpdater": {
+    "_It60_00_047TargetObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.It60_00_077ItemLayoutUpdater.It60_00_077InnerItemLayoutUpdater": {
+    "_It60_00_077TargetObjectRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.It60_00_077DetailSearchUpdater": {
+    "_TargetObjectRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.it60_00_073Updater": {
+    "_TargetRef": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    }
+  },
+  "app.It60_00_073ItemLayoutUpdater": {
+    "_It60_00_053TargetObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.It60_00_073ItemLayoutUpdater.It60_00_073InnerItemLayoutUpdater": {
+    "_It60_00_073TargetObjectRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_10_002Updater": {
+    "_MeshGameObject": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  }
+}
