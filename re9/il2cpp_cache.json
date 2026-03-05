@@ -64269,6 +64269,10 @@
         {
           "name": "PlayerEnterRetreatZone",
           "value": 7
+        },
+        {
+          "name": "NowhereToGo",
+          "value": 8
         }
       ]
     },
@@ -147323,6 +147327,9 @@
       "app.LevelFlowBehaviorTreeAction_FSM_UnlockQuestTabAction.UnlockQuestTabData",
       "app.LevelFlowBehaviorTreeAction_FSM_VibrationTriggerAction.VibrationTriggerData",
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction.WaitData",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction.WaitDifficultyData",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction.WaitDifficultyData.DifficultyTimerData",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction.WaitDifficultyData.WaitTimeData",
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction.WarpData",
       "app.LevelFlowBehaviorTreeAction_FSM_WorldMapSelectAction.WorldMapSelectData",
       "app.LevelFlowBlackboardUnit",
@@ -152768,6 +152775,7 @@
       "app.LevelFlowBehaviorTreeAction_FSM_UnlockQuestTabAction",
       "app.LevelFlowBehaviorTreeAction_FSM_VibrationTriggerAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WorldMapSelectAction",
       "app.MotionZMoveAdjuster",
@@ -157096,6 +157104,7 @@
       "app.Cp_B800LimitedEnterGateBurn",
       "app.Cp_B800ManagerActivateKey",
       "app.Cp_B800MoveDuctSignSound",
+      "app.Cp_B800OutOfAreaDriver",
       "app.Cp_B800ProvSoundContainer",
       "app.Cp_B800RetreatZone",
       "app.Cp_B800RoomZone",
@@ -158213,6 +158222,7 @@
       "app.LevelFlowBehaviorTreeAction_FSM_UnlockQuestTabAction.LevelFlowUnlockQuestTabActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_VibrationTriggerAction.LevelFlowVibrationTriggerActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction.LevelFlowWaitActionParam",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction.LevelFlowWaitDifficultyActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction.LevelFlowWarpActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_WorldMapSelectAction.LevelFlowWorldMapSelectActionParam",
       "app.LevelFlowCatalog",
@@ -166565,6 +166575,7 @@
       "app.LevelFlowBehaviorTreeAction_FSM_UnlockQuestTabAction",
       "app.LevelFlowBehaviorTreeAction_FSM_VibrationTriggerAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WorldMapSelectAction",
       "app.MotionZMoveAdjuster",
@@ -167206,6 +167217,7 @@
       "app.LevelFlowBehaviorTreeAction_FSM_UnlockQuestTabAction.LevelFlowUnlockQuestTabActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_VibrationTriggerAction.LevelFlowVibrationTriggerActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction.LevelFlowWaitActionParam",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction.LevelFlowWaitDifficultyActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction.LevelFlowWarpActionParam",
       "app.LevelFlowBehaviorTreeAction_FSM_WorldMapSelectAction.LevelFlowWorldMapSelectActionParam",
       "app.LevelFlowManagedObject",
@@ -172892,6 +172904,7 @@
       "app.Cp_B600InteractHandlingDriver",
       "app.Cp_B600SeverTongueDriver",
       "app.Cp_B600SoundDriver",
+      "app.Cp_B800OutOfAreaDriver",
       "app.Cp_C100ActionDriver",
       "app.Cp_C100EvaluateNarrowAreaDriver",
       "app.Cp_C100FacialAnimationDriver",
@@ -176991,6 +177004,10 @@
     ],
     "app.Cg_B800CommonBlackboardUnitBase.CoreBase\u00601\u003Capp.Cp_B800OrderBlackboardUnit\u003E": [
       "app.Cp_B800OrderBlackboardUnit.Core"
+    ],
+    "app.CharacterOutOfAreaDriver": [
+      "app.CharacterOutOfAreaDriver",
+      "app.Cp_B800OutOfAreaDriver"
     ],
     "app.Cp_B800PhaseParam\u00601\u003CSystem.Single\u003E": [
       "app.Cp_B800PhaseParam\u00601\u003CSystem.Single\u003E",
@@ -184252,6 +184269,7 @@
       "app.LevelFlowBehaviorTreeAction_FSM_UnlockQuestTabAction",
       "app.LevelFlowBehaviorTreeAction_FSM_VibrationTriggerAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WorldMapSelectAction",
       "app.dev.LevelFlowBehaviorTreeAction_FSM_DevelopProvSoundAction",
@@ -184485,6 +184503,7 @@
       "app.LevelFlowBehaviorTreeAction_FSM_UnlockQuestTabAction",
       "app.LevelFlowBehaviorTreeAction_FSM_VibrationTriggerAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction",
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction",
       "app.LevelFlowBehaviorTreeAction_FSM_WorldMapSelectAction",
       "app.dev.LevelFlowBehaviorTreeAction_FSM_DevelopProvSoundAction",
@@ -185226,6 +185245,9 @@
     ],
     "app.LevelFlowCommandParamBase\u00601\u003Capp.LevelFlowBehaviorTreeAction_FSM_WaitAction.WaitData\u003E": [
       "app.LevelFlowBehaviorTreeAction_FSM_WaitAction.LevelFlowWaitActionParam"
+    ],
+    "app.LevelFlowCommandParamBase\u00601\u003Capp.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction.WaitDifficultyData\u003E": [
+      "app.LevelFlowBehaviorTreeAction_FSM_WaitDifficultyAction.LevelFlowWaitDifficultyActionParam"
     ],
     "app.LevelFlowCommandParamBase\u00601\u003Capp.LevelFlowBehaviorTreeAction_FSM_WarpAction.WarpData\u003E": [
       "app.LevelFlowBehaviorTreeAction_FSM_WarpAction.LevelFlowWarpActionParam"
