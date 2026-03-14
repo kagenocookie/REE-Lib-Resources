@@ -41,7 +41,7 @@
 			"CollisionDefinition": "natives/stm/physics/collisiondefinition.cdef.4"
 		},
 		"mhwilds":{
-			"LastUpdatedAtUtc": "2025-10-05T00:00:00Z",
+			"LastUpdatedAtUtc": "2026-03-13T13:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhwilds.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
@@ -153,7 +153,7 @@
 			"DynamicsDefinition": "natives/stm/collisionfilter/villagedynamics.def.6"
 		},
 		"re9":{
-			"LastUpdatedAtUtc": "2026-03-06T23:09:00Z",
+			"LastUpdatedAtUtc": "2026-03-13T23:09:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre9.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/rsz_patch.json"
@@ -175,14 +175,14 @@
 			"DynamicsDefinition": "natives/stm/product/dynamicssys/definition/dynamicsdefinition.def.6"
 		},
 		"oni2":{
-			"LastUpdatedAtUtc": "2025-12-13T16:30:00Z",
+			"LastUpdatedAtUtc": "2026-03-13T23:09:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszo2.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/O2_STM.list"
 		},
 		"pragmata":{
-			"LastUpdatedAtUtc": "2026-02-03T16:55:00Z",
+			"LastUpdatedAtUtc": "2026-03-13T23:09:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszpragmata.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/rsz_patch.json"
