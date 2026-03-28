@@ -153,7 +153,7 @@
 			"DynamicsDefinition": "natives/stm/collisionfilter/villagedynamics.def.6"
 		},
 		"re9":{
-			"LastUpdatedAtUtc": "2026-03-13T23:09:00Z",
+			"LastUpdatedAtUtc": "2026-03-27T17:30:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre9.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/rsz_patch.json"
