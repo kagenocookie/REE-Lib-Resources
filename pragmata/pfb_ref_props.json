@@ -1,4 +1,16 @@
 {
+  "app.DisplayHologramBehavior.HologramTargetGameObject": {
+    "_GameObject": {
+      "PropertyId": 196608,
+      "AutoDetected": true
+    }
+  },
+  "app.DisplayHologramBehavior": {
+    "_HologramColorControlTargets": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
   "app.HitDamageTrigger.HitDamageParam": {
     "_TargetChildren": {
       "PropertyId": 262154,
@@ -39,12 +51,6 @@
       "AutoDetected": true
     }
   },
-  "app.gamesight.GameSightManagerBehavior": {
-    "_AnalysosLogObjectRef": {
-      "PropertyId": 327681,
-      "AutoDetected": true
-    }
-  },
   "app.ThrowSightControllerV2": {
     "_DotRefObjectRefs": {
       "PropertyId": 393216,
@@ -59,7 +65,135 @@
   },
   "app.RigidBodyObject": {
     "_TargetObject": {
-      "PropertyId": 393221,
+      "PropertyId": 393220,
+      "AutoDetected": true
+    }
+  },
+  "app.EnemyDeadBodyStampBehavior": {
+    "_BodyObjRef": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.EnemyDeadBodyStampBehavior.PartsParam": {
+    "_Target": {
+      "PropertyId": 131072,
+      "AutoDetected": true
+    }
+  },
+  "app.HairPrefabInstantiateRequester": {
+    "_BindTargetObjectRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.DemoClipBehavior": {
+    "_EventEffectManagerParent": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    },
+    "_MaterialControllerParent": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.sm73_006HologramMotionController": {
+    "_HologramObjRef": {
+      "PropertyId": 393220,
+      "AutoDetected": true
+    }
+  },
+  "app.gamesight.GameSightManagerBehavior": {
+    "_AnalysosLogObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.sm75_183_10PropObjectBehavior": {
+    "_LightObject": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    }
+  },
+  "app.sm90_122_00PropObjectBehavior": {
+    "_RigidBodyMeshObject": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    },
+    "_ShadowCylinderMeshObject01": {
+      "PropertyId": 393217,
+      "AutoDetected": true
+    }
+  },
+  "app.NpcActorControl_Ch07200": {
+    "_BagObjectRef": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
+  },
+  "app.sm72_055_10": {
+    "_ItemObjRef": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    }
+  },
+  "app.LightAnimator": {
+    "_MeshMaterialAnimationTargetObjects": {
+      "PropertyId": 327708,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch14600DirectionObjectData": {
+    "_GameObjectRef": {
+      "PropertyId": 196609,
+      "AutoDetected": true
+    }
+  },
+  "app.RingDestructionElevatorPartsController": {
+    "_TargetParts": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.ElevatorPartsDestructionController": {
+    "_BeforeObjectRef": {
+      "PropertyId": 327683,
+      "AutoDetected": true
+    },
+    "_AfterObjectRef": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    },
+    "_PartiallyBrokenObjectRef": {
+      "PropertyId": 327686,
+      "AutoDetected": true
+    }
+  },
+  "app.sm90_136_00PropObjectBehavior": {
+    "elevatorPartsDirectionRefs": {
+      "PropertyId": 393216,
+      "AutoDetected": true
+    }
+  },
+  "app.ElevatorPartsDirection": {
+    "_BeforeObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    },
+    "_AfterObjectRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.sm72_046_10CaseControlObject": {
+    "_CaseObjects": {
+      "PropertyId": 393217,
+      "AutoDetected": true
+    }
+  },
+  "app.sm72_046_10CaseController": {
+    "_SuitObjectRef": {
+      "PropertyId": 327681,
       "AutoDetected": true
     }
   }

@@ -2805,12 +2805,24 @@
           "value": 0
         },
         {
-          "name": "Active",
+          "name": "Open",
           "value": 1
         },
         {
-          "name": "End",
+          "name": "Active",
           "value": 2
+        },
+        {
+          "name": "Close",
+          "value": 3
+        },
+        {
+          "name": "CloseWait",
+          "value": 4
+        },
+        {
+          "name": "End",
+          "value": 5
         }
       ]
     },
@@ -3663,11 +3675,11 @@
           "value": 2
         },
         {
-          "name": "EndTakeOutEarthWait",
+          "name": "InteractFadeWait",
           "value": 3
         },
         {
-          "name": "RequestOpenMainMenu",
+          "name": "EndTakeOutEarthWait",
           "value": 4
         },
         {
@@ -3862,28 +3874,32 @@
           "value": 12
         },
         {
-          "name": "Mission",
+          "name": "PurchaseDemoRequestWait",
           "value": 13
         },
         {
-          "name": "MissionConfirm",
+          "name": "Mission",
           "value": 14
         },
         {
-          "name": "MissionTutorial_Shop",
+          "name": "MissionConfirm",
           "value": 15
         },
         {
-          "name": "MissionTutorial_Mission",
+          "name": "MissionTutorial_Shop",
           "value": 16
         },
         {
-          "name": "MissionTutorial_Exchange",
+          "name": "MissionTutorial_Mission",
           "value": 17
         },
         {
-          "name": "MissionTutorial_MusicChange",
+          "name": "MissionTutorial_Exchange",
           "value": 18
+        },
+        {
+          "name": "MissionTutorial_MusicChange",
+          "value": 19
         }
       ]
     },
@@ -4039,31 +4055,6 @@
         {
           "name": "Danger",
           "value": 2
-        }
-      ]
-    },
-    "app.Ch14300LaserManager.InnerState": {
-      "BackingType": "System.Int32",
-      "Items": [
-        {
-          "name": "Initial",
-          "value": 0
-        },
-        {
-          "name": "Standby",
-          "value": 1
-        },
-        {
-          "name": "Start",
-          "value": 2
-        },
-        {
-          "name": "TerrainCheck",
-          "value": 3
-        },
-        {
-          "name": "Close",
-          "value": 4
         }
       ]
     },
@@ -4410,6 +4401,23 @@
         }
       ]
     },
+    "app.Ch16200ShieldManager.HitResult": {
+      "BackingType": "System.Int32",
+      "Items": [
+        {
+          "name": "None",
+          "value": 0
+        },
+        {
+          "name": "Normal",
+          "value": 1
+        },
+        {
+          "name": "Weak",
+          "value": 2
+        }
+      ]
+    },
     "app.Ch16200ShieldManager.RigidBodyRoutine": {
       "BackingType": "System.Int32",
       "Items": [
@@ -4641,36 +4649,44 @@
         }
       ]
     },
-    "app.Ch17200CureBitController.ch172000Phase": {
+    "app.Ch17200CureBitController.Phase": {
       "BackingType": "System.Int32",
       "Items": [
         {
-          "name": "Move",
+          "name": "None",
           "value": 0
         },
         {
-          "name": "ClingStart",
+          "name": "Find",
           "value": 1
         },
         {
-          "name": "ChargeCure",
+          "name": "Move",
           "value": 2
         },
         {
-          "name": "CureTarget",
+          "name": "ClingStart",
           "value": 3
         },
         {
-          "name": "EndCure",
+          "name": "ChargeCure",
           "value": 4
         },
         {
-          "name": "ClingEnd",
+          "name": "BigCure",
           "value": 5
         },
         {
-          "name": "ChargeConfuse",
+          "name": "EndCure",
           "value": 6
+        },
+        {
+          "name": "ClingEnd",
+          "value": 7
+        },
+        {
+          "name": "Confuse",
+          "value": 8
         }
       ]
     },
@@ -5199,31 +5215,6 @@
         {
           "name": "ParentArea",
           "value": 2
-        }
-      ]
-    },
-    "app.CharacterHeadParts.EmotionType": {
-      "BackingType": "System.Int32",
-      "Items": [
-        {
-          "name": "Normal",
-          "value": 0
-        },
-        {
-          "name": "Laugh",
-          "value": 1
-        },
-        {
-          "name": "Angry",
-          "value": 2
-        },
-        {
-          "name": "Weak",
-          "value": 3
-        },
-        {
-          "name": "Dying",
-          "value": 4
         }
       ]
     },
@@ -6967,6 +6958,39 @@
         }
       ]
     },
+    "app.ElevatorPartsDestructionController.AxisDirection": {
+      "BackingType": "System.UInt32",
+      "Items": [
+        {
+          "name": "Undef",
+          "value": 0
+        },
+        {
+          "name": "X",
+          "value": 1
+        },
+        {
+          "name": "Y",
+          "value": 2
+        },
+        {
+          "name": "Z",
+          "value": 3
+        },
+        {
+          "name": "NX",
+          "value": 5
+        },
+        {
+          "name": "NY",
+          "value": 6
+        },
+        {
+          "name": "NZ",
+          "value": 7
+        }
+      ]
+    },
     "app.EliminateDissolveController.InitAfterAction": {
       "BackingType": "System.Int32",
       "Items": [
@@ -6998,6 +7022,10 @@
         {
           "name": "Dead",
           "value": 2
+        },
+        {
+          "name": "GameOver",
+          "value": 3
         }
       ]
     },
@@ -7195,6 +7223,27 @@
         {
           "name": "InFatalBreak",
           "value": 1
+        },
+        {
+          "name": "EndFatalBreak",
+          "value": 2
+        }
+      ]
+    },
+    "app.EnemyFatalBreakManager.RequestState": {
+      "BackingType": "System.Int32",
+      "Items": [
+        {
+          "name": "None",
+          "value": 0
+        },
+        {
+          "name": "RequestFatalBreak",
+          "value": 1
+        },
+        {
+          "name": "AcceptFatalBreak",
+          "value": 2
         }
       ]
     },
@@ -9597,6 +9646,10 @@
         {
           "name": "ST7BossEventFB",
           "value": 32
+        },
+        {
+          "name": "ST1BossOverDriveUnlock",
+          "value": 64
         }
       ]
     },
@@ -13125,28 +13178,6 @@
         }
       ]
     },
-    "app.MotionFsmAction_WeaponUpdateJointConstraint.ExecutePhase": {
-      "IsFlags": true,
-      "BackingType": "System.UInt32",
-      "Items": [
-        {
-          "name": "None",
-          "value": 0
-        },
-        {
-          "name": "Start",
-          "value": 1
-        },
-        {
-          "name": "Update",
-          "value": 2
-        },
-        {
-          "name": "End",
-          "value": 4
-        }
-      ]
-    },
     "app.MotionMoveFactorController.Kind": {
       "BackingType": "System.Int32",
       "Items": [
@@ -13706,6 +13737,43 @@
         }
       ]
     },
+    "app.OccupyFlowSettings.Phase": {
+      "BackingType": "System.Int32",
+      "Items": [
+        {
+          "name": "Invalid",
+          "value": -1
+        },
+        {
+          "name": "Wait",
+          "value": 0
+        },
+        {
+          "name": "PreOccupy",
+          "value": 1
+        },
+        {
+          "name": "Occupy",
+          "value": 2
+        },
+        {
+          "name": "WaitOccupy",
+          "value": 3
+        },
+        {
+          "name": "EndOccupy",
+          "value": 4
+        },
+        {
+          "name": "TriggerKeyOn",
+          "value": 5
+        },
+        {
+          "name": "End",
+          "value": 6
+        }
+      ]
+    },
     "app.OccupyLockType": {
       "BackingType": "System.Int32",
       "Items": [
@@ -13777,7 +13845,7 @@
         },
         {
           "name": "Gimmick_Low",
-          "value": 16777247
+          "value": 16777503
         },
         {
           "name": "Damage",
@@ -13810,6 +13878,10 @@
         {
           "name": "Grapple_Low",
           "value": 33554447
+        },
+        {
+          "name": "GameOver",
+          "value": 67
         }
       ]
     },
@@ -13852,6 +13924,10 @@
         {
           "name": "InGameMenu",
           "value": 128
+        },
+        {
+          "name": "GameOver",
+          "value": 256
         },
         {
           "name": "Dummy_00",
@@ -15967,20 +16043,24 @@
           "value": 4
         },
         {
-          "name": "ExecWarp",
+          "name": "ReturnBasementWait",
           "value": 5
         },
         {
-          "name": "End",
+          "name": "ExecWarp",
           "value": 6
         },
         {
-          "name": "WaitEnd",
+          "name": "End",
           "value": 7
         },
         {
-          "name": "UnOccupy",
+          "name": "WaitEnd",
           "value": 8
+        },
+        {
+          "name": "UnOccupy",
+          "value": 9
         }
       ]
     },
@@ -16973,44 +17053,48 @@
       "BackingType": "System.Int32",
       "Items": [
         {
-          "name": "WaitGuiTitle",
+          "name": "ExtraContentsActivate",
           "value": 0
         },
         {
-          "name": "PauseStart",
+          "name": "WaitGuiTitle",
           "value": 1
         },
         {
-          "name": "FadeOut",
+          "name": "PauseStart",
           "value": 2
         },
         {
-          "name": "Setup",
+          "name": "FadeOut",
           "value": 3
         },
         {
-          "name": "ActivateTitle",
+          "name": "Setup",
           "value": 4
         },
         {
-          "name": "PauseEnd",
+          "name": "ActivateTitle",
           "value": 5
         },
         {
-          "name": "FadeIn",
+          "name": "PauseEnd",
           "value": 6
         },
         {
-          "name": "TitleMenu",
+          "name": "FadeIn",
           "value": 7
         },
         {
-          "name": "TitleMenuClose",
+          "name": "TitleMenu",
           "value": 8
         },
         {
-          "name": "AllInstallWaitPopup",
+          "name": "TitleMenuClose",
           "value": 9
+        },
+        {
+          "name": "AllInstallWaitPopup",
+          "value": 10
         },
         {
           "name": "Invalid",
@@ -17682,12 +17766,20 @@
           "value": 13
         },
         {
-          "name": "AutoSaveNotice",
+          "name": "DLCActivateStart",
           "value": 14
         },
         {
-          "name": "End",
+          "name": "UpdateApplicationNotice",
           "value": 15
+        },
+        {
+          "name": "AutoSaveNotice",
+          "value": 16
+        },
+        {
+          "name": "End",
+          "value": 17
         },
         {
           "name": "Invalid",
@@ -17849,28 +17941,32 @@
           "value": 4
         },
         {
-          "name": "Weapon",
+          "name": "BGM_Contents0004",
           "value": 5
         },
         {
-          "name": "Ch01000",
+          "name": "Weapon",
           "value": 6
         },
         {
-          "name": "Ch05000",
+          "name": "Ch01000",
           "value": 7
         },
         {
-          "name": "SfxDucker",
+          "name": "Ch05000",
           "value": 8
         },
         {
-          "name": "Gui",
+          "name": "SfxDucker",
           "value": 9
         },
         {
-          "name": "Portal",
+          "name": "Gui",
           "value": 10
+        },
+        {
+          "name": "Portal",
+          "value": 11
         }
       ]
     },
@@ -17908,23 +18004,6 @@
         },
         {
           "name": "Abnormal",
-          "value": 2
-        }
-      ]
-    },
-    "app.WwiseManagerApp.VoiceType": {
-      "BackingType": "System.Int32",
-      "Items": [
-        {
-          "name": "None",
-          "value": 0
-        },
-        {
-          "name": "Conv",
-          "value": 1
-        },
-        {
-          "name": "EffortVoice",
           "value": 2
         }
       ]
@@ -17969,35 +18048,6 @@
         {
           "name": "TITLE",
           "value": 0
-        },
-        {
-          "name": "THANK_YOU_FOR_PLAYING",
-          "value": 1
-        }
-      ]
-    },
-    "app.analysislog.entity.TrialProgressType": {
-      "BackingType": "System.Int32",
-      "Items": [
-        {
-          "name": "None",
-          "value": 0
-        },
-        {
-          "name": "EnterST1",
-          "value": 1
-        },
-        {
-          "name": "UnlockDoor",
-          "value": 2
-        },
-        {
-          "name": "RideElevator",
-          "value": 3
-        },
-        {
-          "name": "ClearTrial",
-          "value": 4
         }
       ]
     },
@@ -18859,6 +18909,10 @@
         {
           "name": "EnableRun",
           "value": 4
+        },
+        {
+          "name": "AroundWait",
+          "value": 8
         }
       ]
     },
@@ -19215,7 +19269,7 @@
           "value": 3
         },
         {
-          "name": "Jack",
+          "name": "Grapple",
           "value": 4
         },
         {
@@ -20523,6 +20577,10 @@
           "value": 64
         },
         {
+          "name": "Escape",
+          "value": 128
+        },
+        {
           "name": "Damage",
           "value": 1024
         },
@@ -21755,6 +21813,10 @@
         {
           "name": "DisableGuardPress",
           "value": 17179869184
+        },
+        {
+          "name": "DeadFilamentBombInvocating",
+          "value": 34359738368
         }
       ]
     },
@@ -22609,6 +22671,10 @@
         {
           "name": "LaunchRecoveryShell04",
           "value": 262144
+        },
+        {
+          "name": "DeadArmFix",
+          "value": 524288
         }
       ]
     },
@@ -24254,6 +24320,10 @@
           "value": 2048
         },
         {
+          "name": "ST4LevelNotification",
+          "value": 4096
+        },
+        {
           "name": "DFFireShell",
           "value": 1048576
         }
@@ -25063,6 +25133,10 @@
         {
           "name": "Rush",
           "value": 64
+        },
+        {
+          "name": "DownLoop",
+          "value": 128
         },
         {
           "name": "Damage",
@@ -26319,6 +26393,14 @@
         {
           "name": "AddGrappleDamageToPlayer",
           "value": 4096
+        },
+        {
+          "name": "CorrectWp8700Wince",
+          "value": 8192
+        },
+        {
+          "name": "CanForceStopGrappleForDamage",
+          "value": 16384
         }
       ]
     },
@@ -28176,48 +28258,52 @@
           "value": 1
         },
         {
-          "name": "SlotList",
+          "name": "InWait",
           "value": 2
         },
         {
-          "name": "OverwriteConfirm",
+          "name": "SlotList",
           "value": 3
         },
         {
-          "name": "SaveCancelConfirm",
+          "name": "OverwriteConfirm",
           "value": 4
         },
         {
-          "name": "LoadConfirm",
+          "name": "SaveCancelConfirm",
           "value": 5
         },
         {
-          "name": "SaveCompleteNotice",
+          "name": "LoadConfirm",
           "value": 6
         },
         {
-          "name": "Save",
+          "name": "SaveCompleteNotice",
           "value": 7
         },
         {
-          "name": "SaveWait",
+          "name": "Save",
           "value": 8
         },
         {
-          "name": "Load",
+          "name": "SaveWait",
           "value": 9
         },
         {
-          "name": "Cancel",
+          "name": "Load",
           "value": 10
         },
         {
-          "name": "FadeWait",
+          "name": "Cancel",
           "value": 11
         },
         {
-          "name": "Close",
+          "name": "FadeWait",
           "value": 12
+        },
+        {
+          "name": "Close",
+          "value": 13
         }
       ]
     },
@@ -28986,32 +29072,36 @@
           "value": 2
         },
         {
-          "name": "KeySelect",
+          "name": "PreKeySelect",
           "value": 3
         },
         {
-          "name": "ResetConfirm",
+          "name": "KeySelect",
           "value": 4
         },
         {
-          "name": "ConflictConfirm",
+          "name": "ResetConfirm",
           "value": 5
         },
         {
-          "name": "EmptyConfirm",
+          "name": "ConflictConfirm",
           "value": 6
         },
         {
-          "name": "Apply",
+          "name": "EmptyConfirm",
           "value": 7
         },
         {
-          "name": "WaitSave",
+          "name": "Apply",
           "value": 8
         },
         {
-          "name": "Close",
+          "name": "WaitSave",
           "value": 9
+        },
+        {
+          "name": "Close",
+          "value": 10
         }
       ]
     },
@@ -29235,6 +29325,10 @@
         {
           "name": "Idle",
           "value": 18
+        },
+        {
+          "name": "Invisible",
+          "value": 19
         }
       ]
     },
@@ -30039,6 +30133,10 @@
         {
           "name": "UnlockDeathBlow",
           "value": 128
+        },
+        {
+          "name": "SuccessOverDrive",
+          "value": 256
         }
       ]
     },
@@ -31765,16 +31863,20 @@
           "value": 14
         },
         {
-          "name": "PlatformRewardWait",
+          "name": "PlatformRewardOpen",
           "value": 15
         },
         {
-          "name": "PlatformRewardResultWait",
+          "name": "PlatformRewardWait",
           "value": 16
         },
         {
-          "name": "PlatformRewordTutorial",
+          "name": "PlatformRewardResultWait",
           "value": 17
+        },
+        {
+          "name": "PlatformRewordTutorial",
+          "value": 18
         }
       ]
     },
@@ -32896,28 +32998,32 @@
           "value": 14
         },
         {
-          "name": "WeaponDemoPlay",
+          "name": "WeaponDemoStopConciergeWait",
           "value": 15
         },
         {
-          "name": "FirstGet",
+          "name": "WeaponDemoPlay",
           "value": 16
         },
         {
-          "name": "DemoFadeOut",
+          "name": "FirstGet",
           "value": 17
         },
         {
-          "name": "DemoPlay",
+          "name": "DemoFadeOut",
           "value": 18
         },
         {
-          "name": "RewardTutorial",
+          "name": "DemoPlay",
           "value": 19
         },
         {
-          "name": "Close",
+          "name": "RewardTutorial",
           "value": 20
+        },
+        {
+          "name": "Close",
+          "value": 21
         }
       ]
     },
@@ -33555,8 +33661,16 @@
           "value": 6
         },
         {
-          "name": "FADE_OUT",
+          "name": "WAIT_INPUT",
           "value": 7
+        },
+        {
+          "name": "ALLOW_INPUT",
+          "value": 8
+        },
+        {
+          "name": "FADE_OUT",
+          "value": 9
         }
       ]
     },
@@ -36205,6 +36319,10 @@
           "value": 1024
         },
         {
+          "name": "StartJustDodgeSlowMode",
+          "value": 4096
+        },
+        {
           "name": "ShotTargetHackingApplyFirst",
           "value": 1048576
         },
@@ -37058,6 +37176,26 @@
         {
           "name": "SolidAngleCullingThreshold",
           "value": 6
+        },
+        {
+          "name": "UseShadowMapFallBack",
+          "value": 7
+        },
+        {
+          "name": "ShadowMapFallBackDistance",
+          "value": 8
+        },
+        {
+          "name": "ShadowMapFallBackBlendDistance",
+          "value": 9
+        },
+        {
+          "name": "TransparentMultiplier",
+          "value": 10
+        },
+        {
+          "name": "FrustumFarPlane",
+          "value": 11
         }
       ]
     },
@@ -37096,6 +37234,26 @@
         {
           "name": "SolidAngleCullingThreshold",
           "value": 64
+        },
+        {
+          "name": "UseShadowMapFallBack",
+          "value": 128
+        },
+        {
+          "name": "ShadowMapFallBackDistance",
+          "value": 256
+        },
+        {
+          "name": "ShadowMapFallBackBlendDistance",
+          "value": 512
+        },
+        {
+          "name": "TransparentMultiplier",
+          "value": 1024
+        },
+        {
+          "name": "FrustumFarPlane",
+          "value": 2048
         }
       ]
     },
@@ -37352,20 +37510,16 @@
           "value": 6
         },
         {
-          "name": "ShadowQuality",
+          "name": "FogCullingDistance",
           "value": 7
         },
         {
-          "name": "FogCullingDistance",
+          "name": "Rejection",
           "value": 8
         },
         {
-          "name": "Rejection",
-          "value": 9
-        },
-        {
           "name": "LeakBias",
-          "value": 10
+          "value": 9
         }
       ]
     },
@@ -37406,20 +37560,16 @@
           "value": 64
         },
         {
-          "name": "ShadowQuality",
+          "name": "FogCullingDistance",
           "value": 128
         },
         {
-          "name": "FogCullingDistance",
+          "name": "Rejection",
           "value": 256
         },
         {
-          "name": "Rejection",
-          "value": 512
-        },
-        {
           "name": "LeakBias",
-          "value": 1024
+          "value": 512
         }
       ]
     },
@@ -38597,23 +38747,6 @@
         {
           "name": "Finish",
           "value": 3
-        }
-      ]
-    },
-    "app.sm75_031_10PropDriver.Phase": {
-      "BackingType": "System.Int32",
-      "Items": [
-        {
-          "name": "None",
-          "value": 0
-        },
-        {
-          "name": "Sign",
-          "value": 1
-        },
-        {
-          "name": "Laser",
-          "value": 2
         }
       ]
     },
@@ -62103,6 +62236,18 @@
         {
           "name": "GetAllPlayersDifferent",
           "value": 381
+        },
+        {
+          "name": "RegistHandleValueCycled",
+          "value": 387
+        },
+        {
+          "name": "RegistHandleValueDuplicate",
+          "value": 388
+        },
+        {
+          "name": "RegistHandleValueLimit",
+          "value": 389
         }
       ]
     },
@@ -90053,8 +90198,12 @@
           "value": 6
         },
         {
-          "name": "Max",
+          "name": "Precise",
           "value": 7
+        },
+        {
+          "name": "Max",
+          "value": 8
         }
       ]
     },
@@ -96693,6 +96842,10 @@
         {
           "name": "AlphaMask",
           "value": 64
+        },
+        {
+          "name": "GBuffer",
+          "value": 128
         }
       ]
     },
@@ -98823,31 +98976,35 @@
       ]
     },
     "via.render.OutputTargetOptionType": {
-      "BackingType": "System.Int32",
+      "BackingType": "System.UInt32",
       "Items": [
         {
           "name": "None",
           "value": 0
         },
         {
-          "name": "DLSS",
-          "value": 1
+          "name": "MaskFG",
+          "value": 7
         },
         {
           "name": "DLSSFG",
-          "value": 2
+          "value": 1
         },
         {
           "name": "FSR3FG",
+          "value": 2
+        },
+        {
+          "name": "BaseOptionalShift",
           "value": 3
         },
         {
-          "name": "XeSSFG",
-          "value": 4
+          "name": "BaseOptionalMask",
+          "value": 4294967288
         },
         {
-          "name": "Num",
-          "value": 5
+          "name": "DLSS",
+          "value": 8
         }
       ]
     },
@@ -105760,64 +105917,68 @@
           "value": 6
         },
         {
-          "name": "DynamicProbeGIProbe",
+          "name": "EarlyGIPointCloud",
           "value": 7
         },
         {
-          "name": "VolumetricParticle",
+          "name": "DynamicProbeGIProbe",
           "value": 8
         },
         {
-          "name": "VolumetricParticleDraw",
+          "name": "VolumetricParticle",
           "value": 9
         },
         {
-          "name": "VolumetricFogUpdateCustomMaterial",
+          "name": "VolumetricParticleDraw",
           "value": 10
         },
         {
-          "name": "IndirectIlluminationWait",
+          "name": "VolumetricFogUpdateCustomMaterial",
           "value": 11
         },
         {
-          "name": "VolumetricFogSimulate",
+          "name": "IndirectIlluminationWait",
           "value": 12
         },
         {
-          "name": "FogIsAvailable",
+          "name": "VolumetricFogSimulate",
           "value": 13
         },
         {
-          "name": "PrepareEffectVertexLighting",
+          "name": "FogIsAvailable",
           "value": 14
         },
         {
-          "name": "EffectVertexLighting",
+          "name": "PrepareEffectVertexLighting",
           "value": 15
         },
         {
-          "name": "Cloudscape",
+          "name": "EffectVertexLighting",
           "value": 16
         },
         {
-          "name": "DynamicProbeGI",
+          "name": "Cloudscape",
           "value": 17
         },
         {
-          "name": "DefaultGIPointCloud",
+          "name": "DynamicProbeGI",
           "value": 18
         },
         {
-          "name": "EffectIndependentVolume",
+          "name": "DefaultGIPointCloud",
           "value": 19
         },
         {
-          "name": "EffectIndependentVolumeDraw",
+          "name": "EffectIndependentVolume",
           "value": 20
         },
         {
-          "name": "EffectIndependentVolumeDispatch",
+          "name": "EffectIndependentVolumeDraw",
           "value": 21
+        },
+        {
+          "name": "EffectIndependentVolumeDispatch",
+          "value": 22
         }
       ]
     },
@@ -106393,20 +106554,16 @@
           "value": 3
         },
         {
-          "name": "EarlyGIPointCloud",
+          "name": "DPGIProbe",
           "value": 4
         },
         {
-          "name": "DPGIProbe",
+          "name": "IndirectIllumination",
           "value": 5
         },
         {
-          "name": "IndirectIllumination",
-          "value": 6
-        },
-        {
           "name": "SDFShadow",
-          "value": 7
+          "value": 6
         }
       ]
     },
@@ -106431,12 +106588,16 @@
       "BackingType": "System.Int32",
       "Items": [
         {
-          "name": "OutdoorProbeUpdateAsyncBegin",
+          "name": "EarlyGIPointCloud",
           "value": 1
         },
         {
-          "name": "OutdoorProbeUpdateAsyncEnd",
+          "name": "OutdoorProbeUpdateAsyncBegin",
           "value": 2
+        },
+        {
+          "name": "OutdoorProbeUpdateAsyncEnd",
+          "value": 3
         }
       ]
     },
@@ -113309,10 +113470,10 @@
       "app.AabbShape",
       "app.Accelerator",
       "app.Accessor_ContactTerrain",
-      "app.Accessor_Facial",
       "app.Accessor_GazeWalk",
       "app.Accessor_System",
       "app.AchievementServiceController",
+      "app.AchievementServiceControllerPS4",
       "app.AchievementServiceControllerPS5",
       "app.AchievementServiceControllerSteam",
       "app.AchievementServiceControllerXboxLive",
@@ -113374,6 +113535,7 @@
       "app.ActionBase\u00601\u003Capp.ch01000.StepClimbSeamless.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.StepDown.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.ThrusterJumpHorizontal.Param\u003E",
+      "app.ActionBase\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.WalkEnd.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.WalkStart.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.WallJump.Param\u003E",
@@ -113933,6 +114095,7 @@
       "app.AppSingleton\u00601\u003Capp.GameClock\u003E",
       "app.AppSingleton\u00601\u003Capp.GameObjectStateSetMediator\u003E",
       "app.AppSingleton\u00601\u003Capp.GameOccurrenceManager\u003E",
+      "app.AppSingleton\u00601\u003Capp.GameOverManager\u003E",
       "app.AppSingleton\u00601\u003Capp.GameSightManager\u003E",
       "app.AppSingleton\u00601\u003Capp.GimmickManager\u003E",
       "app.AppSingleton\u00601\u003Capp.GlobalUserDataManager\u003E",
@@ -114205,6 +114368,7 @@
       "app.Ch06000FaceSpriteIDSelector",
       "app.Ch06000GreetingToPartnerUnit",
       "app.Ch06000SafeRoomTalkDriver",
+      "app.Ch06000SafeRoomTalkDriver.DummyType",
       "app.Ch06000SafeRoomTalkUserData.PurchaseConvSetting",
       "app.Ch06000TalkMenuItemSelector",
       "app.Ch06000ThinkDriver",
@@ -114424,6 +114588,7 @@
       "app.Ch16091SpawnSet",
       "app.Ch16091SpawnUserDataValueHolder",
       "app.Ch16091ThinkDriver",
+      "app.Ch16091WeakPointManager",
       "app.Ch16092ConversationDriver",
       "app.Ch16092HackingDriver",
       "app.Ch16092HitDriver",
@@ -114534,7 +114699,10 @@
       "app.CharacterAreaSetting",
       "app.CharacterBackup",
       "app.CharacterCameraCollisionController.CameraCollisionActivateCondition",
-      "app.CharacterCameraCollisionController.CameraCollisionActivator",
+      "app.CharacterCameraCollisionController.CollidersActivator",
+      "app.CharacterCameraCollisionController.CollidersActivatorSetupParameter",
+      "app.CharacterCameraCollisionController.RequestSetColliderActivator",
+      "app.CharacterCameraCollisionController.RequestSetColliderActivatorSetupParameter",
       "app.CharacterChildMeshCameraDissolveManager",
       "app.CharacterClothController.Config",
       "app.CharacterControllerFilterDriver",
@@ -114561,6 +114729,7 @@
       "app.CharacterManager",
       "app.CharacterManager.GameSaveData",
       "app.CharacterManager.WarpRequest",
+      "app.CharacterMotionLodDriver",
       "app.CharacterNameData.Param",
       "app.CharacterNavigationDriver",
       "app.CharacterSpawnManager",
@@ -114670,6 +114839,9 @@
       "app.ContentsLoadScenePriority",
       "app.ContentsManager",
       "app.ContentsManager.ContentsManager_StateMachine",
+      "app.ContentsManager.DummyArg",
+      "app.ContentsManager.ExtraContentUnit",
+      "app.ContentsManager.SystemSaveData",
       "app.Context",
       "app.ContextBackup",
       "app.ContextID",
@@ -114802,7 +114974,6 @@
       "app.DictionaryCatalog\u00602\u003CSystem.UInt32,app.LoadableAssetManager.InsetMovieAssetData\u003E",
       "app.DictionaryCatalog\u00602\u003CSystem.UInt32,app.OptionCategoryInfo\u003E",
       "app.DictionaryCatalog\u00602\u003CSystem.UInt32,app.OptionItemInfo\u003E",
-      "app.DictionaryCatalog\u00602\u003CSystem.UInt32,app.OptionItemOverwriteInfo\u003E",
       "app.DictionaryCatalog\u00602\u003CSystem.UInt32,app.PrefabController\u003E",
       "app.DictionaryCatalog\u00602\u003CSystem.UInt32,via.Prefab\u003E",
       "app.DictionaryCatalog\u00602\u003Capp.AppEventDefine.Identifier,app.AppEventManager.AppEventController\u003E",
@@ -114889,6 +115060,7 @@
       "app.EliminateDissolveController.DissolveRequestParam",
       "app.EliminateDissolveController.EventArg",
       "app.EliminateDissolveEventHolder.Param",
+      "app.EnemyAbnormalEraseCode.State",
       "app.EnemyAbnormalHeal.LineEffect",
       "app.EnemyActionBase\u00602\u003Capp.Ch10100Updater,app.ActionParamBase\u003E",
       "app.EnemyActionBase\u00602\u003Capp.Ch10100Updater,app.ch10100.Attack.Param\u003E",
@@ -115360,6 +115532,7 @@
       "app.EnemyBasePowerHacking",
       "app.EnemyBaseWeapon",
       "app.EnemyBaseWeapon.EraseCodeDamageUnit",
+      "app.EnemyBaseWeapon.EraseCodeEffectUnit",
       "app.EnemyBaseWeapon.EraseCodeGridUnit",
       "app.EnemyBaseWeapon.EraseCodeGridUnit.AdditionalUnit",
       "app.EnemyBaseWeapon.EraseCodeGridUnit.Unit",
@@ -115407,6 +115580,7 @@
       "app.EnemyDamageReactionAction.Wp7800WinceAction",
       "app.EnemyDamageReactionAction.Wp7800WinceAction_StartLoopEnd",
       "app.EnemyDamageReactionAction.Wp8200FlyAwayAction",
+      "app.EnemyDamageReactionAction.Wp8700WinceAction",
       "app.EnemyDamageReactionConditionFlagSelector",
       "app.EnemyDamageReactionConditionSelector",
       "app.EnemyDamageReactionDriver",
@@ -115517,7 +115691,6 @@
       "app.EnemyParryHackingManager",
       "app.EnemyPartsOffsetPointManager",
       "app.EnemyPartsOnOffManager",
-      "app.EnemyPowerHackManager",
       "app.EnemyPurificationParam",
       "app.EnemySpawnActionParam",
       "app.EnemySpawnOrder",
@@ -115538,6 +115711,7 @@
       "app.EnemyTimeScaleManager",
       "app.EnemyTimeScaleManager.HitStopWork",
       "app.EnemyUnderClifManager",
+      "app.EnemyUpdater.PulseRequestInfo",
       "app.EnemyWeakPointManager",
       "app.EnemyWp7800EffectManager",
       "app.EnemyWp7800EffectManager.EffectWork",
@@ -115825,7 +115999,6 @@
       "app.EnumLikeArrayMessageData\u00601.Param\u003Capp.TrialTitleMenuItemSelector\u003E",
       "app.EnumLikeArrayMessageData\u00601.Param[[TSelector, application, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]",
       "app.EnumOptionHandle",
-      "app.EnumOptionHandle\u00601\u003CSystem.Boolean\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.AmbientOcclusionType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.ControllerInputCheckType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.DLSSQualityType\u003E",
@@ -115848,7 +116021,6 @@
       "app.EnumOptionHandle\u00601\u003Cvia.Language\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.AntiAliasingType\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.LensDistortionSetting\u003E",
-      "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.OptionSetting\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.Quality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.SamplerQuality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.UpscalingInterface.UpscalingAlgorithm\u003E",
@@ -115971,14 +116143,10 @@
       "app.EventActionOwnerEnemyWarpToSpawn",
       "app.EventActionOwnerEnemyWarpToSpawnWrapperd",
       "app.EventActionOwnerEnemyWarpWrapperd",
-      "app.EventActionPLDead",
-      "app.EventActionPLDeadWrapperd",
       "app.EventActionPLFinishBlow",
       "app.EventActionPLFinishBlowWrapperd",
       "app.EventActionPLInvincible",
       "app.EventActionPLInvincibleWrapperd",
-      "app.EventActionPLNoDie",
-      "app.EventActionPLNoDieWrapperd",
       "app.EventActionPartnerCarry",
       "app.EventActionPartnerCarryWrapperd",
       "app.EventActionPartnerDrawing",
@@ -115987,6 +116155,8 @@
       "app.EventActionPartnerIgnoreLipSyncWrapped",
       "app.EventActionPlayDemoClip",
       "app.EventActionPlayDemoClipWrapperd",
+      "app.EventActionPlayEmptyOnStartFinishGrapple",
+      "app.EventActionPlayEmptyOnStartFinishGrappleWrapperd",
       "app.EventActionPlayerCamera",
       "app.EventActionPlayerCameraWrapperd",
       "app.EventActionPlayerHipCarryParts",
@@ -116025,6 +116195,8 @@
       "app.EventActionTerrainAdjustWrapperd",
       "app.EventActionUnequipProp",
       "app.EventActionUnequipPropWrapperd",
+      "app.EventActionWaitGrappleAttackSlow",
+      "app.EventActionWaitGrappleAttackSlowWrapperd",
       "app.EventActionWarp",
       "app.EventActionWarpOffsetFromEnemyContext",
       "app.EventActionWarpOffsetFromEnemyContextWrapperd",
@@ -116047,8 +116219,10 @@
       "app.ExcludableMultiSelectEnum\u00601[[TEnum, application, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]",
       "app.ExcludableMultiSelectWeaponID",
       "app.ExecuteOptionHandle",
+      "app.ExtraContentsTypeSelector",
       "app.ExtraLinkKindSelector",
       "app.ExtraLinkWallChecker",
+      "app.EyeMaterialSwitcherUserdata.EyeMaterialData",
       "app.FacialAnimationDriver",
       "app.FacialAnimationDriver.QueueUnit",
       "app.FadeColorTypeSelector",
@@ -116082,6 +116256,7 @@
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch14300Updater,app.ch14300.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch14400Updater,app.ch14400.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch14500Updater,app.FinishBlowGrappleParamBase\u003E",
+      "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16030Updater,app.ch16030.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16031Updater,app.ch16031.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16050Updater,app.FinishBlowGrappleParamBase\u003E",
@@ -116095,6 +116270,7 @@
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch14100Updater,app.FinishBlowGrappleEndParamBase\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch14200Updater,app.ch14200.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch14400Updater,app.ch14400.FinishBlowGrappleEnd.Param\u003E",
+      "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16021Updater,app.ch16021.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16030Updater,app.ch16030.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16031Updater,app.ch16031.FinishBlowGrappleEnd.Param\u003E",
@@ -116170,6 +116346,8 @@
       "app.GUISeparateUserData_ui1000.MessageSetting",
       "app.GUISeparateUserData_ui1100.LanguageGuiSetting",
       "app.GUISeparateUserData_ui1100.LanguageGuiSetting.UvsSetting",
+      "app.GUISeparateUserData_ui1200.ExContentsParam",
+      "app.GUISeparateUserData_ui2201.ReplaceTextParam",
       "app.GUISeparateUserData_ui3202.LockOnTimerData",
       "app.GUISeparateUserData_ui3202.WeaponData",
       "app.GUISeparateUserData_ui3400.ChangeGridGuiSetting",
@@ -116205,6 +116383,7 @@
       "app.GUISeparateUserData_ui3510.VfxGuiSetting.Setting",
       "app.GUISeparateUserData_ui4000.IconKindParam",
       "app.GUISeparateUserData_ui5050.IgnorePerkParam",
+      "app.GUISeparateUserData_ui5050.ReplaceTextParam",
       "app.GUISeparateUserData_ui5110.ProgressItem",
       "app.GUISeparateUserData_ui5110.StageParam",
       "app.GUISeparateUserData_ui9104.Setting",
@@ -116318,6 +116497,13 @@
       "app.GameOccurrenceStartBossInfo",
       "app.GameOccurrenceStartChallengeAreaInfo",
       "app.GameOccurrenceUseWeaponInfo",
+      "app.GameOverManager",
+      "app.GameOverManager.CheckActiveHelper",
+      "app.GameOverManager.DisplayGameOverGUIHelper",
+      "app.GameOverManager.GameOverOccupyHelper",
+      "app.GameOverManager.NotificationReceiver",
+      "app.GameOverManager.PlayerDeadActionHelper",
+      "app.GameOverManager.PlayerDeadGameDemoHelper",
       "app.GameSightManager",
       "app.GameSightManager.SaveData",
       "app.GateColorOptionTypeSelector",
@@ -116635,6 +116821,7 @@
       "app.InterpolatePositionRequest",
       "app.InterpolateRotationRequest",
       "app.InventoryManager",
+      "app.InventoryManager.AcquireItemOptions",
       "app.InventoryManager.GadgetSlotTable",
       "app.InventoryManager.ItemSlotTable",
       "app.InventoryManager.NewGamePlusBuffer",
@@ -116781,6 +116968,11 @@
       "app.MissionDataBehavior.MissionObjectiveInfo",
       "app.MissionDataBehavior.MissionObjectiveStatus",
       "app.MissionManager",
+      "app.MissionManager.MissionRestartMediator",
+      "app.MissionManager.MissionRestartMediator.RequestOnFallAbyss",
+      "app.MissionManager.MissionRestartMediator.RequestRetryMissionMode",
+      "app.MissionManager.MissionRestartMediator.RequestReturnMainModeFromMissionMode",
+      "app.MissionManager.MissionRestartMediator.RequestReturnMainModeFromMissionModeAdvance",
       "app.MissionMenuFlowSingle",
       "app.MissionUserdata.BGMTriggerUnit",
       "app.MissionUserdata.CategoryBGMTriggerUnit",
@@ -116814,6 +117006,7 @@
       "app.MoveObjectMoveTimeOption",
       "app.MoveObjectMoveTypeOption",
       "app.MoveObjectMovementOption",
+      "app.MoveObjectPauseOption",
       "app.MoveObjectPropDriver",
       "app.MoveObjectPropDriverConfigure",
       "app.MoveObjectSettings.Param",
@@ -117366,6 +117559,9 @@
       "app.OccupyControlPropDriverConfigure",
       "app.OccupyDeniedEventArgs",
       "app.OccupyEventActionBase",
+      "app.OccupyFlowSettings.Param",
+      "app.OccupyFlowTrigger",
+      "app.OccupyFlowTrigger.OccupyFlowParam",
       "app.OccupyHandle",
       "app.OccupyInfo",
       "app.OccupyMediatedEventArgs",
@@ -117444,6 +117640,7 @@
       "app.OptionSettings\u00601\u003Capp.NotifyRandomKeySettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.ObjectActivateSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.ObjectDrawSettings.Param\u003E",
+      "app.OptionSettings\u00601\u003Capp.OccupyFlowSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.OpenMenuSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.OpenSlideGuiSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.PartnerOrderSettings.Param\u003E",
@@ -117575,6 +117772,7 @@
       "app.PeHackingDamageDownOrAbnormalConditionUnit",
       "app.PeHackingDamageHPRatioConditionUnit",
       "app.PeHackingDamageParameter",
+      "app.PeHackingDamagePermanentUpgradeParameter",
       "app.PeHackingDamagePlayerStatusConditionUnit",
       "app.PeHackingDistanceParameter",
       "app.PeHackingGaugeAutoRecoveryParameter",
@@ -117586,6 +117784,7 @@
       "app.PeHitPointParameter",
       "app.PeMultiply",
       "app.PeOpenTimeParameter",
+      "app.PeOpenTimePermanentUpgradeParameter",
       "app.PePlayerJustDodgeChanceTimeParameter",
       "app.PeQuickReloadParameter",
       "app.PeRecoveryHackingGauge",
@@ -117663,6 +117862,7 @@
       "app.PlayStageChatSettings.Param",
       "app.PlayTipsConvSettings.Param",
       "app.PlayerAccessoriesDriver",
+      "app.PlayerAccessoriesDriver.EquipPropController",
       "app.PlayerAccessoriesDriver.ErodeMaterialController",
       "app.PlayerAccessoriesDriver.ErodeMaterialController.InitArgs",
       "app.PlayerAccessoriesDriver.HeadLightController",
@@ -117672,6 +117872,8 @@
       "app.PlayerAccessoriesDriver.JointConstraintsController.BlendRateController",
       "app.PlayerAccessoriesDriver.RepairKitWorkUnit",
       "app.PlayerAccessoriesDriver.WeaponLauncherController",
+      "app.PlayerAccessoriesSettingUserData.EquipPropUnit",
+      "app.PlayerAccessoriesSettingUserData.EquipPropUnit.ChapterFlagUnit",
       "app.PlayerActionCameraworkDefinitionUserData.DefinitionUnit",
       "app.PlayerActionCameraworkDefinitionUserData.DefinitionUnit.PhaseUnit",
       "app.PlayerActionCameraworkDriver",
@@ -117861,6 +118063,9 @@
       "app.PlayerSetTransformParam",
       "app.PlayerSpaceElevatorBattleAim",
       "app.PlayerSpaceElevatorBattleAim.HudDrawController",
+      "app.PlayerSpaceElevatorBattleAim.InputGyro",
+      "app.PlayerSpaceElevatorBattleAim.InputGyro.RemainingDelta",
+      "app.PlayerSpaceElevatorBattleAim.InputGyro.RemainingDelta.Unit",
       "app.PlayerSpaceElevatorBattleAim.LockOnWorker",
       "app.PlayerSpaceElevatorBattleAim.MouseInputUpdater",
       "app.PlayerSpaceElevatorBattleAim.PadInputUpdater",
@@ -117876,6 +118081,7 @@
       "app.PlayerSpaceElevatorBattleMotionSelector",
       "app.PlayerSpaceElevatorBattleMove",
       "app.PlayerStatusTrigger",
+      "app.PlayerTerrainAdsorber.AdditionalVelocitySyncArg",
       "app.PlayerTerrainAdsorber.AdditionalVelocityWork",
       "app.PlayerTerrainAdsorber.AdsorbGroundTrackWork",
       "app.PlayerTerrainAdsorber.ContactVelocityInfo",
@@ -117884,6 +118090,9 @@
       "app.PlayerTerrainAdsorber.InertiaVelocityWork",
       "app.PlayerTerrainAdsorber.MotionVelocityWork",
       "app.PlayerTerrainAdsorber.ParentWork",
+      "app.PlayerTerrainAdsorber.SubStepAdditionalVelocityWork",
+      "app.PlayerTerrainAdsorber.SubStepCalculator",
+      "app.PlayerTerrainAdsorber.SubStepCalculatorUpdateArg",
       "app.PlayerTerrainAdsorber.TerrainVelocityWork",
       "app.PlayerTerrainAdsorber.VelocityInfo",
       "app.PlayerTerrainContactFlagAdjuster",
@@ -118015,6 +118224,8 @@
       "app.PuzzleSnake.ChangeGridProcessingData",
       "app.PuzzleSnake.ChangeGridRequestData",
       "app.PuzzleSnake.ChangeGridRequestDummyArgs",
+      "app.PuzzleSnake.EnemyStatusObserver",
+      "app.PuzzleSnake.EnemyStatusObserver.EnemyStatusUnit",
       "app.PuzzleSnake.Grid",
       "app.PuzzleSnake.GridAccessor",
       "app.PuzzleSnake.GridController",
@@ -118088,7 +118299,6 @@
       "app.RefCounter\u00601\u003Capp.ObjectiveStopoverPointWork[]\u003E",
       "app.RefCounter\u00601\u003Capp.OptionCategoryInfo\u003E",
       "app.RefCounter\u00601\u003Capp.OptionItemInfo\u003E",
-      "app.RefCounter\u00601\u003Capp.OptionItemOverwriteInfo\u003E",
       "app.RefCounter\u00601\u003Capp.PostEffectPresetCatalogUserData.PresetData\u003E",
       "app.RefCounter\u00601\u003Capp.PrefabController\u003E",
       "app.RefCounter\u00601\u003Cvia.Prefab\u003E",
@@ -118134,7 +118344,6 @@
       "app.RichpresenceServiceControllerPSN",
       "app.RichpresenceServiceControllerSteam",
       "app.RichpresenceServiceControllerXboxLive",
-      "app.RigidBodyObject.RigidBodyJointInfo",
       "app.RoundedNonuniformSpline",
       "app.RoundedNonuniformSpline.PointData",
       "app.RoundedNonuniformSpline.PointEditData",
@@ -118157,6 +118366,7 @@
       "app.SaveDataManager.SaveSlotHeaderUnit",
       "app.SaveDataManager.SystemSaveData",
       "app.SaveDataSlotHeaderDescription",
+      "app.SaveDataTransferFlow",
       "app.SaveLoadItemSelector",
       "app.SaveLoadProcessResults",
       "app.SaveLoadRequestArgs",
@@ -118324,6 +118534,8 @@
       "app.StaySceneManager\u00602\u003Capp.ContextID,app.PropBackup\u003E",
       "app.StaySceneManager\u00602[[TKey, application, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[TValue, application, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]",
       "app.StoreServiceFlowEmpty",
+      "app.StoreServiceFlowNSW2",
+      "app.StoreServiceFlowPS4",
       "app.StoreServiceFlowPS5",
       "app.StoreServiceFlowSteam",
       "app.StoreServiceFlowXbox",
@@ -118502,6 +118714,7 @@
       "app.ToArrayList\u00601\u003Capp.PropManager.WarpRequest\u003E",
       "app.ToArrayList\u00601\u003Capp.PuzzleUnit\u003E",
       "app.ToArrayList\u00601\u003Capp.PuzzleUnitConfigure\u003E",
+      "app.ToArrayList\u00601\u003Capp.StateManager.Unit\u003E",
       "app.ToArrayList\u00601\u003Capp.StructureData\u003E",
       "app.ToArrayList\u00601\u003Capp.TimelineEventDynamicResourceData.HidePropInfo\u003E",
       "app.ToArrayList\u00601\u003Capp.TimelineEventDynamicResourceData.PropsActorData.FixDataFlags\u003E",
@@ -118545,7 +118758,6 @@
       "app.ToArrayList\u00601\u003Cvia.OBB\u003E",
       "app.ToArrayList\u00601\u003Cvia.effect.script.CreatedEffectContainer\u003E",
       "app.ToArrayList\u00601\u003Cvia.gui.SelectItem\u003E",
-      "app.ToArrayList\u00601\u003Cvia.gui.TransformObject\u003E",
       "app.ToArrayList\u00601\u003Cvia.hid.GamePadButton\u003E",
       "app.ToArrayList\u00601\u003Cvia.hid.KeyboardKey\u003E",
       "app.ToArrayList\u00601\u003Cvia.physics.Collider\u003E",
@@ -118624,6 +118836,9 @@
       "app.UnlockSTMenuData.Param",
       "app.UpdateCatalogEventArgs",
       "app.UpscalingApplier",
+      "app.UserServiceAppletMediator",
+      "app.UserServiceAppletMediator.AppletRequestArg",
+      "app.UserServiceAppletMediator.AppletRequestUnit",
       "app.UserServiceManager",
       "app.UserServiceManager.EventArgs",
       "app.VFXAutoPlayer.PlayInfo",
@@ -118779,7 +118994,6 @@
       "app.achievement.AchievementManager",
       "app.achievement.AchievementManager.SaveData",
       "app.analysislog.AppAnalysisLogManager",
-      "app.analysislog.AppAnalysisLogManager.AnalysisLogManagerTrial",
       "app.analysislog.AppAnalysisLogManager.DisposableStack\u00601\u003CSystem.IDisposable\u003E",
       "app.analysislog.AppAnalysisLogManager.DisposableStack\u00601[[T, application, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]",
       "app.analysislog.AppAnalysisLogManager.GameSaveData",
@@ -118857,6 +119071,7 @@
       "app.ch01000.Action\u00601\u003Capp.ch01000.StepClimbSeamless.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.StepDown.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontal.Param\u003E",
+      "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.WalkEnd.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.WalkStart.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.WallJump.Param\u003E",
@@ -119038,6 +119253,8 @@
       "app.ch01000.SustainGroundStandby.Param",
       "app.ch01000.ThrusterJumpHorizontal",
       "app.ch01000.ThrusterJumpHorizontal.Param",
+      "app.ch01000.ThrusterJumpHorizontalEnd",
+      "app.ch01000.ThrusterJumpHorizontalEnd.Param",
       "app.ch01000.TimerModule",
       "app.ch01000.TimerModule.Parameter",
       "app.ch01000.UseItem",
@@ -119160,7 +119377,6 @@
       "app.ch05000.DanceAction.Param",
       "app.ch05000.Dead",
       "app.ch05000.DrawAction",
-      "app.ch05000.DrawActionGoal",
       "app.ch05000.EarthItemCancelTalkParam",
       "app.ch05000.EarthItemFlow",
       "app.ch05000.EarthItemFocusTalkParam",
@@ -119182,8 +119398,6 @@
       "app.ch05000.FailedPuzzle",
       "app.ch05000.FilamentPurificationAttack",
       "app.ch05000.FilamentPurificationAttack.Param",
-      "app.ch05000.FilamentPurificationEffectMediator",
-      "app.ch05000.FilamentPurificationExecEffect",
       "app.ch05000.FilamentRemoveEffect",
       "app.ch05000.FilamentRemoveEffectMediator",
       "app.ch05000.FillamentFillamentPurificationGoal",
@@ -119303,7 +119517,6 @@
       "app.ch05000.TalkEarthItemInteract",
       "app.ch05000.TalkEarthItemInteractGoal",
       "app.ch05000.TalkReactionParam",
-      "app.ch05000.TrialDrawingFlow",
       "app.ch05000.TurnDodge",
       "app.ch05000.TurnDodgeGoal",
       "app.ch05000.Walk",
@@ -119349,10 +119562,10 @@
       "app.ch06000.WelcomeHomeGoal",
       "app.ch06001.None",
       "app.ch06001.None.Param",
+      "app.ch07000.Event",
       "app.ch07000.EventActionCh07000EndMiniDemo",
       "app.ch07000.EventActionCh07000EndMiniDemoWrapperd",
       "app.ch07000.Idle",
-      "app.ch07000.IdleGoal",
       "app.ch07000.MainFlow",
       "app.ch07000.MoveToLocker",
       "app.ch07000.MoveToLockerGoal",
@@ -119362,6 +119575,8 @@
       "app.ch07000.ThrusterMoveGoal",
       "app.ch07000.ThrusterMoveIdle",
       "app.ch07000.ThrusterMoveIdleGoal",
+      "app.ch07000.WaitIdle",
+      "app.ch07000.WaitIdleGoal",
       "app.ch07000.WaitInFrontLocker",
       "app.ch07000.WaitInFrontLockerGoal",
       "app.ch07100.Idle",
@@ -119478,6 +119693,7 @@
       "app.ch14100.Goal.RotateToPlayerMoveGoal",
       "app.ch14100.Goal.SecondHalfBattleGoal",
       "app.ch14100.Goal.StomachFilamentRemoverAttackActionGoal",
+      "app.ch14100.Goal.StomachStompAndTurnMowDownGoal",
       "app.ch14100.Goal.StomachStompAttackGoal",
       "app.ch14100.Goal.TerrainGenerateAttackGoal",
       "app.ch14100.Goal.TurnMowDownAttackActionGoal",
@@ -119845,6 +120061,9 @@
       "app.ch14300.WarpGoal",
       "app.ch14300.WraparoundRushAttack",
       "app.ch14300CameraDissolveManager",
+      "app.ch14300CameraDissolveParamBase",
+      "app.ch14300CameraDissolveShpereParam",
+      "app.ch14300CameraDissolveUnit",
       "app.ch14310.AdsorptionFlow",
       "app.ch14310.AdsorptionGoal",
       "app.ch14310.AroundHackMove",
@@ -121730,7 +121949,7 @@
       "app.gui.ui0071",
       "app.gui.ui0071.OpenParam",
       "app.gui.ui0092",
-      "app.gui.ui0092.OpenParam",
+      "app.gui.ui0092.CloseParam",
       "app.gui.ui0200",
       "app.gui.ui0200.OpenParam",
       "app.gui.ui0200.OpenParam.ResultArgs",
@@ -122251,6 +122470,7 @@
       "app.prop.option.AudioSpectrumVisibilityOption",
       "app.prop.option.BaseTramOption",
       "app.prop.option.BootPropOption",
+      "app.prop.option.Ch14100BuildingOption",
       "app.prop.option.CheckItemInventoryOption",
       "app.prop.option.CheckItemInventoryOption.Param",
       "app.prop.option.CheckItemUnlockOption",
@@ -122319,6 +122539,8 @@
       "app.prop.option.TrialSpecialEnemyStatusWatcherOption",
       "app.prop.option.sm09_005_00Option",
       "app.prop.option.sm31_062_20Option",
+      "app.prop.option.sm32_015_30Option",
+      "app.prop.option.sm32_037_20AiMapControlOption",
       "app.prop.option.sm39_033_10Option",
       "app.prop.option.sm39_046_10Option",
       "app.prop.option.sm39_046_10Option.OptionActorParam",
@@ -122350,6 +122572,7 @@
       "app.prop.option.sm75_117_10Option",
       "app.prop.option.sm75_120_10Option",
       "app.prop.option.sm75_154_10Option",
+      "app.prop.option.sm75_215_10SoundCallOptionParam",
       "app.prop.option.sm75_221_10InterlockSoundOption",
       "app.prop.option.sm75_221_10Option",
       "app.prop.option.sm76_015_10Option",
@@ -122527,6 +122750,8 @@
       "app.sm73_006_10PropDriverConfigure",
       "app.sm73_008_10.ChildObjParam",
       "app.sm73_009_10.SectionSpeedParam",
+      "app.sm73_010_10PropDriver",
+      "app.sm73_010_10PropDriverConfigure",
       "app.sm73_014_10.MoveParam",
       "app.sm74_010_10PropDriver",
       "app.sm74_010_10PropDriverConfigure",
@@ -122590,6 +122815,8 @@
       "app.sm75_037_10SoundDriverConfigure",
       "app.sm75_048_10PropDriver",
       "app.sm75_048_10PropDriverConfigure",
+      "app.sm75_056_10MeshSettingPropDriver",
+      "app.sm75_056_10MeshSettingPropDriverConfigure",
       "app.sm75_060_10PropDriver",
       "app.sm75_060_10PropDriver.Unit",
       "app.sm75_060_10PropDriverConfigure",
@@ -122700,6 +122927,8 @@
       "app.sm75_212_10PropDriverConfigure",
       "app.sm75_212_10ProximityDetectionDriver",
       "app.sm75_212_10ProximityDetectionDriverConfigure",
+      "app.sm75_213_10MeshPartsEnablePropDriver",
+      "app.sm75_213_10MeshPartsEnablePropDriverConfigure",
       "app.sm75_215_10EffectUpdatePropDriver",
       "app.sm75_215_10EffectUpdatePropDriverConfigure",
       "app.sm75_215_10NotifyPropDriver",
@@ -123022,6 +123251,7 @@
       "app.FidelityStrandsOptionsControlTrack",
       "app.ForceActionTracks",
       "app.GoGameOverTracks",
+      "app.GrappleTerrainAdsorberTracks",
       "app.HideWeaponTracks",
       "app.IgnoreStepClimbTracks",
       "app.InhibitActionTracks",
@@ -123159,6 +123389,7 @@
       "app.FidelityStrandsOptionsControlTrack",
       "app.ForceActionTracks",
       "app.GoGameOverTracks",
+      "app.GrappleTerrainAdsorberTracks",
       "app.HideWeaponTracks",
       "app.IgnoreStepClimbTracks",
       "app.InhibitActionTracks",
@@ -123300,6 +123531,7 @@
       "app.FidelityStrandsOptionsControlTrack",
       "app.ForceActionTracks",
       "app.GoGameOverTracks",
+      "app.GrappleTerrainAdsorberTracks",
       "app.HideWeaponTracks",
       "app.IgnoreStepClimbTracks",
       "app.InhibitActionTracks",
@@ -123612,7 +123844,6 @@
       "app.MotionFsmAction_SyncPlayMotion",
       "app.MotionFsmAction_WeaponActionState",
       "app.MotionFsmAction_WeaponStartAim",
-      "app.MotionFsmAction_WeaponUpdateJointConstraint",
       "app.MotionFsmAction_WeaponUpdateVariables",
       "app.WakeupFlowMovieAction",
       "app.WakeupFlowSlideGuiAction",
@@ -123731,6 +123962,7 @@
       "app.Ch10100SpawnParam",
       "app.Ch10100Updater",
       "app.Ch14100AttackObjectUpdater",
+      "app.Ch14100BuildingComponent",
       "app.Ch14100CameraDissolveUnit",
       "app.Ch14100DeadBodyCameraDissolveBehavior",
       "app.Ch14100DeadBodyPartsController",
@@ -123801,6 +124033,7 @@
       "app.Ch16200ShieldUnit",
       "app.Ch16200SpawnParam",
       "app.Ch16200Updater",
+      "app.Ch17000ShellHard",
       "app.Ch17000SpawnParam",
       "app.Ch17000Updater",
       "app.Ch17001SpawnParam",
@@ -123966,6 +124199,7 @@
       "app.EnhanceCatalogRegister",
       "app.EnhanceManagerBehavior",
       "app.EnvCore",
+      "app.EnvironmentEffectGroupSetting",
       "app.EnvironmentSceneCatalogRegister",
       "app.EnvironmentSceneCollector",
       "app.EnvironmentSceneManagerBehavior",
@@ -123974,6 +124208,8 @@
       "app.EventCameraController",
       "app.EventSceneCollection",
       "app.ExternalMotionMediator",
+      "app.ExtraContentsSceneController",
+      "app.EyeMaterialSwitcher",
       "app.EyeReflectionController",
       "app.FadeController",
       "app.FadeGuiRegister",
@@ -124008,6 +124244,7 @@
       "app.GameFadeOutTriggerSettings",
       "app.GameObjectStateSetMediatorBehavior",
       "app.GameOccurrenceManagerBehavior",
+      "app.GameOverManagerBehavior",
       "app.GazeCameraSettings",
       "app.GeneralHackingHologramBehavior",
       "app.GetItemSettings",
@@ -124149,6 +124386,8 @@
       "app.ObjectiveManagerBehavior",
       "app.ObjectiveStopoverPoint",
       "app.ObstacleController",
+      "app.OccupyFlowSettings",
+      "app.OccupyFlowTriggerHolder",
       "app.OccupyMediatorBehavior",
       "app.OpenFirstGetMenuTriggerHolder",
       "app.OpenHackingParts",
@@ -124266,6 +124505,7 @@
       "app.SaveDataDescriptionCatalog",
       "app.SaveDataErrorDescriptionCatalog",
       "app.SaveDataManagerBehavior",
+      "app.SaveDataTransferFlowBehavior",
       "app.ScanManagerBehavior",
       "app.SceneLightInitializer",
       "app.ScreenCaptureController",
@@ -124333,6 +124573,7 @@
       "app.StageProgressTriggerHolder",
       "app.StateManagerBehavior",
       "app.StaticControlBehavior",
+      "app.StaticPathTracingRenderingSetting",
       "app.StoreTestBehavior",
       "app.StrandBABController",
       "app.StrandsConfigure",
@@ -124476,6 +124717,7 @@
       "app.gamesight.GameSightManagerBehavior",
       "app.gui.ClosedCaptionHub",
       "app.gui.GuiListCtrlEventHolder",
+      "app.gui.MusicChangeCatalogRegister",
       "app.gui.ObjectiveDrawable",
       "app.gui.PlatformRewardDropBehavior",
       "app.gui.ui0430_01_Supporter",
@@ -124560,7 +124802,11 @@
       "app.shell.Ch14200PlasmaShell",
       "app.shell.Ch14300MissileShell",
       "app.shell.Ch14600Shell",
+      "app.shell.Ch16100Shell",
       "app.shell.Ch17100LaserMissileShell",
+      "app.shell.Ch17100PlasmaShell",
+      "app.shell.Ch17100ShellMissile",
+      "app.shell.DeadFilamentShell",
       "app.shell.FilamentPurificationShell",
       "app.shell.LaserShell",
       "app.shell.Shell",
@@ -124572,6 +124818,7 @@
       "app.shell.Wp9100Shell",
       "app.sm09_005_00",
       "app.sm32_037_10ObjectBehavior",
+      "app.sm32_037_20AiMapControlBehavior",
       "app.sm54_001_20",
       "app.sm71_009_10ZipLineBehavior",
       "app.sm71_009_HologramController",
@@ -124694,6 +124941,7 @@
       "app.Ch10100SpawnParam",
       "app.Ch10100Updater",
       "app.Ch14100AttackObjectUpdater",
+      "app.Ch14100BuildingComponent",
       "app.Ch14100CameraDissolveUnit",
       "app.Ch14100DeadBodyCameraDissolveBehavior",
       "app.Ch14100DeadBodyPartsController",
@@ -124764,6 +125012,7 @@
       "app.Ch16200ShieldUnit",
       "app.Ch16200SpawnParam",
       "app.Ch16200Updater",
+      "app.Ch17000ShellHard",
       "app.Ch17000SpawnParam",
       "app.Ch17000Updater",
       "app.Ch17001SpawnParam",
@@ -124944,6 +125193,7 @@
       "app.EnhanceCatalogRegister",
       "app.EnhanceManagerBehavior",
       "app.EnvCore",
+      "app.EnvironmentEffectGroupSetting",
       "app.EnvironmentSceneCatalogRegister",
       "app.EnvironmentSceneCollector",
       "app.EnvironmentSceneManagerBehavior",
@@ -124952,7 +125202,9 @@
       "app.EventCameraController",
       "app.EventSceneCollection",
       "app.ExternalMotionMediator",
+      "app.ExtraContentsSceneController",
       "app.EyeAO",
+      "app.EyeMaterialSwitcher",
       "app.EyeReflectionController",
       "app.FacialWrinkleController",
       "app.FadeController",
@@ -124988,6 +125240,7 @@
       "app.GameFadeOutTriggerSettings",
       "app.GameObjectStateSetMediatorBehavior",
       "app.GameOccurrenceManagerBehavior",
+      "app.GameOverManagerBehavior",
       "app.GameSightService",
       "app.GazeCameraSettings",
       "app.GeneralHackingHologramBehavior",
@@ -125137,6 +125390,8 @@
       "app.ObjectiveManagerBehavior",
       "app.ObjectiveStopoverPoint",
       "app.ObstacleController",
+      "app.OccupyFlowSettings",
+      "app.OccupyFlowTriggerHolder",
       "app.OccupyMediatorBehavior",
       "app.OpenFirstGetMenuTriggerHolder",
       "app.OpenHackingParts",
@@ -125256,6 +125511,7 @@
       "app.SaveDataDescriptionCatalog",
       "app.SaveDataErrorDescriptionCatalog",
       "app.SaveDataManagerBehavior",
+      "app.SaveDataTransferFlowBehavior",
       "app.ScanManagerBehavior",
       "app.SceneLightInitializer",
       "app.ScreenCaptureController",
@@ -125329,6 +125585,7 @@
       "app.StageProgressTriggerHolder",
       "app.StateManagerBehavior",
       "app.StaticControlBehavior",
+      "app.StaticPathTracingRenderingSetting",
       "app.StoreTestBehavior",
       "app.StrandBABController",
       "app.StrandsConfigure",
@@ -125480,6 +125737,7 @@
       "app.gamesight.GameSightManagerBehavior",
       "app.gui.ClosedCaptionHub",
       "app.gui.GuiListCtrlEventHolder",
+      "app.gui.MusicChangeCatalogRegister",
       "app.gui.ObjectiveDrawable",
       "app.gui.PlatformRewardDropBehavior",
       "app.gui.ui0430_01_Supporter",
@@ -125566,7 +125824,11 @@
       "app.shell.Ch14200PlasmaShell",
       "app.shell.Ch14300MissileShell",
       "app.shell.Ch14600Shell",
+      "app.shell.Ch16100Shell",
       "app.shell.Ch17100LaserMissileShell",
+      "app.shell.Ch17100PlasmaShell",
+      "app.shell.Ch17100ShellMissile",
+      "app.shell.DeadFilamentShell",
       "app.shell.FilamentPurificationShell",
       "app.shell.LaserShell",
       "app.shell.Shell",
@@ -125578,6 +125840,7 @@
       "app.shell.Wp9100Shell",
       "app.sm09_005_00",
       "app.sm32_037_10ObjectBehavior",
+      "app.sm32_037_20AiMapControlBehavior",
       "app.sm54_001_20",
       "app.sm71_009_10ZipLineBehavior",
       "app.sm71_009_HologramController",
@@ -125845,6 +126108,7 @@
       "app.Ch10100SpawnParam",
       "app.Ch10100Updater",
       "app.Ch14100AttackObjectUpdater",
+      "app.Ch14100BuildingComponent",
       "app.Ch14100CameraDissolveUnit",
       "app.Ch14100DeadBodyCameraDissolveBehavior",
       "app.Ch14100DeadBodyPartsController",
@@ -125920,6 +126184,7 @@
       "app.Ch16200ShieldUnit",
       "app.Ch16200SpawnParam",
       "app.Ch16200Updater",
+      "app.Ch17000ShellHard",
       "app.Ch17000SpawnParam",
       "app.Ch17000Updater",
       "app.Ch17001SpawnParam",
@@ -126101,6 +126366,7 @@
       "app.EnhanceCatalogRegister",
       "app.EnhanceManagerBehavior",
       "app.EnvCore",
+      "app.EnvironmentEffectGroupSetting",
       "app.EnvironmentSceneCatalogRegister",
       "app.EnvironmentSceneCollector",
       "app.EnvironmentSceneManagerBehavior",
@@ -126110,7 +126376,10 @@
       "app.EventLightCore",
       "app.EventSceneCollection",
       "app.ExternalMotionMediator",
+      "app.ExtraContentsRegister",
+      "app.ExtraContentsSceneController",
       "app.EyeAO",
+      "app.EyeMaterialSwitcher",
       "app.EyeReflectionController",
       "app.FacialWrinkleController",
       "app.FadeController",
@@ -126132,6 +126401,7 @@
       "app.FinishMovieTriggerHolder",
       "app.FixedCameraController",
       "app.FolderServiceBehavior",
+      "app.FoliageGrassPrefabController",
       "app.ForbidObjectiveSettings",
       "app.ForceDisplayedObjectiveSettings",
       "app.GUIParameterManagerBehavior",
@@ -126148,6 +126418,7 @@
       "app.GameObjectStateController",
       "app.GameObjectStateSetMediatorBehavior",
       "app.GameOccurrenceManagerBehavior",
+      "app.GameOverManagerBehavior",
       "app.GameSightService",
       "app.GazeCameraSettings",
       "app.GeneralHackingHologramBehavior",
@@ -126302,6 +126573,8 @@
       "app.ObjectiveManagerBehavior",
       "app.ObjectiveStopoverPoint",
       "app.ObstacleController",
+      "app.OccupyFlowSettings",
+      "app.OccupyFlowTriggerHolder",
       "app.OccupyMediatorBehavior",
       "app.OpenFirstGetMenuTriggerHolder",
       "app.OpenHackingParts",
@@ -126422,6 +126695,7 @@
       "app.SaveDataDescriptionCatalog",
       "app.SaveDataErrorDescriptionCatalog",
       "app.SaveDataManagerBehavior",
+      "app.SaveDataTransferFlowBehavior",
       "app.ScanManagerBehavior",
       "app.SceneLightInitializer",
       "app.ScreenCaptureController",
@@ -126451,6 +126725,7 @@
       "app.SetTrappedBattleEngagingSettings",
       "app.ShaderWarmingFlow",
       "app.ShaderWarmingResourceHolder",
+      "app.ShadowMaskPrefabController",
       "app.ShakeCameraSettings",
       "app.ShellCatalogRegister",
       "app.ShellConfigure",
@@ -126498,6 +126773,7 @@
       "app.StageSceneCollector",
       "app.StateManagerBehavior",
       "app.StaticControlBehavior",
+      "app.StaticPathTracingRenderingSetting",
       "app.StoreTestBehavior",
       "app.StrandBABController",
       "app.StrandsConfigure",
@@ -126653,6 +126929,7 @@
       "app.gamesight.GameSightManagerBehavior",
       "app.gui.ClosedCaptionHub",
       "app.gui.GuiListCtrlEventHolder",
+      "app.gui.MusicChangeCatalogRegister",
       "app.gui.ObjectiveDrawable",
       "app.gui.PlatformRewardDropBehavior",
       "app.gui.ui0430_01_Supporter",
@@ -126751,7 +127028,11 @@
       "app.shell.Ch14200PlasmaShell",
       "app.shell.Ch14300MissileShell",
       "app.shell.Ch14600Shell",
+      "app.shell.Ch16100Shell",
       "app.shell.Ch17100LaserMissileShell",
+      "app.shell.Ch17100PlasmaShell",
+      "app.shell.Ch17100ShellMissile",
+      "app.shell.DeadFilamentShell",
       "app.shell.FilamentPurificationShell",
       "app.shell.LaserShell",
       "app.shell.Shell",
@@ -126764,6 +127045,7 @@
       "app.shell.Wp9100Shell",
       "app.sm09_005_00",
       "app.sm32_037_10ObjectBehavior",
+      "app.sm32_037_20AiMapControlBehavior",
       "app.sm54_001_20",
       "app.sm71_009_10ZipLineBehavior",
       "app.sm71_009_HologramController",
@@ -127463,6 +127745,7 @@
       "app.AppUserCurveData",
       "app.AttackPermitUserData",
       "app.AudioSpectrumVisibilityParamUserData",
+      "app.AutoPauseUserData",
       "app.BodyBankUserData",
       "app.BodySlopeAdjustUserData",
       "app.BreakableDollAccessoriesUserData",
@@ -127695,6 +127978,8 @@
       "app.EnvironmentSceneCatalogUserData",
       "app.ExchangeResourceUserData",
       "app.ExchangeUserdata",
+      "app.ExtraContentsTypeUserData",
+      "app.EyeMaterialSwitcherUserdata",
       "app.FacialAnimationDriverUserdata",
       "app.FacialWrinkleMaskAttributeConfigFloat4",
       "app.FacialWrinkleMaskAttributeConfigSingle",
@@ -127738,6 +128023,7 @@
       "app.GUISeparateUserData_ui2002_00",
       "app.GUISeparateUserData_ui2006",
       "app.GUISeparateUserData_ui2020",
+      "app.GUISeparateUserData_ui2201",
       "app.GUISeparateUserData_ui3010",
       "app.GUISeparateUserData_ui3020",
       "app.GUISeparateUserData_ui3200",
@@ -127867,6 +128153,7 @@
       "app.PerkNewGamePlusSettingUserdata",
       "app.PermanentEnvironmentSceneUserData",
       "app.PlatformRewardDropItemUserData",
+      "app.PlayerAccessoriesSettingUserData",
       "app.PlayerActionCameraworkDefinitionUserData",
       "app.PlayerActionCameraworkUserData",
       "app.PlayerAdaptiveTriggerSettingUserData",
@@ -128028,6 +128315,7 @@
       "app.gui.CostumeMenuTriggerRelationData",
       "app.gui.GuiMovieRTTUserData",
       "app.gui.GuiSeparateUserData_ui1200_Trial",
+      "app.gui.MusicChangeCatalogUserData",
       "app.gui.MusicChangeMenuUserData",
       "app.gui.PartnerTalkMenuUserData",
       "app.gui.TitleMenuUserdata_Trial",
@@ -128078,6 +128366,7 @@
       "app.AssetLabelData",
       "app.AttackPermitUserData",
       "app.AudioSpectrumVisibilityParamUserData",
+      "app.AutoPauseUserData",
       "app.AutoRunner.AutoRunnerCommandAsset",
       "app.AutoRunner.AutoRunnerScenario",
       "app.BodyBankUserData",
@@ -128314,6 +128603,8 @@
       "app.EnvironmentSceneCatalogUserData",
       "app.ExchangeResourceUserData",
       "app.ExchangeUserdata",
+      "app.ExtraContentsTypeUserData",
+      "app.EyeMaterialSwitcherUserdata",
       "app.FacialAnimationDriverUserdata",
       "app.FacialWrinkleMaskAttributeConfigFloat4",
       "app.FacialWrinkleMaskAttributeConfigSingle",
@@ -128359,6 +128650,7 @@
       "app.GUISeparateUserData_ui2002_00",
       "app.GUISeparateUserData_ui2006",
       "app.GUISeparateUserData_ui2020",
+      "app.GUISeparateUserData_ui2201",
       "app.GUISeparateUserData_ui3010",
       "app.GUISeparateUserData_ui3020",
       "app.GUISeparateUserData_ui3200",
@@ -128492,6 +128784,7 @@
       "app.PerkNewGamePlusSettingUserdata",
       "app.PermanentEnvironmentSceneUserData",
       "app.PlatformRewardDropItemUserData",
+      "app.PlayerAccessoriesSettingUserData",
       "app.PlayerActionCameraworkDefinitionUserData",
       "app.PlayerActionCameraworkUserData",
       "app.PlayerAdaptiveTriggerSettingUserData",
@@ -128694,6 +128987,7 @@
       "app.gui.CostumeMenuTriggerRelationData",
       "app.gui.GuiMovieRTTUserData",
       "app.gui.GuiSeparateUserData_ui1200_Trial",
+      "app.gui.MusicChangeCatalogUserData",
       "app.gui.MusicChangeMenuUserData",
       "app.gui.PartnerTalkMenuUserData",
       "app.gui.TitleMenuUserdata_Trial",
@@ -128961,7 +129255,6 @@
       "app.ch05000.ClingFlow",
       "app.ch05000.ClingStandbyGoal",
       "app.ch05000.CostumeModeGoal",
-      "app.ch05000.DrawActionGoal",
       "app.ch05000.EarthItemFlow",
       "app.ch05000.EarthItemInteractCallSkipGoal",
       "app.ch05000.EarthItemInteractGoal",
@@ -128993,7 +129286,6 @@
       "app.ch05000.SafeRoomWalkAround4Goal",
       "app.ch05000.SafeRoomWalkAroundGoal",
       "app.ch05000.TalkEarthItemInteractGoal",
-      "app.ch05000.TrialDrawingFlow",
       "app.ch05000.TurnDodgeGoal",
       "app.ch05000.WalkAdjustmentGoal",
       "app.ch05000.WalkGoal",
@@ -129015,12 +129307,12 @@
       "app.ch06000.RequestedByHandleGoal",
       "app.ch06000.TalkGoal",
       "app.ch06000.WelcomeHomeGoal",
-      "app.ch07000.IdleGoal",
       "app.ch07000.MainFlow",
       "app.ch07000.MoveToLockerGoal",
       "app.ch07000.ThrusterEndToIdleGoal",
       "app.ch07000.ThrusterMoveGoal",
       "app.ch07000.ThrusterMoveIdleGoal",
+      "app.ch07000.WaitIdleGoal",
       "app.ch07000.WaitInFrontLockerGoal",
       "app.ch07100.IdleGoal",
       "app.ch07100.MainFlow",
@@ -129086,6 +129378,7 @@
       "app.ch14100.Goal.RotateToPlayerMoveGoal",
       "app.ch14100.Goal.SecondHalfBattleGoal",
       "app.ch14100.Goal.StomachFilamentRemoverAttackActionGoal",
+      "app.ch14100.Goal.StomachStompAndTurnMowDownGoal",
       "app.ch14100.Goal.StomachStompAttackGoal",
       "app.ch14100.Goal.TerrainGenerateAttackGoal",
       "app.ch14100.Goal.TurnMowDownAttackActionGoal",
@@ -129774,6 +130067,7 @@
       "app.PropObjectBehavior",
       "app.AIMapControlObject",
       "app.AnimatedItemObject",
+      "app.Ch14100BuildingComponent",
       "app.CustomDetailDestructibleObject",
       "app.DestructibleObject",
       "app.DestructibleRigidBodyObject",
@@ -129804,6 +130098,7 @@
       "app.WeaponResidentEffectController",
       "app.sm09_005_00",
       "app.sm32_037_10ObjectBehavior",
+      "app.sm32_037_20AiMapControlBehavior",
       "app.sm54_001_20",
       "app.sm71_009_10ZipLineBehavior",
       "app.sm71_014_10Object",
@@ -129837,6 +130132,7 @@
       "app.AdaptiveTriggerFeedbackPreset",
       "app.AddMissionUnlockConditionType",
       "app.AppearType",
+      "app.AppletMediatorType",
       "app.AttackPermitGroupType",
       "app.AutoPlayAimSubActionType",
       "app.AutoPlayBattleTargetType",
@@ -129937,6 +130233,7 @@
       "app.EnemyTargetPointType",
       "app.EnemyTerritoryAreaType",
       "app.EquipmentSlotMode",
+      "app.ExtraContentsType",
       "app.ExtraLinkKind",
       "app.FacialPlayLayer",
       "app.FadeColorType",
@@ -130273,6 +130570,7 @@
       "app.EnemyTerritoryAreaTypeSelector",
       "app.EnvironmentSceneDefinition.EnvironmentBroadIDSelector",
       "app.EnvironmentSceneDefinition.EnvironmentIDSelector",
+      "app.ExtraContentsTypeSelector",
       "app.ExtraLinkKindSelector",
       "app.FadeColorTypeSelector",
       "app.FadeTypeSelector",
@@ -130573,6 +130871,7 @@
       "app.CharacterGrappleDriver",
       "app.CharacterHitDriver",
       "app.CharacterInteractDriver",
+      "app.CharacterMotionLodDriver",
       "app.CharacterNavigationDriver",
       "app.ColliderControlPropDriver",
       "app.ContinuePlusTramPropDriver",
@@ -130701,6 +131000,7 @@
       "app.sm73_000_10MeshCreatePropDriver",
       "app.sm73_000_10PropDriver",
       "app.sm73_006_10PropDriver",
+      "app.sm73_010_10PropDriver",
       "app.sm74_010_10PropDriver",
       "app.sm74_015_10PropDriver",
       "app.sm74_023_00PropDriver",
@@ -130725,6 +131025,7 @@
       "app.sm75_037_10PropDriver",
       "app.sm75_037_10SoundDriver",
       "app.sm75_048_10PropDriver",
+      "app.sm75_056_10MeshSettingPropDriver",
       "app.sm75_060_10PropDriver",
       "app.sm75_060_10_SafetyActionPropDriver",
       "app.sm75_060_20PropDriver",
@@ -130772,6 +131073,7 @@
       "app.sm75_212_10MotionEffectControlDriver",
       "app.sm75_212_10PropDriver",
       "app.sm75_212_10ProximityDetectionDriver",
+      "app.sm75_213_10MeshPartsEnablePropDriver",
       "app.sm75_215_10EffectUpdatePropDriver",
       "app.sm75_215_10NotifyPropDriver",
       "app.sm75_215_10PropDriver",
@@ -130870,6 +131172,7 @@
     ],
     "app.NetworkServiceController": [
       "app.AchievementServiceController",
+      "app.AchievementServiceControllerPS4",
       "app.AchievementServiceControllerPS5",
       "app.AchievementServiceControllerSteam",
       "app.AchievementServiceControllerXboxLive",
@@ -130881,6 +131184,7 @@
     ],
     "app.AchievementServiceController": [
       "app.AchievementServiceController",
+      "app.AchievementServiceControllerPS4",
       "app.AchievementServiceControllerPS5",
       "app.AchievementServiceControllerSteam",
       "app.AchievementServiceControllerXboxLive"
@@ -130944,6 +131248,7 @@
       "app.ActionBase\u00601\u003Capp.ch01000.StepClimbSeamless.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.StepDown.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.ThrusterJumpHorizontal.Param\u003E",
+      "app.ActionBase\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.WalkEnd.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.WalkStart.Param\u003E",
       "app.ActionBase\u00601\u003Capp.ch01000.WallJump.Param\u003E",
@@ -131860,6 +132165,7 @@
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch14300Updater,app.ch14300.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch14400Updater,app.ch14400.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch14500Updater,app.FinishBlowGrappleParamBase\u003E",
+      "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16030Updater,app.ch16030.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16031Updater,app.ch16031.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16050Updater,app.FinishBlowGrappleParamBase\u003E",
@@ -131873,6 +132179,7 @@
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch14100Updater,app.FinishBlowGrappleEndParamBase\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch14200Updater,app.ch14200.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch14400Updater,app.ch14400.FinishBlowGrappleEnd.Param\u003E",
+      "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16021Updater,app.ch16021.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16030Updater,app.ch16030.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16031Updater,app.ch16031.FinishBlowGrappleEnd.Param\u003E",
@@ -132382,6 +132689,7 @@
       "app.ch01000.Action\u00601\u003Capp.ch01000.StepClimbSeamless.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.StepDown.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontal.Param\u003E",
+      "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.WalkEnd.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.WalkStart.Param\u003E",
       "app.ch01000.Action\u00601\u003Capp.ch01000.WallJump.Param\u003E",
@@ -132462,6 +132770,7 @@
       "app.ch01000.StepDown",
       "app.ch01000.SustainGroundStandby",
       "app.ch01000.ThrusterJumpHorizontal",
+      "app.ch01000.ThrusterJumpHorizontalEnd",
       "app.ch01000.UseItem",
       "app.ch01000.WalkEnd",
       "app.ch01000.WalkStart",
@@ -132597,11 +132906,13 @@
       "app.ch06000.Talk",
       "app.ch06000.WelcomeHome",
       "app.ch06001.None",
+      "app.ch07000.Event",
       "app.ch07000.Idle",
       "app.ch07000.MoveToLocker",
       "app.ch07000.ThrusterEndIdle",
       "app.ch07000.ThrusterMove",
       "app.ch07000.ThrusterMoveIdle",
+      "app.ch07000.WaitIdle",
       "app.ch07000.WaitInFrontLocker",
       "app.ch07100.Idle",
       "app.ch07100.Md11001Ready",
@@ -133418,6 +133729,7 @@
       "app.CharacterGrappleDriver",
       "app.CharacterHitDriver",
       "app.CharacterInteractDriver",
+      "app.CharacterMotionLodDriver",
       "app.CharacterNavigationDriver",
       "app.EnemyAroundDriver",
       "app.EnemyConversationDriver",
@@ -133486,6 +133798,7 @@
       "app.CharacterConversationDriverConfigurationUnit",
       "app.CharacterGrappleDriverConfigurationUnit",
       "app.CharacterInteractDriverConfigurationUnit",
+      "app.CharacterMotionLodDriverConfigurationUnit",
       "app.CharacterVisibleControllerConfigurationUnit",
       "app.ComponentConfigurationUnit\u00602\u003Capp.AdjustTerrain,app.CharacterControllerConfigurationUnit\u003E",
       "app.ComponentConfigurationUnit\u00602\u003Capp.CharacterVisibleController,app.CharacterVisibleControllerConfigurationUnit\u003E",
@@ -133515,6 +133828,7 @@
       "app.DriverConfigurationUnit\u00602\u003Capp.CharacterConversationDriver,app.CharacterConversationDriverConfigurationUnit\u003E",
       "app.DriverConfigurationUnit\u00602\u003Capp.CharacterGrappleDriver,app.CharacterGrappleDriverConfigurationUnit\u003E",
       "app.DriverConfigurationUnit\u00602\u003Capp.CharacterInteractDriver,app.CharacterInteractDriverConfigurationUnit\u003E",
+      "app.DriverConfigurationUnit\u00602\u003Capp.CharacterMotionLodDriver,app.CharacterMotionLodDriverConfigurationUnit\u003E",
       "app.DriverConfigurationUnit\u00602\u003Capp.CharacterNavigationDriver,app.NavigationDriverConfigurationUnit\u003E",
       "app.DriverConfigurationUnit\u00602\u003Capp.EnemyAroundDriver,app.EnemyAroundDriverConfigurationUnit\u003E",
       "app.DriverConfigurationUnit\u00602\u003Capp.EnemyDamageReactionDriver,app.EnemyDamageReactionDriverConfigurationUnit\u003E",
@@ -133951,6 +134265,7 @@
       "app.sm73_000_10MeshCreatePropDriver",
       "app.sm73_000_10PropDriver",
       "app.sm73_006_10PropDriver",
+      "app.sm73_010_10PropDriver",
       "app.sm74_010_10PropDriver",
       "app.sm74_015_10PropDriver",
       "app.sm74_023_00PropDriver",
@@ -133975,6 +134290,7 @@
       "app.sm75_037_10PropDriver",
       "app.sm75_037_10SoundDriver",
       "app.sm75_048_10PropDriver",
+      "app.sm75_056_10MeshSettingPropDriver",
       "app.sm75_060_10PropDriver",
       "app.sm75_060_10_SafetyActionPropDriver",
       "app.sm75_060_20PropDriver",
@@ -134022,6 +134338,7 @@
       "app.sm75_212_10MotionEffectControlDriver",
       "app.sm75_212_10PropDriver",
       "app.sm75_212_10ProximityDetectionDriver",
+      "app.sm75_213_10MeshPartsEnablePropDriver",
       "app.sm75_215_10EffectUpdatePropDriver",
       "app.sm75_215_10NotifyPropDriver",
       "app.sm75_215_10PropDriver",
@@ -134171,6 +134488,7 @@
       "app.sm73_000_10MeshCreatePropDriverConfigure",
       "app.sm73_000_10PropDriverConfigure",
       "app.sm73_006_10PropDriverConfigure",
+      "app.sm73_010_10PropDriverConfigure",
       "app.sm74_010_10PropDriverConfigure",
       "app.sm74_015_10PropDriverConfigure",
       "app.sm74_023_00PropDriverConfigure",
@@ -134195,6 +134513,7 @@
       "app.sm75_037_10PropDriverConfigure",
       "app.sm75_037_10SoundDriverConfigure",
       "app.sm75_048_10PropDriverConfigure",
+      "app.sm75_056_10MeshSettingPropDriverConfigure",
       "app.sm75_060_10PropDriverConfigure",
       "app.sm75_060_10_SafetyActionPropDriverConfigure",
       "app.sm75_060_20PropDriverConfigure",
@@ -134241,6 +134560,7 @@
       "app.sm75_212_10MotionEffectControlDriverConfigure",
       "app.sm75_212_10PropDriverConfigure",
       "app.sm75_212_10ProximityDetectionDriverConfigure",
+      "app.sm75_213_10MeshPartsEnablePropDriverConfigure",
       "app.sm75_215_10EffectUpdatePropDriverConfigure",
       "app.sm75_215_10NotifyPropDriverConfigure",
       "app.sm75_215_10PropDriverConfigure",
@@ -134822,6 +135142,7 @@
       "app.ShellCatalogRegister",
       "app.TimelineEventDynamicResourceDataCatalogRegister",
       "app.WeaponCatalogRegister",
+      "app.gui.MusicChangeCatalogRegister",
       "app.hid.AdaptiveTriggerParamPresetDataRegister",
       "app.hid.LightBarParamPresetDataRegister"
     ],
@@ -134963,6 +135284,7 @@
       "app.AppSingleton\u00601\u003Capp.GameClock\u003E",
       "app.AppSingleton\u00601\u003Capp.GameObjectStateSetMediator\u003E",
       "app.AppSingleton\u00601\u003Capp.GameOccurrenceManager\u003E",
+      "app.AppSingleton\u00601\u003Capp.GameOverManager\u003E",
       "app.AppSingleton\u00601\u003Capp.GameSightManager\u003E",
       "app.AppSingleton\u00601\u003Capp.GimmickManager\u003E",
       "app.AppSingleton\u00601\u003Capp.GlobalUserDataManager\u003E",
@@ -135071,6 +135393,7 @@
       "app.GameClock",
       "app.GameObjectStateSetMediator",
       "app.GameOccurrenceManager",
+      "app.GameOverManager",
       "app.GameSightManager",
       "app.GimmickManager",
       "app.GlobalUserDataManager",
@@ -135172,7 +135495,9 @@
       "app.Ch16020BreakableObjectUserComponent",
       "app.CostumeStandPositionComponent",
       "app.EventLightCore",
+      "app.ExtraContentsRegister",
       "app.FigureSpaceEffectEmitter",
+      "app.FoliageGrassPrefabController",
       "app.GameObjectStateController",
       "app.HairPrefabInstantiateRequester",
       "app.LightProbeSceneControlComponent",
@@ -135180,6 +135505,7 @@
       "app.MissionEffectEmitter",
       "app.ObjectIDComponent",
       "app.PuzzleInstancePool",
+      "app.ShadowMaskPrefabController",
       "app.SkipEventSettingsLinker",
       "app.StageSceneCollector",
       "app.TimeScaleController",
@@ -135212,7 +135538,9 @@
       "app.Ch16020BreakableObjectUserComponent",
       "app.CostumeStandPositionComponent",
       "app.EventLightCore",
+      "app.ExtraContentsRegister",
       "app.FigureSpaceEffectEmitter",
+      "app.FoliageGrassPrefabController",
       "app.GameObjectStateController",
       "app.HairPrefabInstantiateRequester",
       "app.LightProbeSceneControlComponent",
@@ -135220,6 +135548,7 @@
       "app.MissionEffectEmitter",
       "app.ObjectIDComponent",
       "app.PuzzleInstancePool",
+      "app.ShadowMaskPrefabController",
       "app.SkipEventSettingsLinker",
       "app.StageSceneCollector",
       "app.TimeScaleController",
@@ -135254,6 +135583,7 @@
       "app.ChapterManager.SaveData",
       "app.CharacterManager.GameSaveData",
       "app.CheckPointManager.SaveData",
+      "app.ContentsManager.SystemSaveData",
       "app.ConversationManager.SaveData",
       "app.DatabaseManager.SaveData",
       "app.DifficultyLevelSystem.SaveData",
@@ -135398,6 +135728,7 @@
       "app.InspectAreaTrigger",
       "app.InteractEventTrigger",
       "app.NarrativeInspectAreaTrigger",
+      "app.OccupyFlowTrigger",
       "app.OpenFirstGetMenuTrigger",
       "app.OpenMenuTrigger",
       "app.OpenTutorialTrigger",
@@ -135438,6 +135769,7 @@
       "app.InspectAreaTrigger.InspectAreaParam",
       "app.InteractEventTrigger.InteractEventParam",
       "app.NarrativeInspectAreaTrigger.NarrativeInspectAreaParam",
+      "app.OccupyFlowTrigger.OccupyFlowParam",
       "app.OpenFirstGetMenuTrigger.OpenFirstGetMenuParam",
       "app.OpenMenuTrigger.OpenMenuParam",
       "app.OpenTutorialTrigger.OpenTutorialParam",
@@ -135480,6 +135812,7 @@
       "app.InspectAreaTriggerHolder",
       "app.InteractEventTriggerHolder",
       "app.NarrativeInspectAreaTriggerHolder",
+      "app.OccupyFlowTriggerHolder",
       "app.OpenFirstGetMenuTriggerHolder",
       "app.OpenMenuTriggerHolder",
       "app.OpenTutorialTriggerHolder",
@@ -135529,6 +135862,7 @@
       "app.NotifyRandomKeySettings",
       "app.ObjectActivateSettings",
       "app.ObjectDrawSettings",
+      "app.OccupyFlowSettings",
       "app.OpenMenuSettings",
       "app.OpenSlideGuiSettings",
       "app.PartnerOrderSettings",
@@ -135620,6 +135954,7 @@
       "app.NotifyRandomKeySettings.Param",
       "app.ObjectActivateSettings.Param",
       "app.ObjectDrawSettings.Param",
+      "app.OccupyFlowSettings.Param",
       "app.OpenMenuSettings.Param",
       "app.OpenSlideGuiSettings.Param",
       "app.PartnerOrderSettings.Param",
@@ -135846,7 +136181,6 @@
     "app.OptionValueHandle": [
       "app.BoolOptionHandle",
       "app.EnumOptionHandle",
-      "app.EnumOptionHandle\u00601\u003CSystem.Boolean\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.AmbientOcclusionType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.ControllerInputCheckType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.DLSSQualityType\u003E",
@@ -135869,7 +136203,6 @@
       "app.EnumOptionHandle\u00601\u003Cvia.Language\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.AntiAliasingType\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.LensDistortionSetting\u003E",
-      "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.OptionSetting\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.Quality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.SamplerQuality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.UpscalingInterface.UpscalingAlgorithm\u003E",
@@ -135886,7 +136219,6 @@
     "app.OptionManager.OptionValueHandleBase": [
       "app.BoolOptionHandle",
       "app.EnumOptionHandle",
-      "app.EnumOptionHandle\u00601\u003CSystem.Boolean\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.AmbientOcclusionType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.ControllerInputCheckType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.DLSSQualityType\u003E",
@@ -135909,7 +136241,6 @@
       "app.EnumOptionHandle\u00601\u003Cvia.Language\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.AntiAliasingType\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.LensDistortionSetting\u003E",
-      "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.OptionSetting\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.Quality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.SamplerQuality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.UpscalingInterface.UpscalingAlgorithm\u003E",
@@ -136254,6 +136585,7 @@
       "app.Ch16095Updater",
       "app.Ch16100Updater",
       "app.Ch16200Updater",
+      "app.Ch17000ShellHard",
       "app.Ch17000Updater",
       "app.Ch17001Updater",
       "app.Ch17020Updater",
@@ -136298,7 +136630,11 @@
       "app.shell.Ch14200PlasmaShell",
       "app.shell.Ch14300MissileShell",
       "app.shell.Ch14600Shell",
+      "app.shell.Ch16100Shell",
       "app.shell.Ch17100LaserMissileShell",
+      "app.shell.Ch17100PlasmaShell",
+      "app.shell.Ch17100ShellMissile",
+      "app.shell.DeadFilamentShell",
       "app.shell.FilamentPurificationShell",
       "app.shell.LaserShell",
       "app.shell.Shell",
@@ -137446,6 +137782,7 @@
       "app.Ch14400GroundExplosionShell",
       "app.Ch14400Shell_SonicBoom",
       "app.Ch16031ExplosionShell",
+      "app.Ch17000ShellHard",
       "app.Ch17200Shell",
       "app.Ch18000ExplosionShell",
       "app.Ch18000Shell",
@@ -137458,7 +137795,11 @@
       "app.shell.Ch14200PlasmaShell",
       "app.shell.Ch14300MissileShell",
       "app.shell.Ch14600Shell",
+      "app.shell.Ch16100Shell",
       "app.shell.Ch17100LaserMissileShell",
+      "app.shell.Ch17100PlasmaShell",
+      "app.shell.Ch17100ShellMissile",
+      "app.shell.DeadFilamentShell",
       "app.shell.FilamentPurificationShell",
       "app.shell.LaserShell",
       "app.shell.WeaponShell",
@@ -137472,6 +137813,7 @@
       "app.Ch14400GroundExplosionShell",
       "app.Ch14400Shell_SonicBoom",
       "app.Ch16031ExplosionShell",
+      "app.Ch17000ShellHard",
       "app.Ch17200Shell",
       "app.Ch18000ExplosionShell",
       "app.Ch18000Shell",
@@ -137484,7 +137826,11 @@
       "app.shell.Ch14200PlasmaShell",
       "app.shell.Ch14300MissileShell",
       "app.shell.Ch14600Shell",
+      "app.shell.Ch16100Shell",
       "app.shell.Ch17100LaserMissileShell",
+      "app.shell.Ch17100PlasmaShell",
+      "app.shell.Ch17100ShellMissile",
+      "app.shell.DeadFilamentShell",
       "app.shell.FilamentPurificationShell",
       "app.shell.LaserShell",
       "app.shell.Shell",
@@ -137702,6 +138048,10 @@
     "app.EnemyBlackAuraManager": [
       "app.EnemyBlackAuraManager",
       "app.Ch16091BlackAuraManager"
+    ],
+    "app.EnemyWeakPointManager": [
+      "app.EnemyWeakPointManager",
+      "app.Ch16091WeakPointManager"
     ],
     "app.EnemyLayerActionDriver": [
       "app.EnemyLayerActionDriver",
@@ -138318,6 +138668,10 @@
       "app.AppSingleton\u00601\u003Capp.CharacterManager\u003E",
       "app.CharacterManager"
     ],
+    "app.DriverConfigurationUnit\u00602\u003Capp.CharacterMotionLodDriver,app.CharacterMotionLodDriverConfigurationUnit\u003E": [
+      "app.DriverConfigurationUnit\u00602\u003Capp.CharacterMotionLodDriver,app.CharacterMotionLodDriverConfigurationUnit\u003E",
+      "app.CharacterMotionLodDriverConfigurationUnit"
+    ],
     "app.CharacterOrderSettings.Order.BoolParameter": [
       "app.CharacterOrderSettings.Order.BoolParameter",
       "app.CharacterOrderSettings.Order.AbnormalParameter",
@@ -138365,6 +138719,7 @@
       "app.CharacterOrderSettings.Order.RecoveryAutoHackingParameter",
       "app.CharacterOrderSettings.Order.SafeRoomTalkParameter",
       "app.CharacterOrderSettings.Order.SpaceElevatorBattleParameter",
+      "app.CharacterOrderSettings.Order.SpecialWarpToParameter",
       "app.CharacterOrderSettings.Order.WarpToParameter",
       "app.CharacterOrderSettings.Order.WelcomeActionParameter",
       "app.CharacterOrderSettings.Order.ZoneTalkActionParameter"
@@ -138563,6 +138918,7 @@
       "app.MoveObjectMoveTimeOption",
       "app.MoveObjectMoveTypeOption",
       "app.MoveObjectMovementOption",
+      "app.MoveObjectPauseOption",
       "app.PlayClosedCaptionOption",
       "app.prop.option.AIMapAddOption",
       "app.prop.option.AIMapControlOption",
@@ -138572,6 +138928,7 @@
       "app.prop.option.AudioSpectrumVisibilityOption",
       "app.prop.option.BaseTramOption",
       "app.prop.option.BootPropOption",
+      "app.prop.option.Ch14100BuildingOption",
       "app.prop.option.CheckItemInventoryOption",
       "app.prop.option.CheckItemUnlockOption",
       "app.prop.option.ContainItemOption",
@@ -138630,6 +138987,8 @@
       "app.prop.option.TrialSpecialEnemyStatusWatcherOption",
       "app.prop.option.sm09_005_00Option",
       "app.prop.option.sm31_062_20Option",
+      "app.prop.option.sm32_015_30Option",
+      "app.prop.option.sm32_037_20AiMapControlOption",
       "app.prop.option.sm39_033_10Option",
       "app.prop.option.sm39_046_10Option",
       "app.prop.option.sm39_046_10StopOption",
@@ -138660,6 +139019,7 @@
       "app.prop.option.sm75_117_10Option",
       "app.prop.option.sm75_120_10Option",
       "app.prop.option.sm75_154_10Option",
+      "app.prop.option.sm75_215_10SoundCallOptionParam",
       "app.prop.option.sm75_221_10InterlockSoundOption",
       "app.prop.option.sm75_221_10Option",
       "app.prop.option.sm76_015_10Option",
@@ -138887,6 +139247,7 @@
       "app.ch01000.StepDown.Param",
       "app.ch01000.SustainGroundStandby.Param",
       "app.ch01000.ThrusterJumpHorizontal.Param",
+      "app.ch01000.ThrusterJumpHorizontalEnd.Param",
       "app.ch01000.WalkEnd.Param",
       "app.ch01000.WalkStart.Param",
       "app.ch01000.WallJump.Param",
@@ -139433,6 +139794,7 @@
       "app.PeFatalDamageParameter",
       "app.PeFinishBlowSpawnRateParameter",
       "app.PeHackingDamageParameter",
+      "app.PeHackingDamagePermanentUpgradeParameter",
       "app.PeHackingDistanceParameter",
       "app.PeHackingGaugeAutoRecoveryParameter",
       "app.PeHackingGaugeParameter",
@@ -139440,6 +139802,7 @@
       "app.PeHealReparikitRateParameter",
       "app.PeHitPointParameter",
       "app.PeOpenTimeParameter",
+      "app.PeOpenTimePermanentUpgradeParameter",
       "app.PePlayerJustDodgeChanceTimeParameter",
       "app.PeRepairKitParameter",
       "app.PeStrategyGadgetSlotNumParameter",
@@ -139469,6 +139832,7 @@
       "app.PeFinishBlowSpawnRateParameter",
       "app.PeHackingDamageConditionParameter",
       "app.PeHackingDamageParameter",
+      "app.PeHackingDamagePermanentUpgradeParameter",
       "app.PeHackingDistanceParameter",
       "app.PeHackingGaugeAutoRecoveryParameter",
       "app.PeHackingGaugeParameter",
@@ -139478,6 +139842,7 @@
       "app.PeHitPointMultiplyParameter",
       "app.PeHitPointParameter",
       "app.PeOpenTimeParameter",
+      "app.PeOpenTimePermanentUpgradeParameter",
       "app.PePlayerJustDodgeChanceTimeParameter",
       "app.PeQuickReloadParameter",
       "app.PeRecoveryHackingGaugeParameter",
@@ -139771,11 +140136,13 @@
       "app.ch06000.NewVRArrival",
       "app.ch06000.Talk",
       "app.ch06000.WelcomeHome",
+      "app.ch07000.Event",
       "app.ch07000.Idle",
       "app.ch07000.MoveToLocker",
       "app.ch07000.ThrusterEndIdle",
       "app.ch07000.ThrusterMove",
       "app.ch07000.ThrusterMoveIdle",
+      "app.ch07000.WaitIdle",
       "app.ch07000.WaitInFrontLocker",
       "app.ch07100.Idle",
       "app.ch07100.Md11001Ready",
@@ -141802,22 +142169,26 @@
     "app.NpcActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E": [
       "app.NpcActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
       "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
+      "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
       "app.ch16000.FinishBlowGrapple"
     ],
     "app.ActionBase\u00601\u003Capp.ch16000.FinishBlowGrapple.Param\u003E": [
       "app.ActionBase\u00601\u003Capp.ch16000.FinishBlowGrapple.Param\u003E",
       "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
+      "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
       "app.NpcActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
       "app.ch16000.FinishBlowGrapple"
     ],
     "app.NpcActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E": [
       "app.NpcActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
+      "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.ch16000.FinishBlowGrappleEnd"
     ],
     "app.ActionBase\u00601\u003Capp.ch16000.FinishBlowGrappleEnd.Param\u003E": [
       "app.ActionBase\u00601\u003Capp.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
+      "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.NpcActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.ch16000.FinishBlowGrappleEnd"
     ],
@@ -144985,6 +145356,7 @@
       "app.ch14100.Goal.NoAttackPermitGoal",
       "app.ch14100.Goal.RecoveryAntennaGoal",
       "app.ch14100.Goal.SecondHalfBattleGoal",
+      "app.ch14100.Goal.StomachStompAndTurnMowDownGoal",
       "app.ch14100.Goal.UnderTargetAttackGoal",
       "app.ch14100.Goal.UnderTargetTurnMowDownGoal",
       "app.ch14100.Goal.WaitRangeMoveGoal"
@@ -145011,6 +145383,7 @@
       "app.ch14100.Goal.RecoveryAntennaGoal",
       "app.ch14100.Goal.RootGoal",
       "app.ch14100.Goal.SecondHalfBattleGoal",
+      "app.ch14100.Goal.StomachStompAndTurnMowDownGoal",
       "app.ch14100.Goal.UnderTargetAttackGoal",
       "app.ch14100.Goal.UnderTargetTurnMowDownGoal",
       "app.ch14100.Goal.WaitRangeMoveGoal"
@@ -145064,6 +145437,7 @@
       "app.ch14100.Goal.RotateToPlayerMoveGoal",
       "app.ch14100.Goal.SecondHalfBattleGoal",
       "app.ch14100.Goal.StomachFilamentRemoverAttackActionGoal",
+      "app.ch14100.Goal.StomachStompAndTurnMowDownGoal",
       "app.ch14100.Goal.StomachStompAttackGoal",
       "app.ch14100.Goal.TerrainGenerateAttackGoal",
       "app.ch14100.Goal.TurnMowDownAttackActionGoal",
@@ -145122,6 +145496,7 @@
       "app.ch14100.Goal.RotateToPlayerMoveGoal",
       "app.ch14100.Goal.SecondHalfBattleGoal",
       "app.ch14100.Goal.StomachFilamentRemoverAttackActionGoal",
+      "app.ch14100.Goal.StomachStompAndTurnMowDownGoal",
       "app.ch14100.Goal.StomachStompAttackGoal",
       "app.ch14100.Goal.TerrainGenerateAttackGoal",
       "app.ch14100.Goal.TurnMowDownAttackActionGoal",
@@ -145946,7 +146321,12 @@
       "app.EnemyDamageReactionAction.WaitFinishBlowAction",
       "app.EnemyDamageReactionAction.Wp7800WinceAction",
       "app.EnemyDamageReactionAction.Wp7800WinceAction_StartLoopEnd",
-      "app.EnemyDamageReactionAction.Wp8200FlyAwayAction"
+      "app.EnemyDamageReactionAction.Wp8200FlyAwayAction",
+      "app.EnemyDamageReactionAction.Wp8700WinceAction"
+    ],
+    "app.EnemyDamageReactionAction.StartAction": [
+      "app.EnemyDamageReactionAction.StartAction",
+      "app.EnemyDamageReactionAction.Wp8700WinceAction"
     ],
     "app.FlagSelectObjectBase": [
       "app.FlagSelectObjectBase",
@@ -146263,7 +146643,6 @@
       "app.MotionFsmAction_SyncPlayMotion",
       "app.MotionFsmAction_WeaponActionState",
       "app.MotionFsmAction_WeaponStartAim",
-      "app.MotionFsmAction_WeaponUpdateJointConstraint",
       "app.MotionFsmAction_WeaponUpdateVariables",
       "app.WakeupFlowMovieAction",
       "app.WakeupFlowSlideGuiAction",
@@ -146930,7 +147309,6 @@
     ],
     "app.OptionValueHandle\u00602\u003Capp.OptionValueEnum,System.String\u003E": [
       "app.EnumOptionHandle",
-      "app.EnumOptionHandle\u00601\u003CSystem.Boolean\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.AmbientOcclusionType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.ControllerInputCheckType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.DLSSQualityType\u003E",
@@ -146953,7 +147331,6 @@
       "app.EnumOptionHandle\u00601\u003Cvia.Language\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.AntiAliasingType\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.LensDistortionSetting\u003E",
-      "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.OptionSetting\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.Quality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.SamplerQuality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.UpscalingInterface.UpscalingAlgorithm\u003E",
@@ -146962,7 +147339,6 @@
     ],
     "app.EnumOptionHandle": [
       "app.EnumOptionHandle",
-      "app.EnumOptionHandle\u00601\u003CSystem.Boolean\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.AmbientOcclusionType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.ControllerInputCheckType\u003E",
       "app.EnumOptionHandle\u00601\u003Capp.DLSSQualityType\u003E",
@@ -146985,7 +147361,6 @@
       "app.EnumOptionHandle\u00601\u003Cvia.Language\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.AntiAliasingType\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.LensDistortionSetting\u003E",
-      "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.OptionSetting\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.RenderConfig.Quality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.SamplerQuality\u003E",
       "app.EnumOptionHandle\u00601\u003Cvia.render.UpscalingInterface.UpscalingAlgorithm\u003E",
@@ -147121,14 +147496,13 @@
       "app.EventActionOverrideDOF",
       "app.EventActionOwnerEnemyWarp",
       "app.EventActionOwnerEnemyWarpToSpawn",
-      "app.EventActionPLDead",
       "app.EventActionPLFinishBlow",
       "app.EventActionPLInvincible",
-      "app.EventActionPLNoDie",
       "app.EventActionPartnerCarry",
       "app.EventActionPartnerDrawing",
       "app.EventActionPartnerIgnoreLipSync",
       "app.EventActionPlayDemoClip",
+      "app.EventActionPlayEmptyOnStartFinishGrapple",
       "app.EventActionPlayerCamera",
       "app.EventActionPlayerHipCarryParts",
       "app.EventActionPlayerWeapon",
@@ -147147,6 +147521,7 @@
       "app.EventActionSpecialMoveFaceLight",
       "app.EventActionTerrainAdjust",
       "app.EventActionUnequipProp",
+      "app.EventActionWaitGrappleAttackSlow",
       "app.EventActionWarp",
       "app.EventActionWarpOffsetFromEnemyContext",
       "app.EventActionWarpOffsetFromOwner",
@@ -147216,14 +147591,13 @@
       "app.EventActionOverrideDOFWrapperd",
       "app.EventActionOwnerEnemyWarpToSpawnWrapperd",
       "app.EventActionOwnerEnemyWarpWrapperd",
-      "app.EventActionPLDeadWrapperd",
       "app.EventActionPLFinishBlowWrapperd",
       "app.EventActionPLInvincibleWrapperd",
-      "app.EventActionPLNoDieWrapperd",
       "app.EventActionPartnerCarryWrapperd",
       "app.EventActionPartnerDrawingWrapperd",
       "app.EventActionPartnerIgnoreLipSyncWrapped",
       "app.EventActionPlayDemoClipWrapperd",
+      "app.EventActionPlayEmptyOnStartFinishGrappleWrapperd",
       "app.EventActionPlayerCameraWrapperd",
       "app.EventActionPlayerHipCarryPartsWrapperd",
       "app.EventActionPlayerWeaponWrapperd",
@@ -147242,6 +147616,7 @@
       "app.EventActionSpecialMoveWrapperd",
       "app.EventActionTerrainAdjustWrapperd",
       "app.EventActionUnequipPropWrapperd",
+      "app.EventActionWaitGrappleAttackSlowWrapperd",
       "app.EventActionWarpOffsetFromEnemyContextWrapperd",
       "app.EventActionWarpOffsetFromOwnerWrapperd",
       "app.EventActionWarpOtherOffsetFromTargetWrapperd",
@@ -147307,14 +147682,13 @@
       "app.EventActionOverrideDOFWrapperd",
       "app.EventActionOwnerEnemyWarpToSpawnWrapperd",
       "app.EventActionOwnerEnemyWarpWrapperd",
-      "app.EventActionPLDeadWrapperd",
       "app.EventActionPLFinishBlowWrapperd",
       "app.EventActionPLInvincibleWrapperd",
-      "app.EventActionPLNoDieWrapperd",
       "app.EventActionPartnerCarryWrapperd",
       "app.EventActionPartnerDrawingWrapperd",
       "app.EventActionPartnerIgnoreLipSyncWrapped",
       "app.EventActionPlayDemoClipWrapperd",
+      "app.EventActionPlayEmptyOnStartFinishGrappleWrapperd",
       "app.EventActionPlayerCameraWrapperd",
       "app.EventActionPlayerHipCarryPartsWrapperd",
       "app.EventActionPlayerWeaponWrapperd",
@@ -147333,6 +147707,7 @@
       "app.EventActionSpecialMoveWrapperd",
       "app.EventActionTerrainAdjustWrapperd",
       "app.EventActionUnequipPropWrapperd",
+      "app.EventActionWaitGrappleAttackSlowWrapperd",
       "app.EventActionWarpOffsetFromEnemyContextWrapperd",
       "app.EventActionWarpOffsetFromOwnerWrapperd",
       "app.EventActionWarpOtherOffsetFromTargetWrapperd",
@@ -147404,14 +147779,13 @@
       "app.EventActionOverrideDOFWrapperd",
       "app.EventActionOwnerEnemyWarpToSpawnWrapperd",
       "app.EventActionOwnerEnemyWarpWrapperd",
-      "app.EventActionPLDeadWrapperd",
       "app.EventActionPLFinishBlowWrapperd",
       "app.EventActionPLInvincibleWrapperd",
-      "app.EventActionPLNoDieWrapperd",
       "app.EventActionPartnerCarryWrapperd",
       "app.EventActionPartnerDrawingWrapperd",
       "app.EventActionPartnerIgnoreLipSyncWrapped",
       "app.EventActionPlayDemoClipWrapperd",
+      "app.EventActionPlayEmptyOnStartFinishGrappleWrapperd",
       "app.EventActionPlayerCameraWrapperd",
       "app.EventActionPlayerHipCarryPartsWrapperd",
       "app.EventActionPlayerWeaponWrapperd",
@@ -147430,6 +147804,7 @@
       "app.EventActionSpecialMoveWrapperd",
       "app.EventActionTerrainAdjustWrapperd",
       "app.EventActionUnequipPropWrapperd",
+      "app.EventActionWaitGrappleAttackSlowWrapperd",
       "app.EventActionWarpOffsetFromEnemyContextWrapperd",
       "app.EventActionWarpOffsetFromOwnerWrapperd",
       "app.EventActionWarpOtherOffsetFromTargetWrapperd",
@@ -147560,6 +147935,11 @@
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch14500Updater,app.FinishBlowGrappleParamBase\u003E",
       "app.ch14500.FinishBlowGrapple"
     ],
+    "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E": [
+      "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
+      "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
+      "app.ch16000.FinishBlowGrapple"
+    ],
     "app.EnemyActionBase\u00602\u003Capp.Ch16030Updater,app.ch16030.FinishBlowGrapple.Param\u003E": [
       "app.EnemyActionBase\u00602\u003Capp.Ch16030Updater,app.ch16030.FinishBlowGrapple.Param\u003E",
       "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16030Updater,app.ch16030.FinishBlowGrapple.Param\u003E",
@@ -147619,6 +147999,11 @@
       "app.EnemyActionBase\u00602\u003Capp.Ch14400Updater,app.ch14400.FinishBlowGrappleEnd.Param\u003E",
       "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch14400Updater,app.ch14400.FinishBlowGrappleEnd.Param\u003E",
       "app.ch14400.FinishBlowGrappleEnd"
+    ],
+    "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E": [
+      "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
+      "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
+      "app.ch16000.FinishBlowGrappleEnd"
     ],
     "app.EnemyActionBase\u00602\u003Capp.Ch16021Updater,app.ch16021.FinishBlowGrappleEnd.Param\u003E": [
       "app.EnemyActionBase\u00602\u003Capp.Ch16021Updater,app.ch16021.FinishBlowGrappleEnd.Param\u003E",
@@ -147747,6 +148132,7 @@
       "app.GUISeparateUserData_ui2002_00",
       "app.GUISeparateUserData_ui2006",
       "app.GUISeparateUserData_ui2020",
+      "app.GUISeparateUserData_ui2201",
       "app.GUISeparateUserData_ui3010",
       "app.GUISeparateUserData_ui3020",
       "app.GUISeparateUserData_ui3200",
@@ -147906,6 +148292,10 @@
       "app.GameOccurrenceRecordManager.SaveData.ElementOneItem",
       "app.GameOccurrenceRecordManager.SaveData.ElementUint",
       "app.GameOccurrenceRecordManager.SaveData.ElementUintUint"
+    ],
+    "app.AppSingleton\u00601\u003Capp.GameOverManager\u003E": [
+      "app.AppSingleton\u00601\u003Capp.GameOverManager\u003E",
+      "app.GameOverManager"
     ],
     "app.AppSingleton\u00601\u003Capp.GameSightManager\u003E": [
       "app.AppSingleton\u00601\u003Capp.GameSightManager\u003E",
@@ -148334,6 +148724,7 @@
       "app.collision.AttackUserData",
       "app.collision.CliffEdgeSensorUserData",
       "app.collision.DamageUserData",
+      "app.collision.DeadFilamentShellDamageUserData",
       "app.collision.EnemyDamageUserData",
       "app.collision.FillamentRemoveGimmickDamageUserData",
       "app.collision.GimmickDamageUserData",
@@ -148609,6 +149000,12 @@
       "app.AppSingleton\u00601\u003Capp.MissionManager\u003E",
       "app.MissionManager"
     ],
+    "app.MissionManager.MissionRestartMediator.Request": [
+      "app.MissionManager.MissionRestartMediator.RequestOnFallAbyss",
+      "app.MissionManager.MissionRestartMediator.RequestRetryMissionMode",
+      "app.MissionManager.MissionRestartMediator.RequestReturnMainModeFromMissionMode",
+      "app.MissionManager.MissionRestartMediator.RequestReturnMainModeFromMissionModeAdvance"
+    ],
     "app.MissionUserdata.BGMTriggerUnit": [
       "app.MissionUserdata.BGMTriggerUnit",
       "app.MissionUserdata.CategoryBGMTriggerUnit"
@@ -148698,7 +149095,6 @@
     "app.MotionFsmAction_Weapon": [
       "app.MotionFsmAction_WeaponActionState",
       "app.MotionFsmAction_WeaponStartAim",
-      "app.MotionFsmAction_WeaponUpdateJointConstraint",
       "app.MotionFsmAction_WeaponUpdateVariables"
     ],
     "app.MotionFsmCondition_ConciergeCondition": [
@@ -148914,6 +149310,7 @@
       "app.OptionSettings\u00601\u003Capp.NotifyRandomKeySettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.ObjectActivateSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.ObjectDrawSettings.Param\u003E",
+      "app.OptionSettings\u00601\u003Capp.OccupyFlowSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.OpenMenuSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.OpenSlideGuiSettings.Param\u003E",
       "app.OptionSettings\u00601\u003Capp.PartnerOrderSettings.Param\u003E",
@@ -149396,7 +149793,8 @@
     ],
     "System.Collections.Generic.PriorityQueue\u00602\u003Capp.PuzzleSnake.ChangeGridRequestData,app.PuzzleSnake.ChangeGridRequestData\u003E": [
       "System.Collections.Generic.PriorityQueue\u00602\u003Capp.PuzzleSnake.ChangeGridRequestData,app.PuzzleSnake.ChangeGridRequestData\u003E",
-      "app.PriorityQueue\u00601\u003Capp.PuzzleSnake.ChangeGridRequestData\u003E"
+      "app.PriorityQueue\u00601\u003Capp.PuzzleSnake.ChangeGridRequestData\u003E",
+      "app.PuzzleSnake.FlexPriorityQueue"
     ],
     "System.Collections.Generic.PriorityQueue\u00602\u003C!0,!0\u003E": [
       "System.Collections.Generic.PriorityQueue\u00602\u003C!0,!0\u003E",
@@ -149466,7 +149864,6 @@
       "app.gui.BrightnessSettingGuiBase.OpenParam",
       "app.gui.Tutorial.Param",
       "app.gui.ui0071.OpenParam",
-      "app.gui.ui0092.OpenParam",
       "app.gui.ui0200.OpenParam",
       "app.gui.ui0208.OpenParam",
       "app.gui.ui0208_Trial.OpenParam",
@@ -149556,7 +149953,7 @@
       "app.gui.BrightnessSettingGuiBase.OpenParam",
       "app.gui.Tutorial.Param",
       "app.gui.ui0071.OpenParam",
-      "app.gui.ui0092.OpenParam",
+      "app.gui.ui0092.CloseParam",
       "app.gui.ui0200.OpenParam",
       "app.gui.ui0208.OpenParam",
       "app.gui.ui0208_Trial.OpenParam",
@@ -149644,6 +150041,10 @@
     "app.AppSingleton\u00601\u003Capp.PuzzleManager\u003E": [
       "app.AppSingleton\u00601\u003Capp.PuzzleManager\u003E",
       "app.PuzzleManager"
+    ],
+    "app.PriorityQueue\u00601\u003Capp.PuzzleSnake.ChangeGridRequestData\u003E": [
+      "app.PriorityQueue\u00601\u003Capp.PuzzleSnake.ChangeGridRequestData\u003E",
+      "app.PuzzleSnake.FlexPriorityQueue"
     ],
     "app.PuzzleGuiOpenParamBase": [
       "app.PuzzleGuiOpenParamBase",
@@ -149801,6 +150202,7 @@
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.FidelityStrandsOptionsControlTrack\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.ForceActionTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.GoGameOverTracks\u003E",
+      "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.GrappleTerrainAdsorberTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.HideWeaponTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.IgnoreStepClimbTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.InhibitActionTracks\u003E",
@@ -149834,7 +150236,6 @@
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.PlayerInvincibleTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.PlayerJustDodgeTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.PlayerOverrideMotionSpeedOnMoonTracks\u003E",
-      "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.PlayerRecoveryHpTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.PlayerRequestDeadFadeTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.PlayerRequestSustainStandbyTracks\u003E",
       "app.SequenceUpdater.AddTaskArgs\u00601\u003Capp.PlayerShotFilamentPurificationTracks\u003E",
@@ -149943,6 +150344,7 @@
       "app.SequenceUpdater.Task\u00601\u003Capp.FidelityStrandsOptionsControlTrack\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.ForceActionTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.GoGameOverTracks\u003E",
+      "app.SequenceUpdater.Task\u00601\u003Capp.GrappleTerrainAdsorberTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.HideWeaponTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.IgnoreStepClimbTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.InhibitActionTracks\u003E",
@@ -149976,7 +150378,6 @@
       "app.SequenceUpdater.Task\u00601\u003Capp.PlayerInvincibleTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.PlayerJustDodgeTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.PlayerOverrideMotionSpeedOnMoonTracks\u003E",
-      "app.SequenceUpdater.Task\u00601\u003Capp.PlayerRecoveryHpTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.PlayerRequestDeadFadeTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.PlayerRequestSustainStandbyTracks\u003E",
       "app.SequenceUpdater.Task\u00601\u003Capp.PlayerShotFilamentPurificationTracks\u003E",
@@ -150790,6 +151191,8 @@
     ],
     "app.StoreServiceFlowBase": [
       "app.StoreServiceFlowEmpty",
+      "app.StoreServiceFlowNSW2",
+      "app.StoreServiceFlowPS4",
       "app.StoreServiceFlowPS5",
       "app.StoreServiceFlowSteam",
       "app.StoreServiceFlowXbox"
@@ -151304,14 +151707,10 @@
     ],
     "app.analysislog.PlayingProperty": [
       "app.analysislog.BossPlayingCollector.BossClearProperty",
-      "app.analysislog.GamePlayingCollector.GameClearProperty",
-      "app.analysislog.TrialProgressPlayingCollector.TrialProgressClearProperty"
+      "app.analysislog.GamePlayingCollector.GameClearProperty"
     ],
     "app.analysislog.PlayingCollector\u00602\u003Capp.analysislog.entity.IGameClearProperty,app.analysislog.GamePlayingCollector.GameClearProperty\u003E": [
       "app.analysislog.GamePlayingCollector"
-    ],
-    "app.analysislog.PlayingCollector\u00602\u003Capp.analysislog.entity.IProgressClearProperty,app.analysislog.TrialProgressPlayingCollector.TrialProgressClearProperty\u003E": [
-      "app.analysislog.TrialProgressPlayingCollector"
     ],
     "app.analysislog.sender.OptionSender": [
       "app.analysislog.sender.FirstBootOptionSender",
@@ -151856,6 +152255,15 @@
       "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontal.Param\u003E",
       "app.ch01000.ThrusterJumpHorizontal"
     ],
+    "app.ch01000.ActionBase\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E": [
+      "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
+      "app.ch01000.ThrusterJumpHorizontalEnd"
+    ],
+    "app.ActionBase\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E": [
+      "app.ActionBase\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
+      "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
+      "app.ch01000.ThrusterJumpHorizontalEnd"
+    ],
     "app.ch01000.ActionBase\u00601\u003Capp.ch01000.WalkEnd.Param\u003E": [
       "app.ch01000.Action\u00601\u003Capp.ch01000.WalkEnd.Param\u003E",
       "app.ch01000.WalkEnd"
@@ -152008,6 +152416,7 @@
       "app.ch01000.StepDown.Param",
       "app.ch01000.SustainGroundStandby.Param",
       "app.ch01000.ThrusterJumpHorizontal.Param",
+      "app.ch01000.ThrusterJumpHorizontalEnd.Param",
       "app.ch01000.WalkEnd.Param",
       "app.ch01000.WalkStart.Param",
       "app.ch01000.WallJump.Param",
@@ -152303,6 +152712,10 @@
     "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontal.Param\u003E": [
       "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontal.Param\u003E",
       "app.ch01000.ThrusterJumpHorizontal"
+    ],
+    "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E": [
+      "app.ch01000.Action\u00601\u003Capp.ch01000.ThrusterJumpHorizontalEnd.Param\u003E",
+      "app.ch01000.ThrusterJumpHorizontalEnd"
     ],
     "app.ch01000.Action\u00601\u003Capp.ch01000.WalkEnd.Param\u003E": [
       "app.ch01000.Action\u00601\u003Capp.ch01000.WalkEnd.Param\u003E",
@@ -152884,7 +153297,6 @@
       "app.ch05000.MainFlow",
       "app.ch05000.SafeRoomAroundFlow",
       "app.ch05000.SafeRoomFlow",
-      "app.ch05000.TrialDrawingFlow",
       "app.ch05000.WelcomeActionFlow"
     ],
     "app.AIBaseGoal\u00602\u003Capp.Ch05000ThinkDriver,app.ThinkMemory\u003E": [
@@ -152901,7 +153313,6 @@
       "app.ch05000.ClingFlow",
       "app.ch05000.ClingStandbyGoal",
       "app.ch05000.CostumeModeGoal",
-      "app.ch05000.DrawActionGoal",
       "app.ch05000.EarthItemFlow",
       "app.ch05000.EarthItemInteractCallSkipGoal",
       "app.ch05000.EarthItemInteractGoal",
@@ -152933,7 +153344,6 @@
       "app.ch05000.SafeRoomWalkAround4Goal",
       "app.ch05000.SafeRoomWalkAroundGoal",
       "app.ch05000.TalkEarthItemInteractGoal",
-      "app.ch05000.TrialDrawingFlow",
       "app.ch05000.TurnDodgeGoal",
       "app.ch05000.WalkAdjustmentGoal",
       "app.ch05000.WalkGoal",
@@ -152957,7 +153367,6 @@
       "app.ch05000.ClingFlow",
       "app.ch05000.ClingStandbyGoal",
       "app.ch05000.CostumeModeGoal",
-      "app.ch05000.DrawActionGoal",
       "app.ch05000.EarthItemFlow",
       "app.ch05000.EarthItemInteractCallSkipGoal",
       "app.ch05000.EarthItemInteractGoal",
@@ -152989,7 +153398,6 @@
       "app.ch05000.SafeRoomWalkAround4Goal",
       "app.ch05000.SafeRoomWalkAroundGoal",
       "app.ch05000.TalkEarthItemInteractGoal",
-      "app.ch05000.TrialDrawingFlow",
       "app.ch05000.TurnDodgeGoal",
       "app.ch05000.WalkAdjustmentGoal",
       "app.ch05000.WalkGoal",
@@ -153008,7 +153416,6 @@
       "app.ch05000.Ch06000AppealGoal",
       "app.ch05000.ClingStandbyGoal",
       "app.ch05000.CostumeModeGoal",
-      "app.ch05000.DrawActionGoal",
       "app.ch05000.EarthItemInteractCallSkipGoal",
       "app.ch05000.EarthItemInteractGoal",
       "app.ch05000.EnemyFindGoal",
@@ -153048,7 +153455,6 @@
       "app.ch05000.Ch06000AppealGoal",
       "app.ch05000.ClingStandbyGoal",
       "app.ch05000.CostumeModeGoal",
-      "app.ch05000.DrawActionGoal",
       "app.ch05000.EarthItemInteractCallSkipGoal",
       "app.ch05000.EarthItemInteractGoal",
       "app.ch05000.EnemyFindGoal",
@@ -153198,17 +153604,8 @@
       "app.ch05000.ActionBase\u00601\u003Capp.ch05000.FilamentPurificationAttack.Param\u003E",
       "app.ch05000.FilamentPurificationAttack"
     ],
-    "app.ch05000.LineEffectMediatorBase": [
-      "app.ch05000.LineEffectMediatorBase",
-      "app.ch05000.FilamentPurificationEffectMediator",
-      "app.ch05000.FilamentRemoveEffectMediator",
-      "app.ch05000.InteractEffectMediator",
-      "app.ch05000.PartnerOnlyInteractEffectMediator",
-      "app.ch05000.PuzzleEffectMediator"
-    ],
     "app.ch05000.LineEffect": [
       "app.ch05000.LineEffect",
-      "app.ch05000.FilamentPurificationExecEffect",
       "app.ch05000.FilamentRemoveEffect",
       "app.ch05000.PuzzleDefaultEffect",
       "app.ch05000.PuzzleEffect",
@@ -153216,6 +153613,13 @@
       "app.ch05000.PuzzleOpenErodeEffect",
       "app.ch05000.PuzzleSuccessEffect",
       "app.ch05000.PuzzleWp3100Effect"
+    ],
+    "app.ch05000.LineEffectMediatorBase": [
+      "app.ch05000.LineEffectMediatorBase",
+      "app.ch05000.FilamentRemoveEffectMediator",
+      "app.ch05000.InteractEffectMediator",
+      "app.ch05000.PartnerOnlyInteractEffectMediator",
+      "app.ch05000.PuzzleEffectMediator"
     ],
     "app.ch05000.ActionBase\u00601\u003Capp.ch05000.FillamentPurification.Param\u003E": [
       "app.ch05000.ActionBase\u00601\u003Capp.ch05000.FillamentPurification.Param\u003E",
@@ -153482,59 +153886,63 @@
       "app.ch06001.None"
     ],
     "app.ch07000.ActionBase\u00601\u003Capp.ActionParamBase\u003E": [
+      "app.ch07000.Event",
       "app.ch07000.Idle",
       "app.ch07000.MoveToLocker",
       "app.ch07000.ThrusterEndIdle",
       "app.ch07000.ThrusterMove",
       "app.ch07000.ThrusterMoveIdle",
+      "app.ch07000.WaitIdle",
       "app.ch07000.WaitInFrontLocker"
     ],
     "app.NpcActionBase\u00602\u003Capp.Ch07000Updater,app.ActionParamBase\u003E": [
       "app.NpcActionBase\u00602\u003Capp.Ch07000Updater,app.ActionParamBase\u003E",
+      "app.ch07000.Event",
       "app.ch07000.Idle",
       "app.ch07000.MoveToLocker",
       "app.ch07000.ThrusterEndIdle",
       "app.ch07000.ThrusterMove",
       "app.ch07000.ThrusterMoveIdle",
+      "app.ch07000.WaitIdle",
       "app.ch07000.WaitInFrontLocker"
     ],
-    "app.AIActionGoal\u00601\u003Capp.Ch07000ThinkDriver\u003E": [
-      "app.ch07000.IdleGoal",
-      "app.ch07000.MoveToLockerGoal",
-      "app.ch07000.ThrusterEndToIdleGoal",
-      "app.ch07000.ThrusterMoveGoal",
-      "app.ch07000.ThrusterMoveIdleGoal",
-      "app.ch07000.WaitInFrontLockerGoal"
-    ],
-    "app.AIActionGoal\u00602\u003Capp.Ch07000ThinkDriver,app.ThinkMemory\u003E": [
-      "app.ch07000.IdleGoal",
-      "app.ch07000.MoveToLockerGoal",
-      "app.ch07000.ThrusterEndToIdleGoal",
-      "app.ch07000.ThrusterMoveGoal",
-      "app.ch07000.ThrusterMoveIdleGoal",
-      "app.ch07000.WaitInFrontLockerGoal"
+    "app.AIBaseGoal\u00601\u003Capp.Ch07000ThinkDriver\u003E": [
+      "app.ch07000.MainFlow"
     ],
     "app.AIBaseGoal\u00602\u003Capp.Ch07000ThinkDriver,app.ThinkMemory\u003E": [
-      "app.ch07000.IdleGoal",
       "app.ch07000.MainFlow",
       "app.ch07000.MoveToLockerGoal",
       "app.ch07000.ThrusterEndToIdleGoal",
       "app.ch07000.ThrusterMoveGoal",
       "app.ch07000.ThrusterMoveIdleGoal",
+      "app.ch07000.WaitIdleGoal",
       "app.ch07000.WaitInFrontLockerGoal"
     ],
     "app.AIGoal\u00602\u003Capp.Ch07000ThinkDriver,app.ThinkMemory\u003E": [
       "app.AIGoal\u00602\u003Capp.Ch07000ThinkDriver,app.ThinkMemory\u003E",
-      "app.ch07000.IdleGoal",
       "app.ch07000.MainFlow",
       "app.ch07000.MoveToLockerGoal",
       "app.ch07000.ThrusterEndToIdleGoal",
       "app.ch07000.ThrusterMoveGoal",
       "app.ch07000.ThrusterMoveIdleGoal",
+      "app.ch07000.WaitIdleGoal",
       "app.ch07000.WaitInFrontLockerGoal"
     ],
-    "app.AIBaseGoal\u00601\u003Capp.Ch07000ThinkDriver\u003E": [
-      "app.ch07000.MainFlow"
+    "app.AIActionGoal\u00601\u003Capp.Ch07000ThinkDriver\u003E": [
+      "app.ch07000.MoveToLockerGoal",
+      "app.ch07000.ThrusterEndToIdleGoal",
+      "app.ch07000.ThrusterMoveGoal",
+      "app.ch07000.ThrusterMoveIdleGoal",
+      "app.ch07000.WaitIdleGoal",
+      "app.ch07000.WaitInFrontLockerGoal"
+    ],
+    "app.AIActionGoal\u00602\u003Capp.Ch07000ThinkDriver,app.ThinkMemory\u003E": [
+      "app.ch07000.MoveToLockerGoal",
+      "app.ch07000.ThrusterEndToIdleGoal",
+      "app.ch07000.ThrusterMoveGoal",
+      "app.ch07000.ThrusterMoveIdleGoal",
+      "app.ch07000.WaitIdleGoal",
+      "app.ch07000.WaitInFrontLockerGoal"
     ],
     "app.ch07100.ActionBase\u00601\u003Capp.ActionParamBase\u003E": [
       "app.ch07100.Idle",
@@ -153949,6 +154357,7 @@
       "app.ch14100.Goal.NoAttackPermitGoal",
       "app.ch14100.Goal.RecoveryAntennaGoal",
       "app.ch14100.Goal.SecondHalfBattleGoal",
+      "app.ch14100.Goal.StomachStompAndTurnMowDownGoal",
       "app.ch14100.Goal.UnderTargetAttackGoal",
       "app.ch14100.Goal.UnderTargetTurnMowDownGoal",
       "app.ch14100.Goal.WaitRangeMoveGoal"
@@ -154681,6 +155090,7 @@
       "app.FinishBlowGrappleEndParamBase",
       "app.ch14200.FinishBlowGrappleEnd.Param",
       "app.ch14400.FinishBlowGrappleEnd.Param",
+      "app.ch16000.FinishBlowGrappleEnd.Param",
       "app.ch16021.FinishBlowGrappleEnd.Param",
       "app.ch16030.FinishBlowGrappleEnd.Param",
       "app.ch16031.FinishBlowGrappleEnd.Param",
@@ -155329,6 +155739,7 @@
       "app.FinishBlowGrappleParamBase",
       "app.ch14300.FinishBlowGrapple.Param",
       "app.ch14400.FinishBlowGrapple.Param",
+      "app.ch16000.FinishBlowGrapple.Param",
       "app.ch16030.FinishBlowGrapple.Param",
       "app.ch16031.FinishBlowGrapple.Param",
       "app.ch16060.FinishBlowGrapple.Param",
@@ -155562,6 +155973,10 @@
     "app.EnemyActionBase\u00602\u003Capp.Ch14300Updater,app.ch14300.Warp.Param\u003E": [
       "app.EnemyActionBase\u00602\u003Capp.Ch14300Updater,app.ch14300.Warp.Param\u003E",
       "app.ch14300.Warp"
+    ],
+    "app.ch14300CameraDissolveParamBase": [
+      "app.ch14300CameraDissolveParamBase",
+      "app.ch14300CameraDissolveShpereParam"
     ],
     "app.AIBaseGoal\u00601\u003Capp.Ch14310ThinkDriver\u003E": [
       "app.ch14310.AdsorptionFlow",
@@ -156976,18 +157391,12 @@
       "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FallSpawnAction.Param\u003E",
       "app.ch16000.FallSpawnAction"
     ],
-    "app.ch16000.ActionBase\u00601\u003Capp.ch16000.FinishBlowGrapple.Param\u003E": [
+    "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E": [
+      "app.FinishBlowGrappleBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
       "app.ch16000.FinishBlowGrapple"
     ],
-    "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E": [
-      "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrapple.Param\u003E",
-      "app.ch16000.FinishBlowGrapple"
-    ],
-    "app.ch16000.ActionBase\u00601\u003Capp.ch16000.FinishBlowGrappleEnd.Param\u003E": [
-      "app.ch16000.FinishBlowGrappleEnd"
-    ],
-    "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E": [
-      "app.EnemyActionBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
+    "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E": [
+      "app.FinishBlowGrappleEndBase\u00602\u003Capp.Ch16000Updater,app.ch16000.FinishBlowGrappleEnd.Param\u003E",
       "app.ch16000.FinishBlowGrappleEnd"
     ],
     "app.ch16000.ActionBase\u00601\u003Capp.ch16000.GeneralFallSpawnAction.Param\u003E": [
@@ -161530,6 +161939,7 @@
     "app.collision.DamageUserData": [
       "app.collision.DamageUserData",
       "app.collision.AttackSignMakerUserData",
+      "app.collision.DeadFilamentShellDamageUserData",
       "app.collision.EnemyDamageUserData",
       "app.collision.FillamentRemoveGimmickDamageUserData",
       "app.collision.GimmickDamageUserData",
@@ -161542,6 +161952,7 @@
       "app.collision.AttackSignUserData",
       "app.collision.AttackUserData",
       "app.collision.DamageUserData",
+      "app.collision.DeadFilamentShellDamageUserData",
       "app.collision.EnemyDamageUserData",
       "app.collision.FillamentRemoveGimmickDamageUserData",
       "app.collision.GimmickDamageUserData",
@@ -161557,6 +161968,7 @@
       "app.collision.AttackSignUserData",
       "app.collision.AttackUserData",
       "app.collision.DamageUserData",
+      "app.collision.DeadFilamentShellDamageUserData",
       "app.collision.EnemyDamageUserData",
       "app.collision.FillamentRemoveGimmickDamageUserData",
       "app.collision.GimmickDamageUserData",
@@ -161572,6 +161984,10 @@
       "app.collision.AttackUserData",
       "app.collision.AttackSignUserData",
       "app.collision.WeaponAttackUserData"
+    ],
+    "app.collision.EnemyDamageUserData": [
+      "app.collision.EnemyDamageUserData",
+      "app.collision.DeadFilamentShellDamageUserData"
     ],
     "app.collision.GimmickDamageUserData": [
       "app.collision.GimmickDamageUserData",
@@ -161604,22 +162020,32 @@
     "app.dev1lab.AnalysisLogEventParamBase": [
       "app.dev1lab.AnalysisLogEventParamBase",
       "app.dev1lab.AnalysisLogEventParamActive",
+      "app.dev1lab.AnalysisLogEventParamCabin_end",
       "app.dev1lab.AnalysisLogEventParamClear",
+      "app.dev1lab.AnalysisLogEventParamDev_stage_end",
+      "app.dev1lab.AnalysisLogEventParamDlc_install",
       "app.dev1lab.AnalysisLogEventParamNeutral_age_gate",
       "app.dev1lab.AnalysisLogEventParamOption",
+      "app.dev1lab.AnalysisLogEventParamReward",
       "app.dev1lab.AnalysisLogEventParamStage_end",
       "app.dev1lab.AnalysisLogEventParamStore_transition",
+      "app.dev1lab.AnalysisLogEventParamVr_mission_end",
       "app.dev1lab.AnalysisLogUserParam"
     ],
     "app.dev1lab.AnalysisLogSendParamBase": [
       "app.dev1lab.AnalysisLogSendParamBase",
       "app.dev1lab.AnalysisLogParam",
       "app.dev1lab.AnalysisLogSendParamActive",
+      "app.dev1lab.AnalysisLogSendParamCabin_end",
       "app.dev1lab.AnalysisLogSendParamClear",
+      "app.dev1lab.AnalysisLogSendParamDev_stage_end",
+      "app.dev1lab.AnalysisLogSendParamDlc_install",
       "app.dev1lab.AnalysisLogSendParamNeutral_age_gate",
       "app.dev1lab.AnalysisLogSendParamOption",
+      "app.dev1lab.AnalysisLogSendParamReward",
       "app.dev1lab.AnalysisLogSendParamStage_end",
       "app.dev1lab.AnalysisLogSendParamStore_transition",
+      "app.dev1lab.AnalysisLogSendParamVr_mission_end",
       "app.dev1lab.AnalysisLogTransmitter.AnalysisLogSendParamRebeAuthOnly"
     ],
     "app.dev1lab.AnalysisLogParamTypeBase": [
@@ -161630,11 +162056,16 @@
     "app.dev1lab.AnalysisLogParam": [
       "app.dev1lab.AnalysisLogParam",
       "app.dev1lab.AnalysisLogSendParamActive",
+      "app.dev1lab.AnalysisLogSendParamCabin_end",
       "app.dev1lab.AnalysisLogSendParamClear",
+      "app.dev1lab.AnalysisLogSendParamDev_stage_end",
+      "app.dev1lab.AnalysisLogSendParamDlc_install",
       "app.dev1lab.AnalysisLogSendParamNeutral_age_gate",
       "app.dev1lab.AnalysisLogSendParamOption",
+      "app.dev1lab.AnalysisLogSendParamReward",
       "app.dev1lab.AnalysisLogSendParamStage_end",
       "app.dev1lab.AnalysisLogSendParamStore_transition",
+      "app.dev1lab.AnalysisLogSendParamVr_mission_end",
       "app.dev1lab.AnalysisLogTransmitter.AnalysisLogSendParamRebeAuthOnly"
     ],
     "app.facial.tower.Damper\u00601\u003CSystem.Single\u003E": [
@@ -162154,6 +162585,9 @@
     ],
     "app.gui.ScrollCtrlBase\u00601\u003Capp.gui.ui5174.AppSelectItem\u003E": [
       "app.gui.ScrollListController\u00601\u003Capp.gui.ui5174.AppSelectItem\u003E"
+    ],
+    "app.GuiCloseParamBase": [
+      "app.gui.ui0092.CloseParam"
     ],
     "app.GuiMenuOpenParamBase": [
       "app.gui.ui0401.OpenParam",
@@ -165969,6 +166403,7 @@
       "via.physics.ContinuousCapsuleShape",
       "via.physics.ContinuousSphereShape",
       "via.physics.CylinderShape",
+      "via.physics.PreciseSphereShape",
       "via.physics.SphereShape",
       "via.physics.TriangleShape"
     ],
@@ -165983,6 +166418,7 @@
       "via.physics.DeformableMeshShape",
       "via.physics.HeightFieldShape",
       "via.physics.MeshShape",
+      "via.physics.PreciseSphereShape",
       "via.physics.ScriptShape",
       "via.physics.SignedDistanceFieldShape",
       "via.physics.SkinningMeshShape",
@@ -166013,6 +166449,10 @@
       "via.physics.CollisionMaterialResourceHolder",
       "via.physics.CollisionSignedDistanceFieldResourceHolder",
       "via.physics.CollisionSkinningMeshResourceHolder"
+    ],
+    "via.physics.SphereShape": [
+      "via.physics.SphereShape",
+      "via.physics.PreciseSphereShape"
     ],
     "via.puppet.RemoteGameObject": [
       "via.puppet.RemoteGameObject",
