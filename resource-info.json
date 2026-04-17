@@ -1,7 +1,7 @@
 {
 	"file_extensions": {
 		"Uri": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/global/file_extensions.json",
-		"LastUpdatedAtUtc": "2026-02-14T20:34:00Z"
+		"LastUpdatedAtUtc": "2026-04-17T05:00:00Z"
 	},
 	"resources": {
 		"dd2": {
@@ -182,13 +182,13 @@
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/O2_STM.list"
 		},
 		"pragmata":{
-			"LastUpdatedAtUtc": "2026-03-13T23:09:00Z",
+			"LastUpdatedAtUtc": "2026-04-17T05:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszpragmata.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/rsz_patch.json"
 			],
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/il2cpp_cache.json",
-			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/PRAGMATA_DEMO_STM.list"
+			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/P_STM_Release.list"
 		},
 		"mhsto3":{
 			"LastUpdatedAtUtc": "2026-02-14T20:34:00Z",
