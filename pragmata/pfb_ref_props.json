@@ -196,5 +196,23 @@
       "PropertyId": 327681,
       "AutoDetected": true
     }
+  },
+  "via.motion.ConstraintParent": {
+    "TargetGameObject": {
+      "PropertyId": 262146,
+      "AutoDetected": true
+    }
+  },
+  "via.render.LightShaft": {
+    "LightGameObject": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
+  },
+  "via.render.SpotLight": {
+    "DetailFocusTarget": {
+      "PropertyId": 262181,
+      "AutoDetected": true
+    }
   }
 }

@@ -3860,6 +3860,7 @@
       "gpus": 13,
       "sbd": 251121870,
       "skeleton": 8,
+      "sfur": 5,
       "chain2": 15,
       "rbs": 2061,
       "motfsm2": 45,
@@ -3925,7 +3926,8 @@
       "gsty": 4,
       "fxct": 4,
       "efcsv": 1,
-      "efx": 5965300
+      "efx": 5965300,
+      "gpuc": 251121978
     },
     "Info": {
       "jmap": {
@@ -4069,6 +4071,12 @@
       "skeleton": {
         "Locales": [],
         "Version": 8,
+        "CanNotHaveX64": true,
+        "CanNotHaveLang": true
+      },
+      "sfur": {
+        "Locales": [],
+        "Version": 5,
         "CanNotHaveX64": true,
         "CanNotHaveLang": true
       },
@@ -4502,6 +4510,12 @@
       "efx": {
         "Locales": [],
         "Version": 5965300,
+        "CanNotHaveX64": true,
+        "CanNotHaveLang": true
+      },
+      "gpuc": {
+        "Locales": [],
+        "Version": 251121978,
         "CanNotHaveX64": true,
         "CanNotHaveLang": true
       }
