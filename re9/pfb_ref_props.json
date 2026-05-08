@@ -168,5 +168,23 @@
       "PropertyId": 327680,
       "AutoDetected": true
     }
+  },
+  "app.It10_02_000Updater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.It10_00_001Updater": {
+    "_TargetMeshObjectRef": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "via.render.LightShaft": {
+    "LightGameObject": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
   }
 }
