@@ -164,5 +164,10 @@
       "PropertyId": 262162,
       "AutoDetected": true
     }
+  },
+  "app.EventCharacterSetting": {
+    "HairObjectRef": {
+      "PropertyId": 327687
+    }
   }
 }
