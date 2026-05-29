@@ -103,7 +103,7 @@
 			"DynamicsDefinition": "objectroot/dynamics/ropewaydynamicsdefinition.def.6"
 		},
 		"re4":{
-			"LastUpdatedAtUtc": "2025-10-25T00:00:00Z",
+			"LastUpdatedAtUtc": "2026-04-01T00:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre4.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re4/rsz_patch.json"
