@@ -198,12 +198,12 @@
 			],
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/MHST3_DEMO_STM.list"
 		},
-		"oni":{
+		"oniws":{
 			"LastUpdatedAtUtc": "2026-06-03T07:30:00Z",
 			"RszPatchFiles": [],
 			"Il2cppCache": null,
 			"PfbRefs": null,
-			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oni/oni.list"
+			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/oniws_demo.list"
 		}
 	}
 }
