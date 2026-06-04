@@ -165,9 +165,9 @@
 			"DynamicsDefinition": "natives/stm/config/dynamics/appdynamicsdefinition.def.6"
 		},
 		"sf6":{
-			"LastUpdatedAtUtc": "2026-06-04T06:00:00Z",
+			"LastUpdatedAtUtc": "2026-06-04T20:40:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszsf6.json"
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/sf6/rszsf6.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/Ekey/REE.PAK.Tool/refs/heads/main/Projects/SF6_STM_Release.list",
 			"CollisionDefinition": "natives/stm/product/collision/collision.cdef.5",
