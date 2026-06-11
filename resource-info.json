@@ -5,9 +5,9 @@
 	},
 	"resources": {
 		"dd2": {
-			"LastUpdatedAtUtc": "2026-06-10T05:20:00Z",
+			"LastUpdatedAtUtc": "2026-06-11T20:50:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszdd2.json",
+				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/rsz_template.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/rsz_patch.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dd2/dd2_files.list",

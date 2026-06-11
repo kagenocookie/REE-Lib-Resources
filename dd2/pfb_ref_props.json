@@ -601,5 +601,21 @@
       "PropertyId": 262144,
       "AutoDetected": true
     }
+  },
+  "via.dynamics.ConstraintSet.ConstraintInfo": {
+    "ParentGameObjectRef": {
+      "PropertyId": 131092,
+      "AutoDetected": true
+    },
+    "ChildGameObjectRef": {
+      "PropertyId": 131100,
+      "AutoDetected": true
+    }
+  },
+  "via.motion.SubConstraintJoints": {
+    "TargetGameObject": {
+      "PropertyId": 131073,
+      "AutoDetected": true
+    }
   }
 }
