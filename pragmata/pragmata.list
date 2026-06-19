@@ -763,6 +763,13 @@ natives/STM/Character/ch/ch00/ch0011/00/ch0011_00_Mat.mdf2.51
 natives/STM/Character/ch/ch00/ch0011/20/ch0011_20.mesh.251121828
 natives/STM/Character/ch/ch00/ch0011/20/ch0011_20_Const.jcns.35
 natives/STM/Character/ch/ch00/ch0011/20/ch0011_20_Mat.mdf2.51
+natives/STM/Character/ch/ch00/ch0012/00/ch0012_00.mesh.251121828
+natives/STM/Character/ch/ch00/ch0012/00/ch0012_00_Mat.mdf2.51
+natives/STM/Character/ch/ch00/ch0012/00/ch0012_00_paint_ALBD.tex.251111100
+natives/STM/Character/ch/ch00/ch0012/00/ch0012_00_paint_ATOC.tex.251111100
+natives/STM/Character/ch/ch00/ch0012/00/ch0012_00_paint_nrmr.tex.251111100
+natives/STM/Character/ch/ch00/ch0012/20/ch0012_20.mesh.251121828
+natives/STM/Character/ch/ch00/ch0012/20/ch0012_20_Mat.mdf2.51
 natives/STM/Character/ch/ch00/ch0050/00/ch0050_00.mesh.251121828
 natives/STM/Character/ch/ch00/ch0050/00/ch0050_00_Body_ALBD.tex.251111100
 natives/STM/Character/ch/ch00/ch0050/00/ch0050_00_Body_nrmr.tex.251111100
@@ -2868,6 +2875,8 @@ natives/STM/Character/Prefab/ch01000/Costume/CosPl2000/Body_Spacesuit13.pfb.18
 natives/STM/Character/Prefab/ch01000/Costume/CosPl2000/ch01000_helmet_Spacesuit13.pfb.18
 natives/STM/Character/Prefab/ch01000/Costume/CosPl2010/Body_Spacesuit14.pfb.18
 natives/STM/Character/Prefab/ch01000/Costume/CosPl2010/ch01000_helmet_Spacesuit14.pfb.18
+natives/STM/Character/Prefab/ch01000/Costume/CosPl3000/Body_Spacesuit15.pfb.18
+natives/STM/Character/Prefab/ch01000/Costume/CosPl3000/ch01000_helmet_Spacesuit15.pfb.18
 natives/STM/Character/Prefab/ch01000/Grapple/gp0100.pfb.18
 natives/STM/Character/Prefab/ch01000/Grapple/gp0100GameDemoPlayerSetting.user.3
 natives/STM/Character/Prefab/ch01000/Grapple/gp0100_ch01000_GameDemoUserData.user.3
@@ -62914,6 +62923,7 @@ natives/STM/Event/Resource/Character/Temp/ch30000/ch30000_00_pl1010_event.pfb.18
 natives/STM/Event/Resource/Character/Temp/ch30000/ch30000_00_pl1020_event.pfb.18
 natives/STM/Event/Resource/Character/Temp/ch30000/ch30000_00_pl2000_event.pfb.18
 natives/STM/Event/Resource/Character/Temp/ch30000/ch30000_00_pl2010_event.pfb.18
+natives/STM/Event/Resource/Character/Temp/ch30000/ch30000_00_pl3000_event.pfb.18
 natives/STM/Event/Resource/Character/Temp/ch31001/ch31001_00_event.pfb.18
 natives/STM/Event/Resource/Character/Temp/ch31001/ch31001_00_pa0010_event.pfb.18
 natives/STM/Event/Resource/Character/Temp/ch31001/ch31001_00_pa0020_event.pfb.18
@@ -63025,8 +63035,10 @@ natives/STM/Event/Resource/Motion/cs0110/ch0100_00.pfb.18
 natives/STM/Event/Resource/Motion/cs0110/ch0100_00.user.3
 natives/STM/Event/Resource/Motion/cs0110/ch0100_00_after.mot.993
 natives/STM/Event/Resource/Props/cs0010/cs0010_PropControllerSetting.user.3
+natives/STM/Event/Resource/Props/cs0010/cs0010_TimelineEventPartsChangerSetting.user.3
 natives/STM/Event/Resource/Props/cs0250/cs0250_PropControllerSetting.user.3
 natives/STM/Event/Resource/Props/cs0460/cs0460_PropControllerSetting.user.3
+natives/STM/Event/Resource/Props/cs1050/cs1050_TimelineEventPartsChangerSetting.user.3
 natives/STM/Event/Resource/SimulationPartsData/ch05000_SimulationPartsData.user.3
 natives/STM/Event/Resource/SimulationPartsData/ch09000_SimulationPartsData.user.3
 natives/STM/Event/Resource/SimulationPartsData/ch09001_SimulationPartsData.user.3
@@ -68854,6 +68866,8 @@ natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_ArtificalMu
 natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_ArtificalMuscle_PrintFilament_Event.mmtr.251112995
 natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_ArtificalMuscle_PrintFilament_Tessellation_Event.mmtr.251112995
 natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_CabinDisplay.mmtr.251112995
+natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_Decal_Default_12weight.mmtr.251112995
+natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_Decal_DirtDamage_12weight.mmtr.251112995
 natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_Default.mmtr.251112995
 natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_Default_12weight.mmtr.251112995
 natives/STM/MaterialShader/MasterMaterial/Master/Character/Character_Default_12weight_PrintFilament_Event.mmtr.251112995
@@ -75640,6 +75654,10 @@ natives/STM/streaming/Character/ch/ch00/ch0011/00/ch0011_00_HeadLight_OCMA.tex.2
 natives/STM/streaming/Character/ch/ch00/ch0011/00/ch0011_00_Head_ALBD.tex.251111100
 natives/STM/streaming/Character/ch/ch00/ch0011/00/ch0011_00_Head_ATOC.tex.251111100
 natives/STM/streaming/Character/ch/ch00/ch0011/00/ch0011_00_Head_nrmr.tex.251111100
+natives/STM/streaming/Character/ch/ch00/ch0012/00/ch0012_00.mesh.251121828
+natives/STM/streaming/Character/ch/ch00/ch0012/00/ch0012_00_paint_ALBD.tex.251111100
+natives/STM/streaming/Character/ch/ch00/ch0012/00/ch0012_00_paint_ATOC.tex.251111100
+natives/STM/streaming/Character/ch/ch00/ch0012/00/ch0012_00_paint_nrmr.tex.251111100
 natives/STM/streaming/Character/ch/ch00/ch0050/00/ch0050_00.mesh.251121828
 natives/STM/streaming/Character/ch/ch00/ch0050/00/ch0050_00_Body_ALBD.tex.251111100
 natives/STM/streaming/Character/ch/ch00/ch0050/00/ch0050_00_Body_nrmr.tex.251111100
@@ -99358,6 +99376,8 @@ natives/STM/UI/Asset/ui0000/texture/ui0052_UVS.uvs.8
 natives/STM/UI/Asset/ui0000/texture/ui0053_IAM.tex.251111100
 natives/STM/UI/Asset/ui0000/texture/ui0053_UVS.uvs.8
 natives/STM/UI/Asset/ui0000/texture/ui0060_IM.tex.251111100
+natives/STM/UI/Asset/ui0000/texture/ui0060_text_UVS.uvs.8
+natives/STM/UI/Asset/ui0000/texture/ui0060_txt_IAM.tex.251111100
 natives/STM/UI/Asset/ui0000/texture/ui0060_UVS.uvs.8
 natives/STM/UI/Asset/ui0000/texture/ui0061B_IAM.tex.251111100
 natives/STM/UI/Asset/ui0000/texture/ui0061G_IAM.tex.251111100
