@@ -885,6 +885,11 @@
       {
         "Name": "v2",
         "Type": "Object"
+      },
+      {
+        "Name": "v3",
+        "OriginalType": "via.render.CompositeMeshTransformController",
+        "Type": "Object"
       }
     ]
   },
