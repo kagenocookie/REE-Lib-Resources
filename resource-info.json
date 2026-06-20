@@ -182,7 +182,7 @@
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/O2_STM.list"
 		},
 		"pragmata":{
-			"LastUpdatedAtUtc": "2026-06-19T014:15:00Z",
+			"LastUpdatedAtUtc": "2026-06-19T14:15:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/kagenocookie/REasy/refs/heads/master/resources/data/dumps/rszpragmata.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/rsz_patch.json"
