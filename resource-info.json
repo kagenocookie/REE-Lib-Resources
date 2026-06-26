@@ -1,4 +1,5 @@
 {
+	"$schema": "resource-info.schema.json",
 	"file_extensions": {
 		"Uri": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/global/file_extensions.json",
 		"LastUpdatedAtUtc": "2026-06-03T07:30:00Z"

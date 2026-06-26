@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/resource-info.schema.json",
+  "title": "Resource Info",
+  "description": "Schema for resource-info.json defining resource configurations for various games.",
+  "type": "object",
+  "required": ["file_extensions", "resources"],
+  "properties": {
+    "file_extensions": {
+      "type": "object",
+      "description": "File extension mappings and metadata",
+      "required": ["Uri", "LastUpdatedAtUtc"],
+      "properties": {
+        "Uri": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the file_extensions.json file"
+        },
+        "LastUpdatedAtUtc": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp in ISO 8601 format"
+        }
+      }
+    },
+    "resources": {
+      "type": "object",
+      "description": "Per game resource definitions",
+      "additionalProperties": {
+        "$ref": "#/$defs/resource"
+      }
+    }
+  },
+  "$defs": {
+    "resource": {
+      "type": "object",
+      "description": "Resource configuration for a game/project",
+      "required": ["LastUpdatedAtUtc"],
+      "properties": {
+        "LastUpdatedAtUtc": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp in ISO 8601 format"
+        },
+        "RszPatchFiles": {
+          "type": "array",
+          "description": "RSZ file list",
+          "nullable": true,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "minItems": 1
+        },
+        "FileList": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the file list"
+        },
+        "Il2cppCache": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the il2cpp cache file built using REE Lib"
+        },
+        "PfbRefs": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the PFB GameObjectRef property id mapping file"
+        },
+        "EfxStructs": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the EFX structs file"
+        },
+        "CollisionDefinition": {
+          "type": "string",
+          "description": "Path to the main .cdef file"
+        },
+        "DynamicsDefinition": {
+          "type": "string",
+          "description": "Path to the main .def file"
+        }
+      }
+    }
+  }
+}
