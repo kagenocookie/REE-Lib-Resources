@@ -6,8 +6,8 @@ The `resource-info.json` file contains the current status and direct file downlo
 If you'd rather update the resource yourself, you can clone the repository and launch the `setup-local-repository.bat` file. This will create a `local-resource-info.json` file and replace URLs with absolute paths for your local machine.
 
 ## Credits
-- [SilverEzredes](https://github.com/SilverEzredes) - current DD2 file list
+- [SilverEzredes](https://github.com/SilverEzredes)
 - [Battlezone/REasy](https://github.com/seifhassine/REasy)
 - [alphaZomega](https://github.com/alphazolam/RE_RSZ)
 - [Ekey](https://github.com/Ekey/REE.PAK.Tool)
-- Anyone who's contributed to making up to date file lists, RSZ dumps, etc.
+- Anyone else who's contributed to making up to date file lists, RSZ dumps, etc.
