@@ -167,11 +167,11 @@
 			"DynamicsDefinition": "natives/stm/config/dynamics/appdynamicsdefinition.def.6"
 		},
 		"sf6":{
-			"LastUpdatedAtUtc": "2026-06-25T19:00:00Z",
+			"LastUpdatedAtUtc": "2026-08-03T08:00:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/sf6/rszsf6.json"
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszsf6.json"
 			],
-			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/sf6/sf6_files.list",
+			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/SF6_STM.list",
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/sf6/il2cpp_cache.json",
 			"CollisionDefinition": "natives/stm/product/collision/collision.cdef.5",
 			"DynamicsDefinition": "natives/stm/product/dynamicssys/definition/dynamicsdefinition.def.6"
