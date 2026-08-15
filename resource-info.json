@@ -19,7 +19,7 @@
 			"DynamicsDefinition": "config/dynamics/towerdynamics.def.6"
 		},
 		"dmc5":{
-			"LastUpdatedAtUtc": "2026-06-26T01:00:00Z",
+			"LastUpdatedAtUtc": "2026-07-12T16:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszdmc5.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/dmc5/rsz_patch.json"
@@ -42,7 +42,7 @@
 			"CollisionDefinition": "natives/stm/physics/collisiondefinition.cdef.4"
 		},
 		"mhwilds":{
-			"LastUpdatedAtUtc": "2026-06-27T00:00:00Z",
+			"LastUpdatedAtUtc": "2026-08-09T14:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhwilds.json",
 				"https://raw.githubusercontent.com/kagenocookie/ReachForGodot/refs/heads/master/addons/ReachForGodot/game_config/global/rsz_patches.json"
@@ -53,7 +53,7 @@
 			"DynamicsDefinition": "dynamics/sagdynamics.def.5"
 		},
 		"re2":{
-			"LastUpdatedAtUtc": "2025-10-25T00:00:00Z",
+			"LastUpdatedAtUtc": "2026-07-12T16:00:00Z",
 			"RszPatchFiles": [
           		"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre2.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re2/rsz_patch.json"
@@ -155,7 +155,7 @@
 			"DynamicsDefinition": "natives/stm/collisionfilter/villagedynamics.def.6"
 		},
 		"re9":{
-			"LastUpdatedAtUtc": "2026-06-27T20:50:00Z",
+			"LastUpdatedAtUtc": "2026-08-15T18:10:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszre9.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/re9/rsz_patch.json"
@@ -177,14 +177,14 @@
 			"DynamicsDefinition": "natives/stm/product/dynamicssys/definition/dynamicsdefinition.def.6"
 		},
 		"oni2":{
-			"LastUpdatedAtUtc": "2026-03-13T23:09:00Z",
+			"LastUpdatedAtUtc": "2026-06-30T14:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszo2.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/O2_STM.list"
 		},
 		"pragmata":{
-			"LastUpdatedAtUtc": "2026-06-19T14:15:00Z",
+			"LastUpdatedAtUtc": "2026-08-01T00:15:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszpragmata.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/rsz_patch.json"
@@ -194,14 +194,14 @@
 			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/pragmata/pragmata.list"
 		},
 		"mhsto3":{
-			"LastUpdatedAtUtc": "2026-02-14T20:34:00Z",
+			"LastUpdatedAtUtc": "2026-06-30T14:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszmhst3.json"
 			],
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/MHST3_DEMO_STM.list"
 		},
 		"oniws":{
-			"LastUpdatedAtUtc": "2026-06-26T05:00:00Z",
+			"LastUpdatedAtUtc": "2026-06-30T14:00:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszoniwots.json",
 				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/rsz_patch.json"
