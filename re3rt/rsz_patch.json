@@ -6465,5 +6465,13 @@
         "Type": "F32"
       }
     ]
+  },
+  "via.wwise.WwiseGlobalUserVariablesSetStateParam": {
+    "FieldPatches": [
+      {
+        "Name": "v1",
+        "Type": "Object"
+      }
+    ]
   }
 }
