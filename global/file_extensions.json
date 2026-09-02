@@ -9,7 +9,7 @@
       "scn": 21,
       "mdf2": 51,
       "mesh": 260421070,
-      "sdftex": 858718212,
+      "sdftex": 502231882,
       "tex": 251211553,
       "mmtr": 260511270,
       "mcol": 29030,
@@ -66,7 +66,7 @@
       "gcf": 29,
       "gcp": 2,
       "gsty": 4,
-      "rcf": 2,
+      "rcf": 7,
       "rtmr": 6,
       "sss": 6,
       "lod": 4,
@@ -93,7 +93,7 @@
       "swms": 1,
       "sbnk": 1,
       "spck": 1,
-      "sdf": 240112003,
+      "sdf": 260511270,
       "lprb": 8,
       "prb": 9,
       "rcfg": 10,
@@ -158,7 +158,7 @@
       },
       "sdftex": {
         "Locales": [],
-        "Version": 858718212,
+        "Version": 502231882,
         "CanNotHaveX64": true,
         "CanNotHaveLang": true
       },
@@ -504,7 +504,7 @@
       },
       "rcf": {
         "Locales": [],
-        "Version": 2,
+        "Version": 7,
         "CanNotHaveX64": true,
         "CanNotHaveLang": true
       },
@@ -681,7 +681,7 @@
         "Locales": [
           "stm"
         ],
-        "Version": 240112003,
+        "Version": 260511270,
         "CanNotHaveX64": true,
         "CanHaveLang": true,
         "CanNotHaveLang": true
