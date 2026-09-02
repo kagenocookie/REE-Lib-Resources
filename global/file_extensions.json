@@ -98,7 +98,7 @@
       "prb": 9,
       "rcfg": 10,
       "stdlod": 5,
-      "vsdf": 240112006,
+      "vsdf": 260511277,
       "vsdflist": 1,
       "efcsv": 1,
       "tml": 91004,
@@ -712,7 +712,7 @@
       },
       "vsdf": {
         "Locales": [],
-        "Version": 240112006,
+        "Version": 260511277,
         "CanNotHaveX64": true,
         "CanNotHaveLang": true
       },
