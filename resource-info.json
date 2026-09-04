@@ -201,7 +201,7 @@
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/MHST3_DEMO_STM.list"
 		},
 		"oniws":{
-			"LastUpdatedAtUtc": "2026-09-04T04:55:00Z",
+			"LastUpdatedAtUtc": "2026-09-04T14:30:00Z",
 			"RszPatchFiles": [
 				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszoniwots.json"
 			],
