@@ -2,7 +2,7 @@
 	"$schema": "resource-info.schema.json",
 	"file_extensions": {
 		"Uri": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/global/file_extensions.json",
-		"LastUpdatedAtUtc": "2026-09-02T10:00:00Z"
+		"LastUpdatedAtUtc": "2026-09-04T04:55:00Z"
 	},
 	"resources": {
 		"dd2": {
@@ -201,14 +201,12 @@
 			"FileList": "https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/lists/MHST3_DEMO_STM.list"
 		},
 		"oniws":{
-			"LastUpdatedAtUtc": "2026-06-30T14:00:00Z",
+			"LastUpdatedAtUtc": "2026-09-04T04:55:00Z",
 			"RszPatchFiles": [
-				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszoniwots.json",
-				"https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/rsz_patch.json"
+				"https://raw.githubusercontent.com/seifhassine/REasy/refs/heads/master/resources/data/dumps/rszoniwots.json"
 			],
 			"Il2cppCache": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/il2cpp_cache.json",
-			"PfbRefs": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/pfb_ref_props.json",
-			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/oniws_demo.list"
+			"FileList": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/oniws/oniws_files.list"
 		}
 	}
 }
