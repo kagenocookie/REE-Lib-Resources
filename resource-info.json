@@ -2,7 +2,7 @@
 	"$schema": "resource-info.schema.json",
 	"file_extensions": {
 		"Uri": "https://raw.githubusercontent.com/kagenocookie/REE-Lib-Resources/refs/heads/master/global/file_extensions.json",
-		"LastUpdatedAtUtc": "2026-09-04T04:55:00Z"
+		"LastUpdatedAtUtc": "2026-09-04T14:30:00Z"
 	},
 	"resources": {
 		"dd2": {
