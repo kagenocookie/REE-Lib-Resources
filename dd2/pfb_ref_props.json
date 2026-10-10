@@ -1,7 +1,12 @@
 {
   "app.Character": {
     "SpecialFoliageChecker": {
-      "PropertyId": 262244
+      "PropertyId": 262244,
+      "AutoDetected": true
+    },
+    "OverHeadGUIObject": {
+      "PropertyId": 262247,
+      "AutoDetected": true
     }
   },
   "app.Human": {
@@ -84,16 +89,24 @@
   },
   "app.Gm80_076": {
     "UpObj": {
-      "PropertyId": 327685
+      "PropertyId": 327685,
+      "AutoDetected": true
     },
     "DownObj": {
-      "PropertyId": 327686
+      "PropertyId": 327686,
+      "AutoDetected": true
     },
-    "AIMapLinkObj": {
-      "PropertyId": 327688
+    "ExtraLinkObj_Upper": {
+      "PropertyId": 327688,
+      "AutoDetected": true
+    },
+    "ExtraLinkObj_Lower": {
+      "PropertyId": 327689,
+      "AutoDetected": true
     },
     "_AfterRef": {
-      "PropertyId": 327693
+      "PropertyId": 327693,
+      "AutoDetected": true
     }
   },
   "app.Gm50_036": {
@@ -440,6 +453,10 @@
     "HandleObj": {
       "PropertyId": 327688,
       "AutoDetected": true
+    },
+    "_FireObj": {
+      "PropertyId": 327696,
+      "AutoDetected": true
     }
   },
   "app.Gm80_105": {
@@ -584,6 +601,10 @@
     "OutermostRollModelObj": {
       "PropertyId": 262153,
       "AutoDetected": true
+    },
+    "FrameObj": {
+      "PropertyId": 262154,
+      "AutoDetected": true
     }
   },
   "app.MockupBuilder": {
@@ -615,6 +636,278 @@
   "via.motion.SubConstraintJoints": {
     "TargetGameObject": {
       "PropertyId": 131073,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_275_03.ExtraLinkTarget": {
+    "TargetObj": {
+      "PropertyId": 131073,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_128": {
+    "_WallObj": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    },
+    "_FadeTargetObj": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    },
+    "_PZ_GeneralTargetObj": {
+      "PropertyId": 327686,
+      "AutoDetected": true
+    },
+    "_FogTargetObj": {
+      "PropertyId": 327687,
+      "AutoDetected": true
+    }
+  },
+  "app.EqIt8316601": {
+    "HookObj": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    },
+    "RopeObj": {
+      "PropertyId": 262145,
+      "AutoDetected": true
+    }
+  },
+  "app.Kusari": {
+    "ModelGameObjectRef": {
+      "PropertyId": 262147,
+      "AutoDetected": true
+    }
+  },
+  "app.Kusari.Constraint.Target": {
+    "GameObjectRef": {
+      "PropertyId": 131073,
+      "AutoDetected": true
+    }
+  },
+  "via.render.SpotLight": {
+    "DetailFocusTarget": {
+      "PropertyId": 262181,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_087": {
+    "_MainLever": {
+      "PropertyId": 327683,
+      "AutoDetected": true
+    },
+    "_DownLever": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    },
+    "_UpLever": {
+      "PropertyId": 327685,
+      "AutoDetected": true
+    },
+    "_BlockCol": {
+      "PropertyId": 327686,
+      "AutoDetected": true
+    },
+    "_Floor": {
+      "PropertyId": 327687,
+      "AutoDetected": true
+    },
+    "_CharaSensor": {
+      "PropertyId": 327688,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_207": {
+    "LadderRef": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    },
+    "AIMapLinkUpObj": {
+      "PropertyId": 327683,
+      "AutoDetected": true
+    },
+    "AIMapLinkDownObj": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch257003WeatherDriver": {
+    "_SnowstormAreaObjectRef": {
+      "PropertyId": 131072,
+      "AutoDetected": true
+    },
+    "_BlizzardAreaObjectRef": {
+      "PropertyId": 131073,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_080": {
+    "_Hook": {
+      "PropertyId": 327683,
+      "AutoDetected": true
+    },
+    "_Ladder": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    }
+  },
+  "app.gm83_363": {
+    "_ColObj": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch272000": {
+    "_UI020601Ref": {
+      "PropertyId": 393226,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch254001": {
+    "_Ch254GRef": {
+      "PropertyId": 327686,
+      "AutoDetected": true
+    },
+    "_Ch254SRef": {
+      "PropertyId": 327687,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_231LightController": {
+    "_Light": {
+      "PropertyId": 262146,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_231EffectController": {
+    "_EffObj": {
+      "PropertyId": 262145,
+      "AutoDetected": true
+    }
+  },
+  "app.gm83_001": {
+    "_Bars": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_247EffectController": {
+    "_EffObj": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch253012": {
+    "GenerateAILocalAreaCheckerObject": {
+      "PropertyId": 393218,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_247MaterialController": {
+    "_Targets": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_121": {
+    "_SmokeEffObj": {
+      "PropertyId": 393217,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_275": {
+    "AIMapLinkObj": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch228000_50": {
+    "Head": {
+      "PropertyId": 327683,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_128_10": {
+    "_WallObj": {
+      "PropertyId": 327682,
+      "AutoDetected": true
+    },
+    "_FadeTargetObj": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    },
+    "_PZ_GeneralTargetObj": {
+      "PropertyId": 327686,
+      "AutoDetected": true
+    },
+    "_FogTargetObj": {
+      "PropertyId": 327687,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_229_01": {
+    "_LeverObj": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch270000": {
+    "BarrierRagdollObj": {
+      "PropertyId": 393219,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch225003": {
+    "_ui020601": {
+      "PropertyId": 327680,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm51_188_30LightController": {
+    "_Light": {
+      "PropertyId": 262144,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_290": {
+    "_Barrier": {
+      "PropertyId": 327681,
+      "AutoDetected": true
+    }
+  },
+  "app.Gm83_215": {
+    "_FireColObj": {
+      "PropertyId": 327683,
+      "AutoDetected": true
+    },
+    "_CharaSensorObj": {
+      "PropertyId": 327684,
+      "AutoDetected": true
+    },
+    "_GimmickMeshObj": {
+      "PropertyId": 327685,
+      "AutoDetected": true
+    }
+  },
+  "app.Ch254000": {
+    "_Ch254GRef": {
+      "PropertyId": 327686,
+      "AutoDetected": true
+    },
+    "_Ch254SRef": {
+      "PropertyId": 327687,
+      "AutoDetected": true
+    }
+  },
+  "via.motion.ConstraintJoints": {
+    "TargetGameObject": {
+      "PropertyId": 262145,
+      "AutoDetected": true
+    }
+  },
+  "app.Player": {
+    "PushAndPullableCharaDetectObjectRef": {
+      "PropertyId": 262153,
       "AutoDetected": true
     }
   }
